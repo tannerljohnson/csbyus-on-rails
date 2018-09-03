@@ -19,6 +19,8 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 // import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+import MainMenu from './MainMenu';
+import Video from './Video';
 
 
 const styles = theme => ({
@@ -82,7 +84,7 @@ function Test(props) {
           <AppBar position="static" className={classes.appBar}>
             <Toolbar>
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                <MenuIcon />
+                <MainMenu/>
               </IconButton>
               <Typography variant="title" color="inherit" noWrap>
                 CSbyUs
@@ -100,6 +102,9 @@ function Test(props) {
                 Expanding access to quality computer science education <br/>
                 by students, for students.
                 </Typography>
+                <div>
+                  <Video link='https://www.youtube.com/watch?v=in1BfwaZ2rU'/>
+                </div>
                 <div className={classes.heroButtons}>
                   <Grid container spacing={16} justify="center">
                     <Grid item>
