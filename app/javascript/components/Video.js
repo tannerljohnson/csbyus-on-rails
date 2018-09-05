@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 class Video extends React.Component {
   render () {
     return (
-      <ReactPlayer url={this.props.link} playing />
+      <ReactPlayer url={this.props.link} />
       // <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
     );
   }
