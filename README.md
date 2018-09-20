@@ -8,6 +8,7 @@ We're going to start by cloning the repository, setting up rails, and creating o
 For starters, go ahead and clone this repository into a new directory called `csbyus/practice/`:
 
 `cd csbyus/practice/`
+
 `git clone https://github.com/tannerljohnson/csbyus-on-rails.git`
 
 Now, point your current directory to this new directory:
