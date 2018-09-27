@@ -73,5 +73,54 @@ Tip: here's how you pass props into a react component in a rails view.
 Pls don't commit anything yet or worry about adding a git remote to this repository yet -- we'll get there :) 
 
 ## Up and running with Git
-```Here is a test 
-block quote```
+
+1. Clone this repo into an appropriate directory.
+```
+$> mkdir csbyus
+$> cd csbyus
+$> git clone https://github.com/tannerljohnson/csbyus-on-rails.git 
+$> cd csbyus-on-rails
+```
+
+2. Configure some stuff. 
+```
+$> git config --local user.name "YOUR_FIRSTNAME YOUR_LASTNAME"
+$> git config --local user.email "your-email@whatever.yo"
+$> git config --local push.default simple
+```
+
+3. Add our remote. 
+```
+$> git remote add origin https://github.com/tannerljohnson/csbyus-on-rails.git
+```
+
+To integrate code from our repo (relevant when changes have been pushed by someone), use this command:
+```
+$> git pull
+```
+
+All sub-team development work will happen on a different branch. Read more about branching [here](https://git-scm.com/docs/git-init).
+
+*Never* `commit` and `push` to `master`. 
+*Always* `commit` and `push` to a separate branch, and then `merge` with master. 
+
+To create a new branch off `master`:
+```
+$> git checkout -b <your-branch-name>
+```
+
+To `commit` and `push` to a branch called `development`, do the following (step one verified you're on this branch):
+```
+$> git branch
+>>> *development
+$> git add .
+$> git commit -m "this should be a detailed commit message the describes changes made"
+$> git push
+```
+
+To check the status of unstaged/staged (what happens in the `add .` step) files, as well as commited files, use 
+```
+$> git status
+```
+
+*Do not, under any circumstances, perform a hard reset or a force push on your repo*
