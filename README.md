@@ -104,7 +104,7 @@ All sub-team development work will happen on a different branch. Read more about
 *Never* `commit` and `push` to `master`. 
 *Always* `commit` and `push` to a separate branch, and then `merge` with master. 
 
-To create a new branch off `master`:
+To create a new branch off `master` or to switch back to a branch that already exists, use this command:
 ```
 $> git checkout -b <your-branch-name>
 ```
