@@ -71,3 +71,7 @@ Tip: here's how you pass props into a react component in a rails view.
 `<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>`
 
 Pls don't commit anything yet or worry about adding a git remote to this repository yet -- we'll get there :) 
+
+## Up and running with Git
+```Here is a test 
+block quote```
