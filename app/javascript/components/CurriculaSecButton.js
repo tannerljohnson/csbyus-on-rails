@@ -1,12 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Redirect} from "react-router";
-import * as ReactDOM from "react-dom";
 
 /**
  *
  */
-class SecButton extends React.Component{
+class CurriculaSecButton extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -38,10 +37,10 @@ class SecButton extends React.Component{
     };
 }
 
-SecButton.propTypes = {
+CurriculaSecButton.propTypes = {
     secNum: PropTypes.number,
     secName: PropTypes.string,
     hyperlink: PropTypes.string,
 };
 
- export default SecButton
+export default CurriculaSecButton
