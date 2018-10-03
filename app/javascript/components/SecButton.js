@@ -1,11 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {Redirect} from "react-router";
-import * as ReactDOM from "react-dom";
 
-/**
- *
- */
 class SecButton extends React.Component{
     constructor(props){
         super(props);
@@ -25,13 +21,14 @@ class SecButton extends React.Component{
     }
 
     render() {
+        //TODO: make the router working
         if (this.state.redirect) {
-            return <Redirect to={this.props.hyperlink}/>
+            return <Redirect push to={this.props.hyperlink}/>
         }
         return (
             <button className = "secButton" onClick={this.handleClick}>
-                hello
                 {this.props.secNum}
+                <br />
                 {this.props.secName}
             </button>
         )
@@ -39,9 +36,9 @@ class SecButton extends React.Component{
 }
 
 SecButton.propTypes = {
-    secNum: PropTypes.number,
-    secName: PropTypes.string,
-    hyperlink: PropTypes.string,
+    secNum: PropTypes.number.isRequired,
+    secName: PropTypes.string.isRequired,
+    hyperlink: PropTypes.string.isRequired,
 };
 
  export default SecButton
