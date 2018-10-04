@@ -6,6 +6,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import { Link } from 'react-router-dom'
+
 
 const options = [
   'Home',
@@ -57,7 +59,7 @@ class MainMenu extends React.Component {
         >
           {options.map(option => (
             <MenuItem key={option} selected={option === 'None'} onClick={this.handleClose}>
-              {option}
+              <Link>{option}</Link>
             </MenuItem>
           ))}
         </Menu>
