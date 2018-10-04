@@ -1,18 +1,22 @@
-var React = require("react")
-var PropTypes = require("prop-types")
+import React from "react"
+import PropTypes from "prop-types"
 class Post extends React.Component {
   render () {
     return (
-      <div>
-        <div>Title: {this.props.title}</div>
-        <div>Body: {this.props.body}</div>
-      </div>
+      <React.Fragment>
+        Author: {this.props.author}
+        Title: {this.props.title}
+        Timestamp: {this.props.timestamp}
+        Content: {this.props.content}
+      </React.Fragment>
     );
   }
 }
 
 Post.propTypes = {
+  author: PropTypes.string,
   title: PropTypes.string,
-  body: PropTypes.string
+  timestamp: PropTypes.string,
+  content: PropTypes.string
 };
-module.exports = Post
+export default Post
