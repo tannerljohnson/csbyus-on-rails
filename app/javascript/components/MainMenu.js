@@ -5,6 +5,8 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { Link } from 'react-router-dom'
 
@@ -32,6 +34,7 @@ class MainMenu extends React.Component {
   };
 
   render () {
+
     const { anchorEl } = this.state;
     const open = Boolean(anchorEl);
 
@@ -59,7 +62,11 @@ class MainMenu extends React.Component {
         >
           {options.map(option => (
             <MenuItem key={option} selected={option === 'None'} onClick={this.handleClose}>
+<<<<<<< HEAD
               <Link>{option}</Link>
+=======
+              <Link to={'/' + String(option).toLowerCase()}>{option}</Link>
+>>>>>>> 76746656d1e44c4af56e9b8ad09d6ca540be8bf4
             </MenuItem>
           ))}
         </Menu>
