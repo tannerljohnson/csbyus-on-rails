@@ -12,6 +12,7 @@ const options = [
   'What We Do',
   'About',
   'Join Us',
+  'Blog'
 ];
 
 const ITEM_HEIGHT = 48;
