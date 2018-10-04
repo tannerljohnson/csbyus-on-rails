@@ -4,7 +4,9 @@ class Blog extends React.Component {
   render () {
     return (
       <React.Fragment>
+      <div>
       	Welcome to our blog!
+      	</div>
       </React.Fragment>
     );
   }
