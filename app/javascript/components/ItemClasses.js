@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {Redirect} from "react-router";
+import {Redirect} from "react-router"
+import ListItem from '@material-ui/core/ListItem';
 
-class SecButton extends React.Component{
+class ItemClasses extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -26,19 +27,19 @@ class SecButton extends React.Component{
             return <Redirect push to={this.props.hyperlink}/>
         }
         return (
-            <button className = "secButton" onClick={this.handleClick}>
+            <ListItem button onClick={this.handleClick}>
                 {this.props.secNum}
                 <br />
                 {this.props.secName}
-            </button>
+            </ListItem>
         )
     };
 }
 
-SecButton.propTypes = {
-    secNum: PropTypes.number.isRequired,
-    secName: PropTypes.string.isRequired,
-    hyperlink: PropTypes.string.isRequired,
+ItemClasses.propTypes = {
+    secNum: PropTypes.number,
+    secName: PropTypes.string,
+    hyperlink: PropTypes.string,
 };
 
- export default SecButton
+export default ItemClasses
