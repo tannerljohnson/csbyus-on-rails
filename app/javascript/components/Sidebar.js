@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles'
 import ItemClasses from "./ItemClasses";
 import ListSubheader from "@material-ui/core/ListSubheader/ListSubheader";
 
-const drawerWidth = 20;
+const drawerWidth = 200;
 const styles = themes => ({
     drawerPaper: {
         position: 'relative',
@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
         };
     }
     render () {
-        // const { classes } = this.props.classes;
+        const { classes } = this.props;
         //FIXME: change state to props
         const courses = this.state.courses;
         const courseListFunc = (course) =>
@@ -34,7 +34,9 @@ class Sidebar extends React.Component {
         return (
             <Drawer
                 variant="permanent"
-
+                classes={{
+                    paper: classes.drawerPaper,
+                 }}
             >
             <List
                 component="nav"
@@ -55,8 +57,7 @@ class Sidebar extends React.Component {
 //      {secNum: ...., secName: ".......",    hyperlink: "......"}
 //      ]
 Sidebar.propTypes = {
-    // classes: PropTypes.object.isRequired,
-
+    classes: PropTypes.object.isRequired,
     courses: PropTypes.array,
 };
 
