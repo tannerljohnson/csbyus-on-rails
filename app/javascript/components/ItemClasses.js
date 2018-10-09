@@ -27,7 +27,9 @@ class ItemClasses extends React.Component{
             return <Redirect push to={this.props.hyperlink}/>
         }
         return (
-            <ListItem button onClick={this.handleClick}>
+            <ListItem
+
+                button onClick={this.handleClick}>
                 {this.props.secNum}
                 <br />
                 {this.props.secName}

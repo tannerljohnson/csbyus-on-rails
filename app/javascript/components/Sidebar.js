@@ -42,8 +42,10 @@ class Sidebar extends React.Component {
                 component="nav"
                 subheader={<ListSubheader component="div">Course Overview</ListSubheader>}>
                 {this.state.courses.map((course) =>
-                    <ItemClasses secNum={course.secNum} secName={course.secName} hyperlink={course.hyperlink}/>)
-                },
+                    <ItemClasses
+                        key = {course.secNum.toString()}
+                        secNum={course.secNum} secName={course.secName} hyperlink={course.hyperlink}/>)
+                }
             </List>
 
         </Drawer>
@@ -56,8 +58,10 @@ class Sidebar extends React.Component {
 //      {secNum： 0.0, secName: "HelloWorld", hyperlink: "www.csbyus.com"},
 //      {secNum: ...., secName: ".......",    hyperlink: "......"}
 //      ]
+
 Sidebar.propTypes = {
     classes: PropTypes.object.isRequired,
+    //TODO: add the following parameters into classes if possible
     courses: PropTypes.array,
 };
 
