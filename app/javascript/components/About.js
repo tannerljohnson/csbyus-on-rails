@@ -1,12 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
+import CommentBox from './CommentBox'
+
+//Dummy data node you can use, courtesy of Facebook
+const data = [];
+
 class About extends React.Component {
   render () {
     return (
       <React.Fragment>
-      <div>
+      <h1>
         About us!
-      </div>
+      </h1>
+      <CommentBox data={data} />
       </React.Fragment>
     );
   }
