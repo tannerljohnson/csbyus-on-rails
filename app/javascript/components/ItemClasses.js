@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {Redirect} from "react-router"
 import ListItem from '@material-ui/core/ListItem';
 
 class ItemClasses extends React.Component{
@@ -13,19 +12,11 @@ class ItemClasses extends React.Component{
     }
 
     handleClick(e) {
-        e.preventDefault();
-        this.setState({
-            redirect: true
-        });
-        //FIXME: delete this line
-        console.log("Button clicked!")
+        window.location = this.props.hyperlink
     }
 
     render() {
         //TODO: make the router working
-        if (this.state.redirect) {
-            return <Redirect push to={this.props.hyperlink}/>
-        }
         return (
             <ListItem
                 button onClick={this.handleClick}>

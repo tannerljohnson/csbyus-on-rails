@@ -20,7 +20,7 @@ class Sidebar extends React.Component {
         this.state = {
             courses: [
                 {secNum: 0.0, secName: "HelloWorld", hyperlink: "www.csbyus.com"},
-                {secNum: 1.0, secName: "AgainWorld", hyperlink: "www.google.com"}
+                {secNum: 1.0, secName: "AgainWorld", hyperlink: "https://www.google.com"}
                 ],
         };
     }

@@ -24,16 +24,23 @@ class CourseCard extends React.Component {
     this.state = {
         title: "CSByUs",
         intro: "Go Team! blaahdfjal",
-        img: "http://csbyus.org/wp-content/uploads/2018/03/amy.png"
-    }
+        img: "http://csbyus.org/wp-content/uploads/2018/03/amy.png",
+        url: "https://www.google.com"
+    };
+
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick(e) {
+        window.location = this.state.url
+    }
 
   render() {
       // FIXME: change all the state to props when server is ready
       const { classes } = this.props;
       return (
           <Card className={classes.card}>
-              <CardActionArea>
+              <CardActionArea onClick = {this.handleClick}>
                   <CardMedia
                       component="img"
                       alt= {this.props.img}
@@ -59,6 +66,7 @@ CourseCard.propTypes = {
   img: PropTypes.string,
   title: PropTypes.string,
   intro: PropTypes.string,
+  url: PropTypes.string
 
 };
 
