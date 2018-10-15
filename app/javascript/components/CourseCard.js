@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
+//TODO: resize the cards so that it fits the requirement
 const styles = {
   card: {
     maxWidth: 345,
@@ -22,7 +23,8 @@ class CourseCard extends React.Component {
     super(props);
     this.state = {
         title: "CSByUs",
-        intro: "Go Team! blaahdfjal"
+        intro: "Go Team! blaahdfjal",
+        img: "http://csbyus.org/wp-content/uploads/2018/03/amy.png"
     }
   }
 
@@ -36,9 +38,7 @@ class CourseCard extends React.Component {
                       component="img"
                       alt= {this.props.img}
                       className={classes.media}
-                      height="140"
-                      // FIXME: fix the url
-                      image="http://csbyus.org/wp-content/uploads/2018/03/CSbyUs_logo.png"
+                      image={this.state.img}
                   />
                   <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">

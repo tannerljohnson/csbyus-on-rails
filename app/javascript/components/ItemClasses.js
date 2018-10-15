@@ -28,7 +28,6 @@ class ItemClasses extends React.Component{
         }
         return (
             <ListItem
-
                 button onClick={this.handleClick}>
                 {this.props.secNum}
                 <br />
