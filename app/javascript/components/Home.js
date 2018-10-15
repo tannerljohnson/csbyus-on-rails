@@ -89,7 +89,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 const theme = createMuiTheme();
 
-function Test(props) {
+function Home(props) {
   const { classes } = props;
 
     return (
@@ -211,8 +211,8 @@ function Test(props) {
     );
 }
 
-Test.propTypes = {
+Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Test);
+export default withStyles(styles)(Home);
