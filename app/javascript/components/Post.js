@@ -20,3 +20,6 @@ Post.propTypes = {
   content: PropTypes.string
 };
 export default Post
+
+
+//put card stuff here to make a card
