@@ -124,3 +124,21 @@ $> git status
 ```
 
 *Do not, under any circumstances, perform a hard reset or a force push on your repo*
+
+## Install Material-UI with yarn
+`material-ui` website gives instructions on how to install with `npm`. However, our project is using `yarn` as the package manager. Here is how you should install `material-ui` with `yarn`:
+
+```
+$ cd /path_to_project_folder
+$ yarn add @material-ui/core
+```
+
+If you need to use material-ui icon, also add
+```
+$ yarn add @material-ui/icons
+```
+
+At last, run
+```
+$ yarn install
+```
