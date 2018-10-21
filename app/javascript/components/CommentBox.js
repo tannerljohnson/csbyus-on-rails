@@ -12,6 +12,52 @@ class CommentBox extends React.Component {
     };
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
     this.addNewComment = this.addNewComment.bind(this)
+    this.handleDelete = this.handleDelete.bind(this)
+    this.deleteComment = this.deleteComment.bind(this)
+    this.handleUpdate = this.handleUpdate.bind(this);
+    this.updateComment = this.updateComment.bind(this)
+  }
+
+  handleUpdate(comment){
+    fetch(`http://localhost:3000/api/v1/comments/${comment.id}`,
+    {
+      method: 'PUT',
+      body: JSON.stringify({comment: comment}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => {
+        this.updateComment(comment)
+      })
+  }
+  updateComment(comment){
+    let newComments = this.state.comments.filter((c) => c.id !== comment.id)
+    newComments.push(comment)
+    this.setState({
+      comments: newComments
+    })
+  }
+
+  handleDelete(id){
+      fetch(`http://localhost:3000/api/v1/comments/${id}`,
+      {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then((response) => {
+          console.log('Item was deleted: ' + id)
+          this.deleteComment(id)
+        })
+    }
+
+
+
+  deleteComment(id){
+    var newComments = this.state.comments.filter((comment) => comment.id !== id)
+    this.setState({
+      comments: newComments
+    })
   }
 
   handleCommentSubmit(author, text) {
@@ -49,7 +95,7 @@ class CommentBox extends React.Component {
     return (
       <div className="commentBox">
         <h1>Comments</h1>
-        <CommentList data={this.state.comments} />
+        <CommentList data={this.state.comments} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
         <CommentForm handleCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
