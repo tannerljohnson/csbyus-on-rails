@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 class Post extends React.Component {
   render () {
+      //use <br/> if you need to go to another line
     return (
       <div>
         <Card>
