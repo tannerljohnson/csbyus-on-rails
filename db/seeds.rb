@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-comments = ['Tanner', 'Emma', 'Austin', 'Gopika']
+
+comments = ["Megan", "Tanner", "Judyth", "Eliza", "Cady", "Amarachi"]
 
 comments.each{|comment|
-  Comment.create(author: comment, text: "My name is #{comment}.")
+  Comment.create(author: comment, text: "Hey! My name is #{comment}.")
 }
