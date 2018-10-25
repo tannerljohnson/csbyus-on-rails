@@ -12,13 +12,19 @@ class Blog extends React.Component {
           {title:"Title3", author:"Tanner",
               content:"Post3", timestamp:"Friday, October 19th at 2:34 pm"}];
 
+      const posts = data.map((post) =>
+          <Post title = {post.title} author = {post.author}
+                content = {post.content} timestamp = {post.timestamp}/>
+      );
+
     return (
         //TODO: see if this works
       	<div>
       		Welcome to our blog!
-            {data.map(post => (
-                <Post title = {post.title} author = {post.author} content = {post.content} timestamp = {post.timestamp}/>
-            ))}
+            <ul>
+                {posts}
+            </ul>
+
       	</div>
 
     );

@@ -2,13 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 class Post extends React.Component {
   render () {
+      //use <br/> if you need to go to another line
     return (
-      <React.Fragment>
+      <div>
         Author: {this.props.author}
+        <br/>
         Title: {this.props.title}
         Timestamp: {this.props.timestamp}
         Content: {this.props.content}
-      </React.Fragment>
+      </div>
     );
   }
 }
