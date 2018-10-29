@@ -41,7 +41,9 @@ function CourseMainPage(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-        <Grid>
+      <Grid container spacing={24}>
+
+        <Grid item>
           <AppBar position="fixed" className={classes.appBar}>
             <Toolbar>
               <Typography variant="h6" color="inherit" noWrap>
@@ -49,16 +51,20 @@ function CourseMainPage(props) {
               </Typography>
             </Toolbar>
           </AppBar>
-          <Sidebar />
+        </Grid>
+        <Sidebar />
+
+        <Grid item>
+          <ProgressBar />
         </Grid>
 
-        <Grid>
-          <ProgressBar />
+        <Grid item>
           <main className={classes.content}>
             <div className={classes.toolbar} />
             <Video link = "https://www.youtube.com/watch?v=ckAgAc8paKo&list=RDckAgAc8paKo&start_radio=1"/>
           </main>
         </Grid>
+      </Grid>
     </div>
   );
 }
