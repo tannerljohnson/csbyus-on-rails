@@ -6,8 +6,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography';
 import Sidebar from './Sidebar'
-//import ProgressBar from './ProgressBar'
+import ProgressBar from './ProgressBar'
 import Video from './Video'
+import Grid from '@material-ui/core/Grid'
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -40,20 +41,24 @@ function CourseMainPage(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Course Main Page
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Sidebar />
+        <Grid>
+          <AppBar position="fixed" className={classes.appBar}>
+            <Toolbar>
+              <Typography variant="h6" color="inherit" noWrap>
+                Course Main Page
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Sidebar />
+        </Grid>
 
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-
-        <Video />
-      </main>
+        <Grid>
+          <ProgressBar />
+          <main className={classes.content}>
+            <div className={classes.toolbar} />
+            <Video link = "https://www.youtube.com/watch?v=ckAgAc8paKo&list=RDckAgAc8paKo&start_radio=1"/>
+          </main>
+        </Grid>
     </div>
   );
 }

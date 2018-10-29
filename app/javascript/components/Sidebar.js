@@ -6,12 +6,28 @@ import { withStyles } from '@material-ui/core/styles'
 import ItemClasses from "./ItemClasses";
 import ListSubheader from "@material-ui/core/ListSubheader/ListSubheader";
 
-const drawerWidth = 200;
-const styles = themes => ({
-    drawerPaper: {
-        position: 'relative',
-        width: drawerWidth,
-    },
+const drawerWidth = 240;
+const styles = theme => ({
+  root: {
+    display: 'flex',
+  },
+  appBar: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth,
+  },
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+  },
+  drawerPaper: {
+    width: drawerWidth,
+  },
+  toolbar: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.default,
+    padding: theme.spacing.unit * 3,
+  },
 });
 
 class Sidebar extends React.Component {
@@ -32,23 +48,26 @@ class Sidebar extends React.Component {
             <ItemClasses secNum={course.secNum} secName={course.secName} hyperlink={course.hyperlink}/>;
 
         return (
-            <Drawer
-                variant="permanent"
-                classes={{
-                    paper: classes.drawerPaper,
-                 }}
-            >
-            <List
-                component="nav"
-                subheader={<ListSubheader component="div">Course Overview</ListSubheader>}>
-                {this.state.courses.map((course) =>
-                    <ItemClasses
-                        key = {course.secNum.toString()}
-                        secNum={course.secNum} secName={course.secName} hyperlink={course.hyperlink}/>)
-                }
-            </List>
-
-        </Drawer>
+            <div className={ classes.root}>
+                <Drawer
+                    className={ classes.drawer }
+                    variant="permanent"
+                    classes={{
+                        paper: classes.drawerPaper,
+                    }}
+                    anchor = "left"
+                >
+                    <List
+                        component="nav"
+                        subheader={<ListSubheader component="div">Course Overview</ListSubheader>}>
+                        {this.state.courses.map((course) =>
+                            <ItemClasses
+                                key = {course.secNum.toString()}
+                                secNum={course.secNum} secName={course.secName} hyperlink={course.hyperlink}/>)
+                        }
+                    </List>
+                </Drawer>
+            </div>
     );
   }
 }
