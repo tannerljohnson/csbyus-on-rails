@@ -13,6 +13,7 @@ const options = [
   'Home',
   'What We Do',
   'CurriculaHub',
+  'Blog',
   'About',
   'Join Us',
 ];
