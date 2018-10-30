@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 const options = [
   'Home',
   'What We Do',
+  'CurriculaHub',
   'About',
   'Join Us',
 ];
@@ -60,7 +61,7 @@ class MainMenu extends React.Component {
         >
           {options.map(option => (
             <MenuItem key={option} selected={option === 'None'} onClick={this.handleClose}>
-              <Link to={'/' + String(option).toLowerCase()}>{option}</Link>
+              <Link to={'/' + String(option).toLowerCase().replace(/ /g,'')}>{option}</Link>
             </MenuItem>
           ))}
         </Menu>
