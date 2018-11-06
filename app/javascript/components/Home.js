@@ -23,11 +23,27 @@ import Divider from '@material-ui/core/Divider';
 import MainMenu from './MainMenu';
 import Video from './Video';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+import purple from '@material-ui/core/colors/purple';
+import green from '@material-ui/core/colors/green';
 
+const lightText = blue['A200'];
 
 const styles = theme => ({
   appBar: {
+    position: 'fixed',
+    paddingTop: '0%',
+  },
+  bgimg: {
+    backgroundImage: `url('https://farm2.staticflickr.com/1968/30813166517_2dfdb78b8e_b.jpg')`,
     position: 'relative',
+    width: '100%',
+    height: 670,
+    backgroundRepeat: 'no-repeat',
+    webkitBackgroundSize: 'cover',
+    mozBackgroundSize: 'cover',
+    oBackgroundSize: 'cover',
+    backgroundSize: 'cover',
   },
   icon: {
     marginRight: theme.spacing.unit * 2,
@@ -42,6 +58,9 @@ const styles = theme => ({
   },
   heroUnit: {
     backgroundColor: theme.palette.background.paper,
+  },
+  video: {
+    position: 'relative',
   },
   heroContent: {
     maxWidth: 600,
@@ -76,6 +95,11 @@ const styles = theme => ({
     marginLeft: -12,
     marginRight: 20,
   },
+  mainTitle: {
+    paddingTop: '10%',
+    marginRight: '30%',
+    color: '#fff',
+  },
   list: {
     width: 250,
   },
@@ -87,7 +111,22 @@ const styles = theme => ({
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff7961',
+      main: '#f44336',
+      dark: '#ba000d',
+      contrastText: '#000',
+    },
+  },
+});
 
 function Home(props) {
   const { classes } = props;
@@ -95,7 +134,7 @@ function Home(props) {
     return (
       <React.Fragment>
         <CssBaseline />
-          <AppBar position="static" className={classes.appBar}>
+          <AppBar className={classes.appBar}>
             <Toolbar>
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                 <MainMenu/>
@@ -106,6 +145,10 @@ function Home(props) {
             </Toolbar>
           </AppBar>
           <main>
+            {/* Big picture */}
+            <div className={classes.bgimg} >
+              {/* insert picture as background here */}
+            </div>
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
@@ -113,12 +156,13 @@ function Home(props) {
                   CSbyUs
                 </Typography>
                 <Typography variant="title" align="center" color="textSecondary" paragraph>
-                  Expanding access to quality computer science education <br/>
-                  by students, for students.
+                  Developing and sharing justice-oriented education programs in computer science and beyond
                 </Typography>
-              {/* Embded video with react component */}
-              <Video link='https://www.youtube.com/watch?v=in1BfwaZ2rU'/>
-            </div>
+                <div className={classes.video}>
+                  {/* Embded video with react component */}
+                  <Video link='https://www.youtube.com/watch?v=in1BfwaZ2rU'/>
+                </div>
+              </div>
             </div>
 
           {/* Main featured post */}
@@ -138,7 +182,7 @@ function Home(props) {
                     </div>
                     <div>
                       <Typography variant="display1" color="inherit" gutterBottom align="center">
-                        <br/><br/><b>What is CSbyUs?</b>
+                        <b>What is CSbyUs?</b>
                       </Typography>
                       <Typography variant="headline" color="inherit" paragraph align="center">
                         CSbyUs envisions an educational system in which all students are empowered to learn
@@ -165,8 +209,23 @@ function Home(props) {
           {/* End main featured post */}
 
             {/* End hero unit */}
-            
           </main>
+          <form>
+            <h3>Get in touch with us</h3>
+            <input placeholder="Name" type="text"  value="" required />
+            <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required />
+            <span class="validation-text">Please enter a valid email address.</span>
+            <input placeholder="Location" type="text" value="" required />
+            <div class="flex">
+              <textarea placeholder="Message" rows="1" required></textarea>
+            </div>
+            <formButton>Send</formButton>
+          </form>
+
+          <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
+
+          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+          <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css' />
           {/* Footer */}
           <footer className={classes.footer}>
             <Typography variant="title" align="center" gutterBottom>
