@@ -188,7 +188,7 @@ function Home(props) {
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
                 <Typography variant="display4" align="center" color="textPrimary" gutterBottom>
-                  CSbyUs
+                  CSby<b>Us</b>
                 </Typography>
                 <Typography variant="title" align="center" color="textSecondary" paragraph>
                   Developing and sharing justice-oriented education programs in computer science and beyond
@@ -247,7 +247,7 @@ function Home(props) {
           </main>
           <div id="formTarget">
             <ContactForm />
-            
+
             <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
 
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
