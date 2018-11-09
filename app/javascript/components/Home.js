@@ -21,6 +21,7 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 // import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import MainMenu from './MainMenu';
+import ContactForm from './ContactForm';
 import Video from './Video';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
@@ -97,8 +98,7 @@ const styles = theme => ({
   },
   mainTitle: {
     paddingTop: '10%',
-    marginRight: '30%',
-    color: '#fff',
+    marginLeft: '10%',
   },
   list: {
     width: 250,
@@ -128,6 +128,36 @@ const theme = createMuiTheme({
   },
 });
 
+function handleJoinClick() {
+  console.log("clicked join us");
+  window.smoothScroll(document.getElementById('formTarget'));
+};
+
+// use this to scroll from join us button to the form
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 25) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+
 function Home(props) {
   const { classes } = props;
 
@@ -148,7 +178,12 @@ function Home(props) {
             {/* Big picture */}
             <div className={classes.bgimg} >
               {/* insert picture as background here */}
+              <div className={classes.mainTitle}>
+              {/* defined in pages.scss */}
+                <subtitle>Committed to learning<br/>like the future depends on it</subtitle>
+              </div>
             </div>
+
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
@@ -194,7 +229,7 @@ function Home(props) {
                     <div className={classes.heroButtons}>
                       <Grid container spacing={16} justify="center">
                         <Grid item>
-                          <Button variant="contained" color="primary">
+                          <Button variant="contained" color="primary" onClick={handleJoinClick}>
                             Join us today
                           </Button>
                         </Grid>
@@ -210,22 +245,14 @@ function Home(props) {
 
             {/* End hero unit */}
           </main>
-          <form>
-            <h3>Get in touch with us</h3>
-            <input placeholder="Name" type="text"  value="" required />
-            <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required />
-            <span class="validation-text">Please enter a valid email address.</span>
-            <input placeholder="Location" type="text" value="" required />
-            <div class="flex">
-              <textarea placeholder="Message" rows="1" required></textarea>
-            </div>
-            <formButton>Send</formButton>
-          </form>
+          <div id="formTarget">
+            <ContactForm />
+            
+            <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
 
-          <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
-
-          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-          <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css' />
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
+            <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'></link>
+          </div>
           {/* Footer */}
           <footer className={classes.footer}>
             <Typography variant="title" align="center" gutterBottom>

@@ -1,7 +1,8 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$base: #03A9F4;
+// $base: #03A9F4;
+$base: #F44336;
 $text: #555;
 $invalid: #E91E63;
 $width: 400px;
@@ -15,7 +16,15 @@ html, body, form, span, h1special {
     box-sizing: border-box;
 }
 
-h3 {
+subtitle {
+  font-family: 'roboto', sans-serif;
+  color: white;
+  padding: 40px;
+  font-size: 3em;
+  text-align: left;
+}
+
+h3form {
   width: 100%;
   background: $base;
   padding: 20px;
