@@ -8,6 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Slide from '@material-ui/core/Slide';
 
 
 
@@ -47,6 +53,10 @@ const styles = theme => ({
   },
 });
 
+function Transition(props) {
+  return <Slide direction="up" {...props} />;
+}
+
 
 class ContactForm extends React.Component {
   state = {
@@ -55,13 +65,22 @@ class ContactForm extends React.Component {
     subject: '',
     message: '',
     multiline: 'Controlled',
+    open: false,
+  };
+
+  handleDialogOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleDialogClose = () => {
+    this.setState({ open: false });
   };
 
   handleSubmit = event => {
     console.log("attempting to submit form...");
     // TODO: slack hook integration
-    var message = "CSbyUs Interest Form Submission: " + this.state.name +
-      " with subject: *" + this.state.subject + "*. They left this message: \n>" + this.state.message + ". \nReach out to them soon at this email address: `" +
+    var message = "CSbyUs Interest Form Submission:\n*" + this.state.name +
+      "* filled the form with subject: *" + this.state.subject + "*.\nThey left this message: \n>" + this.state.message + ". \nReach out to them soon at this email address: `" +
       this.state.email + "`!";
     // form into json object for slack post object
     var data = '{"text": "' + message + '" }';
@@ -71,7 +90,7 @@ class ContactForm extends React.Component {
     fetch('https://hooks.slack.com/services/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', {
       method: 'POST',
       body: data,
-    });
+    }).then((response) => { return response.json() });
 
     // reset form
     this.setState({
@@ -80,7 +99,10 @@ class ContactForm extends React.Component {
       subject: '',
       message: '',
       multiline: 'Controlled',
+      open: false,
     });
+
+    handleDialogClose();
 
   };
 
@@ -94,7 +116,7 @@ class ContactForm extends React.Component {
     const { classes } = this.props;
 
     return (
-
+      <div>
       <form className={classes.container} autoComplete="off">
         <Paper elevation={1}>
           <div className={classes.mainTitle}>
@@ -149,13 +171,40 @@ class ContactForm extends React.Component {
         <div className={classes.heroButtons}>
           <Grid container spacing={16} justify="center">
             <Grid item>
-              <Button variant="contained" color="primary" onClick={this.handleSubmit}>
+              <Button variant="contained" color="primary" onClick={this.handleDialogOpen}>
                 Submit
               </Button>
             </Grid>
           </Grid>
         </div>
       </form>
+
+      <Dialog
+        open={this.state.open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={this.handleDialogClose}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogTitle id="alert-dialog-slide-title">
+          {"Are you sure you'd like to submit this form?"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-slide-description">
+            Please make sure you've written a quick message that explains your interest in collaborating -- this will help us get started :)
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={this.handleDialogClose} color="secondary">
+            Not quite
+          </Button>
+          <Button onClick={this.handleSubmit} color="primary">
+            Yes, let's do it!
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
     );
   }
 }

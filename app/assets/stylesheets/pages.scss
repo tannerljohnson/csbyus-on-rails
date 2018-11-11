@@ -12,6 +12,13 @@ html, body {
   overflow-x: hidden;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 html, body, form, span, h1special {
     box-sizing: border-box;
 }
@@ -179,7 +186,7 @@ aForm {
   width: 42px;
   height: 42px;
   border-radius: 50px;
-  background: $base;
+  background: $invalid;
   display: inline-block;
   margin: 50px calc(50% - 21px);
   white-space: nowrap;
