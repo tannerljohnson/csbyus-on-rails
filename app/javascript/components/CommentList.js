@@ -1,11 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Comment from './Comment'
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+import List from '@material-ui/core/List';
 
+const styles = theme => ({
+  root: {
+    width: 'inherit',
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+});
 
 class CommentList extends React.Component {
 
   render () {
+    const { classes } = this.props;
+
     // when this is called from within a function, javascript can not reach the variable because this is in an outer scope
     var that = this;
 
@@ -19,11 +31,13 @@ class CommentList extends React.Component {
     });
 
     return (
-      <div className="commentList">
-        {commentNodes}
+      <div className={classes.root}>
+        <List>
+          {commentNodes}
+        </List>
       </div>
     );
   }
 }
 
-export default CommentList
+export default withStyles(styles)(CommentList);

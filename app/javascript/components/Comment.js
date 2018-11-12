@@ -1,5 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Avatar from '@material-ui/core/Avatar';
+import ImageIcon from '@material-ui/icons/Image';
+import Divider from '@material-ui/core/Divider';
+
+
+
+const styles = theme => ({
+  root: {
+    width: '100%',
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+});
 
 class Comment extends React.Component {
 
@@ -17,7 +34,7 @@ class Comment extends React.Component {
      let text = this.text.value
      let id = this.props.comment.id
      let comment = {id: id, author: author, text: text}
-     // do we need to define that? 
+     // do we need to define that?
      this.props.handleUpdate(comment)
     }
    this.setState({
@@ -26,6 +43,7 @@ class Comment extends React.Component {
   }
 
   render () {
+    const { classes } = this.props;
 
     let author = this.state.editable ? <input type='text'
                                             ref={input => this.author = input}
@@ -37,14 +55,18 @@ class Comment extends React.Component {
                                     :<p>{this.props.comment.text}</p>
 
     return (
-      <div className="comment">
-        {author}
-        {text}
-        <button onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
-        <button onClick={() => this.props.handleDelete(this.props.comment.id)}>Delete</button>
+      <div className={classes.root}>
+        <ListItem>
+          <Avatar>
+            <ImageIcon />
+          </Avatar>
+          <ListItemText primary={author} secondary={text} />
+        </ListItem>
+        <Divider inset component="li" />
       </div>
     );
   }
 }
 
-export default Comment
+
+export default withStyles(styles)(Comment);

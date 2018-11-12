@@ -2,6 +2,22 @@ import React from "react"
 import PropTypes from "prop-types"
 import CommentList from './CommentList'
 import CommentForm from './CommentForm'
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+
+
+const styles = theme => ({
+  commentStyle: {
+    width: 'inherit',
+    backgroundColor: theme.palette.background.paper,
+  },
+  root: {
+    width: '100%',
+    maxWidth: 460,
+  },
+});
 
 class CommentBox extends React.Component {
 
@@ -51,8 +67,6 @@ class CommentBox extends React.Component {
         })
     }
 
-
-
   deleteComment(id){
     var newComments = this.state.comments.filter((comment) => comment.id !== id)
     this.setState({
@@ -92,14 +106,21 @@ class CommentBox extends React.Component {
   }
 
   render () {
+
+    const { classes } = this.props;
+
     return (
-      <div className="commentBox">
-        <h1>Comments</h1>
-        <CommentList data={this.state.comments} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
-        <CommentForm handleCommentSubmit={this.handleCommentSubmit} />
+      <div className={classes.root}>
+        <Paper className={classes.commentStyle}>
+          <Typography variant="display1" color="inherit" gutterBottom align="center">
+            Comments
+          </Typography>
+          <CommentList data={this.state.comments} handleDelete={this.handleDelete} handleUpdate={this.handleUpdate} />
+          <CommentForm handleCommentSubmit={this.handleCommentSubmit} />
+        </Paper>
       </div>
     );
   }
 }
 
-export default CommentBox
+export default withStyles(styles)(CommentBox);

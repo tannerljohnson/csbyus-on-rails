@@ -90,7 +90,7 @@ const styles = theme => ({
     margin: '0 auto',
   },
   heroButtons: {
-    paddingTop: '5%', // 16:9
+    paddingTop: '0%', // 16:9
     paddingBottom: '5%', // 16:9
   },
   layout: {
@@ -418,13 +418,15 @@ function Home(props) {
 
             {/* End hero unit */}
           </main>
-          <div id="formTarget">
-            <ContactForm />
+          <div className={classes.root2}>
+            <div id="formTarget">
+              <ContactForm />
 
-            <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
+              <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
 
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
-            <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'></link>
+              <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
+              <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'></link>
+            </div>
           </div>
           {/* Footer */}
           <footer className={classes.footer}>
