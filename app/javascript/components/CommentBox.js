@@ -79,7 +79,7 @@ class CommentBox extends React.Component {
 
     let body = JSON.stringify({comment: {author: author, text: text} })
 
-    fetch('http://localhost:3000/api/v1/comments', {
+    fetch('https://csbyus.herokuapp.com/api/v1/comments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
