@@ -34,6 +34,9 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
+import Background from '../../assets/images/HomePageBackground.JPG';
+import ImpactChart from '../../assets/images/ImpactChart.png';
+
 
 const lightText = blue['A200'];
 
@@ -48,7 +51,7 @@ const styles = theme => ({
     textAlign: 'center',
   },
   bgimg: {
-    backgroundImage: `url('https://farm2.staticflickr.com/1968/30813166517_2dfdb78b8e_b.jpg')`,
+    backgroundImage: `url(${Background})`,
     position: 'relative',
     width: '100%',
     height: 670,
@@ -121,6 +124,8 @@ const styles = theme => ({
   mainTitle: {
     paddingTop: '10%',
     marginLeft: '10%',
+    textAlign: 'left',
+    padding: '40px',
   },
   title: {
     margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
@@ -145,25 +150,7 @@ const styles = theme => ({
   },
 });
 
-
 const cards = [1, 2, 3];
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
-    },
-    secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
-    },
-  },
-});
 
 function handleJoinClick() {
   console.log("clicked join us");
@@ -344,7 +331,7 @@ function Home(props) {
               </div>
 
             <div className={classes.video}>
-              <img src="https://farm5.staticflickr.com/4904/45779032392_0d607d5612_z.jpg" class="center"/>
+              <img src={ImpactChart} class="center"/>
             </div>
 
             <div className={classes.root}>
