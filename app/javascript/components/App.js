@@ -13,7 +13,17 @@ import Blog from './Blog'
 import ContactForm from './ContactForm'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import HeaderAppBar from './HeaderAppBar';
+import { createMuiTheme } from '@material-ui/core/styles';
+import pink from '@material-ui/core/colors/pink';
 
+
+const theme = createMuiTheme({
+  palette: {
+    secondary: {
+      main: '#F48FB1',
+    },
+  }
+});
 
 class App extends React.Component {
   _redirectToHome() {
@@ -22,7 +32,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider theme={theme}>
         <Router>
           <div>
             <HeaderAppBar/>
