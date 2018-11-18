@@ -29,6 +29,7 @@ import Divider from '@material-ui/core/Divider';
 import MainMenu from './MainMenu';
 import ContactForm from './ContactForm';
 import Video from './Video';
+import HeaderAppBar from './HeaderAppBar';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import purple from '@material-ui/core/colors/purple';
@@ -207,17 +208,7 @@ function Home(props) {
 
     return (
       <React.Fragment>
-        <CssBaseline />
-          <AppBar className={classes.appBar}>
-            <Toolbar>
-              <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                <MainMenu/>
-              </IconButton>
-              <Typography variant="title" color="inherit" noWrap>
-                CSbyUs
-              </Typography>
-            </Toolbar>
-          </AppBar>
+
           <main>
             {/* Big picture */}
             <div className={classes.bgimg} >
