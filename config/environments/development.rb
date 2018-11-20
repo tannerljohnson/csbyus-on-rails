@@ -1,5 +1,8 @@
 Rails.application.configure do
   # Verifies that versions and hashed value of the package contents in the project's package.json
+config.webpacker.check_yarn_integrity = true
+
+  # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
 
   # Settings specified here will take precedence over those in config/application.rb.
@@ -11,6 +14,9 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+
+  # TODO: delete to check yarn update -- only for remote development
+  config.webpacker.check_yarn_integrity = false
 
   # Show full error reports.
   config.consider_all_requests_local = true

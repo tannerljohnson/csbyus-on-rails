@@ -5,13 +5,20 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Redirect } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import {
+  Redirect,
+  Link,
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 
 const options = [
   'Home',
   'What We Do',
+  'CurriculaHub',
+  'Blog',
   'About',
   'Join Us',
 ];
@@ -58,13 +65,15 @@ class MainMenu extends React.Component {
             },
           }}
         >
-          {options.map(option => (
-            <MenuItem key={option} selected={option === 'None'} onClick={this.handleClose}>
-              <Link to={'/' + String(option).toLowerCase()}>{option}</Link>
-            </MenuItem>
-          ))}
+            {options.map(option => (
+              <MenuItem key={option} selected={option === 'None'} onClick={this.handleClose}>
+                <NavLink to={'/' + String(option).toLowerCase().replace(/ /g,'')}>{option}</NavLink>
+              </MenuItem>
+            ))}
         </Menu>
+
       </div>
+
     );
   }
 }

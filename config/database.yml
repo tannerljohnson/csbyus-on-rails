@@ -23,3 +23,32 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+# IMPLEMENTING POSTGRES DB
+# default: &default
+#   adapter: postgresql
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   timeout: 5000
+#   username: projekt
+#   password: <%= ENV['DB_PASSWORD'] %>
+#
+# development:
+#   <<: *default
+#   adapter: postgresql
+#   database: projekt_development
+#   username: projekt
+#   password: <%= ENV['DB_PASSWORD'] %>
+#
+# test:
+#   <<: *default
+#   adapter: postgresql
+#   database: projekt_test
+#   username: projekt
+#   password: <%= ENV['DB_PASSWORD'] %>
+#
+# production:
+#   <<: *default
+#   adapter: postgresql
+#   database: projekt_production
+#   username: projekt
+#   password: <%= ENV['DB_PASSWORD'] %>
