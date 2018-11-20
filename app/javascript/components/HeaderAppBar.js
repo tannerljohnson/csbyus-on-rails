@@ -14,7 +14,9 @@ import { withRouter } from 'react-router-dom';
 const styles = theme => ({
   appBar: {
     position: 'fixed',
-    paddingTop: '0%',
+    margin: '0 auto',
+    top: 0,
+    padding: '0%',
   },
   menuButton: {
     marginLeft: -12,
