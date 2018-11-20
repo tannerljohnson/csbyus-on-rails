@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
-import CourseMainPage from './CourseMainPage'
+import CourseVersionsPage from './CourseVersionsPage'
 import Blog from './Blog'
 import ContactForm from './ContactForm'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
@@ -41,7 +41,7 @@ class App extends React.Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/curriculahub" component={CourseMainPage} />
+              <Route exact path="/curriculahub" component={CourseVersionsPage} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/joinus" component={ContactForm} />
               {/* catch-all redirects to home */}
