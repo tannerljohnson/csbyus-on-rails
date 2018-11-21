@@ -15,6 +15,7 @@ const styles = theme => ({
         width: 'auto',
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
+        marginTop: 90,
         [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
             width: 1100,
             marginLeft: 'auto',
@@ -26,9 +27,6 @@ const styles = theme => ({
     },
     toolbarTitle: {
         flex: 1,
-    },
-    toolbarSecondary: {
-        justifyContent: 'space-between',
     },
     featuredPicture: {
         backgroundColor: theme.palette.grey[800],
