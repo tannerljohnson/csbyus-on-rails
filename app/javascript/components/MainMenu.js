@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-// import MoreVertIcon from '@material-ui/icons/MoreVert';
 import MenuIcon from '@material-ui/icons/Menu';
 import {
   Redirect,
@@ -22,6 +21,7 @@ const options = [
   'About',
   'Join Us',
 ];
+
 
 const ITEM_HEIGHT = 48;
 
@@ -45,8 +45,8 @@ class MainMenu extends React.Component {
 
     return (
       <div>
-        <IconButton
-          aria-label="More"
+        <IconButton color = 'inherit'
+          aria-label="Menu"
           aria-owns={open ? 'long-menu' : null}
           aria-haspopup="true"
           onClick={this.handleClick}
@@ -73,12 +73,9 @@ class MainMenu extends React.Component {
         </Menu>
 
       </div>
-
     );
   }
 }
 
-MainMenu.propTypes = {
-  items: PropTypes.array
-};
-export default MainMenu
+
+export default MainMenu;
