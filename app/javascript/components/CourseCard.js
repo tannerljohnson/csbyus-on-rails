@@ -6,6 +6,12 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import CourseVersionsPage from "./CourseVersionsPage";
+import {
+    Link,
+} from "react-router-dom";
+
+
 
 //TODO: resize the cards so that it fits the requirement
 const styles = {
@@ -31,32 +37,35 @@ class CourseCard extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e) {
-        window.location = this.state.url
-    }
+  handleClick() {
+
+  }
 
   render() {
       // FIXME: change all the state to props when server is ready
       const { classes } = this.props;
       return (
-          <Card className={classes.card}>
-              <CardActionArea onClick = {this.handleClick}>
-                  <CardMedia
+              <div>
+                  <Link to = "/curriculahub/course">   
+                  <Card className={classes.card}>
+                      <CardActionArea onClick = {this.handleClick()}/>
+                    <CardMedia
                       component="img"
                       alt= {this.props.img}
                       className={classes.media}
                       image={this.state.img}
-                  />
-                  <CardContent>
+                      />
+                    <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
                           {this.state.title}
                       </Typography>
                       <Typography component="p">
                           {this.state.intro}
                       </Typography>
-                  </CardContent>
-              </CardActionArea>
-          </Card>
+                    </CardContent>
+                  </Card>
+                  </Link>
+              </div>
       );
   }
 }

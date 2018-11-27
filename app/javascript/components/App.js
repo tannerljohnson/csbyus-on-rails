@@ -17,6 +17,7 @@ import HeaderAppBar from './HeaderAppBar';
 import Divider from '@material-ui/core/Divider';
 import { createMuiTheme } from '@material-ui/core/styles';
 import pink from '@material-ui/core/colors/pink';
+import CourseOverview from './CourseOverview'
 
 
 const theme = createMuiTheme({
@@ -43,9 +44,10 @@ class App extends React.Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/curriculahub" component={CourseVersionsPage} />
+              <Route exact path="/curriculahub" component={CourseOverview} />
               <Route exact path="/blog" component={Blog} />
-              <Route exact path="/joinus" component={ContactForm} />
+                <Route exact path="/joinus" component={ContactForm} />
+                <Route exact path="/curriculahub/course" component={CourseVersionsPage} />
               {/* catch-all redirects to home */}
               <Route render={this._redirectToHome} />
             </Switch>
