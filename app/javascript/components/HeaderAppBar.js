@@ -10,39 +10,38 @@ import { withRouter } from 'react-router-dom';
 
 
 const styles = theme => ({
-  appBar: {
-    position: 'fixed',
-    paddingTop: '0%',
-  },
+    appBar: {
+        position: 'fixed',
+        paddingTop: '0%',
+    },
 
-  menuButton: {
-    marginLeft: 0,
-    marginRight: 200,
-  },
+    menuButton: {
+        marginLeft: 0,
+        marginRight: 200,
+    },
 });
 
-const theme = createMuiTheme();
 
 class HeaderAppBar extends React.Component {
 
-  render () {
-    const { classes } = this.props;
+    render() {
+        const {classes} = this.props;
 
-    return (
-      <AppBar className={classes.appBar}>
-        <Toolbar>
-            <MainMenu className = {classes.menuButton}/>
-          <Typography variant="title" color="inherit" noWrap>
-            CSbyUs
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    );
-  }
+        return (
+            <AppBar className={classes.appBar}>
+                <Toolbar>
+                    <MainMenu className={classes.menuButton}/>
+                    <Typography variant="title" color="inherit" noWrap>
+                        CSbyUs
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+        );
+    }
 }
 
 HeaderAppBar.propTypes = {
-  classes: PropTypes.object.isRequired
+    classes: PropTypes.object.isRequired
 };
 const HeaderWithRouter = withRouter(HeaderAppBar);
 export default withStyles(styles)(HeaderWithRouter);

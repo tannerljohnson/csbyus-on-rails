@@ -23,11 +23,11 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import FolderIcon from '@material-ui/icons/Folder';
-
 import Divider from '@material-ui/core/Divider';
 // import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import MainMenu from './MainMenu';
 import ContactForm from './ContactForm';
+import Footer from './Footer';
 import Video from './Video';
 import HeaderAppBar from './HeaderAppBar';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -181,7 +181,7 @@ window.smoothScroll = function(target) {
     } while (target = target.offsetParent);
 
     scroll = function(c, a, b, i) {
-        i++; if (i > 25) return;
+        i++; if (i > 27) return;
         c.scrollTop = a + (b - a) / 30 * i;
         setTimeout(function(){ scroll(c, a, b, i); }, 20);
     }
@@ -393,29 +393,17 @@ function Home(props) {
               </Grid>
             </div>
           </div>
-
             {/* End hero unit */}
           </main>
+
+          <Divider/>
+
           <div className={classes.root2}>
             <div id="formTarget">
               <ContactForm />
-
-              <aForm href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Follow Us</aForm>
-
-              <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
-              <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'></link>
             </div>
           </div>
-          {/* Footer */}
-          <footer className={classes.footer}>
-            <Typography variant="title" align="center" gutterBottom>
-              Computer Science by us, for us.
-            </Typography>
-            <Typography variant="subheading" align="center" color="textSecondary" component="p">
-              © 2018 CSbyUs.org. All rights reserved.
-            </Typography>
-          </footer>
-          {/* End footer */}
+
       </React.Fragment>
     );
 }
