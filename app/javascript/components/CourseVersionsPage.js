@@ -4,7 +4,6 @@ import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
@@ -15,6 +14,7 @@ const styles = theme => ({
         width: 'auto',
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
+        marginTop: 90,
         [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
             width: 1100,
             marginLeft: 'auto',
@@ -99,9 +99,6 @@ function CourseVersionsPage(props) {
                     >
                         Course
                     </Typography>
-                    <IconButton>
-                        <SearchIcon />
-                    </IconButton>
                 </Toolbar>
 
                 <main>
@@ -165,17 +162,6 @@ function CourseVersionsPage(props) {
                     </Grid>
                 </main>
             </div>
-
-            {/* Footer */}
-            <footer className={classes.footer}>
-                <Typography variant="h6" align="center" gutterBottom>
-                    Footer
-                </Typography>
-                <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                    Something here to give the footer a purpose!
-                </Typography>
-            </footer>
-            {/* End footer */}
         </React.Fragment>
     );
 }
