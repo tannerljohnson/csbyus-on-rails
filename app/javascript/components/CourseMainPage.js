@@ -61,7 +61,7 @@ function CourseMainPage(props) {
         <Grid item>
           <main className={classes.content}>
             <div className={classes.toolbar} />
-            <Video link = "https://www.youtube.com/watch?v=ckAgAc8paKo&list=RDckAgAc8paKo&start_radio=1"/>
+            <Video link = "https://www.youtube.com/watch?v=1CjM3NLjXnE"/>
           </main>
         </Grid>
       </Grid>
