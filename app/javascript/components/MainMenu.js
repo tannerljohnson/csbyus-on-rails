@@ -16,11 +16,11 @@ import {
 
 const options = [
   'Home',
-  'What We Do',
-  'CurriculaHub',
-  'Blog',
   'About',
+  'CurriculaHub',
   'Join Us',
+  'Blog',
+  'Donate',
 ];
 
 const ITEM_HEIGHT = 48;

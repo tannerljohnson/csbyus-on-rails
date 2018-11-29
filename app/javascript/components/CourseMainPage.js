@@ -9,6 +9,8 @@ import Sidebar from './Sidebar'
 import ProgressBar from './ProgressBar'
 import Video from './Video'
 import Grid from '@material-ui/core/Grid'
+import courseMainPageComponentStyles from "../../assets/javascripts/jss/components/courseMainPageComponentStyles.js";
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -73,4 +75,4 @@ CourseMainPage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CourseMainPage);
+export default withStyles(courseMainPageComponentStyles)(CourseMainPage);

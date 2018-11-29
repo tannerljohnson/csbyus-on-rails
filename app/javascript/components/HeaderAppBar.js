@@ -9,20 +9,8 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { withRouter } from 'react-router-dom';
+import headerComponentStyles from "../../assets/javascripts/jss/components/headerComponentStyles.js";
 
-
-const styles = theme => ({
-  appBar: {
-    position: 'fixed',
-    margin: '0 auto',
-    top: 0,
-    padding: '0%',
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-});
 
 const theme = createMuiTheme();
 
@@ -47,4 +35,4 @@ class HeaderAppBar extends React.Component {
 }
 
 const HeaderWithRouter = withRouter(HeaderAppBar);
-export default withStyles(styles)(HeaderWithRouter);
+export default withStyles(headerComponentStyles)(HeaderWithRouter);
