@@ -5,30 +5,11 @@ import Drawer from "@material-ui/core/Drawer"
 import { withStyles } from '@material-ui/core/styles'
 import ItemClasses from "./ItemClasses";
 import ListSubheader from "@material-ui/core/ListSubheader/ListSubheader";
+import sidebarComponentStyles from "../../assets/javascripts/jss/components/sidebarComponentStyles.js";
+
 
 const drawerWidth = 240;
-const styles = theme => ({
-  root: {
-    display: 'flex',
-  },
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  toolbar: theme.mixins.toolbar,
-  content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing.unit * 3,
-  },
-});
+
 
 class Sidebar extends React.Component {
     constructor (props) {
@@ -84,4 +65,4 @@ Sidebar.propTypes = {
     courses: PropTypes.array,
 };
 
-export default withStyles(styles)(Sidebar)
+export default withStyles(sidebarComponentStyles)(Sidebar)

@@ -16,7 +16,6 @@ import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Paper from '@material-ui/core/Paper';
-// set up drawer dependencies
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -24,7 +23,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import FolderIcon from '@material-ui/icons/Folder';
 import Divider from '@material-ui/core/Divider';
-// import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import MainMenu from './MainMenu';
 import ContactForm from './ContactForm';
 import Footer from './Footer';
@@ -32,125 +30,13 @@ import Video from './Video';
 import HeaderAppBar from './HeaderAppBar';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
-import purple from '@material-ui/core/colors/purple';
-import green from '@material-ui/core/colors/green';
-import Background from '../../assets/images/HomePageBackground.JPG';
 import ImpactChart from '../../assets/images/ImpactChart.png';
+import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 
 
 const lightText = blue['A200'];
-
-const styles = theme => ({
-  appBar: {
-    position: 'fixed',
-    paddingTop: '0%',
-  },
-  avatar: {
-    margin: 10,
-    postition: 'relative',
-    textAlign: 'center',
-  },
-  bgimg: {
-    backgroundImage: `url(${Background})`,
-    position: 'relative',
-    width: '100%',
-    height: 670,
-    backgroundRepeat: 'no-repeat',
-    webkitBackgroundSize: 'cover',
-    mozBackgroundSize: 'cover',
-    oBackgroundSize: 'cover',
-    backgroundSize: 'cover',
-  },
-  icon: {
-    marginRight: theme.spacing.unit * 2,
-  },
-  mainFeaturedPost: {
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing.unit * 4,
-  },
-  ourImpact: {
-    backgroundColor: theme.palette.background.paper,
-  },
-  mainFeaturedPostContent: {
-    padding: `${theme.spacing.unit * 5}px`,
-    marginLeft: theme.spacing.unit * 25,
-    marginRight: theme.spacing.unit * 25,
-  },
-  heroUnit: {
-    backgroundColor: theme.palette.background.paper,
-    textAlign: 'center',
-  },
-  video: {
-    position: 'relative',
-  },
-  heroContent: {
-    maxWidth: 600,
-    margin: '0 auto',
-    padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
-  },
-  ourImpactTitle: {
-    maxWidth: 600,
-    margin: '0 auto',
-  },
-  heroButtons: {
-    paddingTop: '0%', // 16:9
-    paddingBottom: '5%', // 16:9
-  },
-  layout: {
-    width: 'auto',
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: 1100,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
-  },
-  cardGrid: {
-    padding: `${theme.spacing.unit * 8}px 0`,
-  },
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing.unit * 6,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
-  mainTitle: {
-    paddingTop: '10%',
-    marginLeft: '10%',
-    textAlign: 'left',
-    padding: '40px',
-  },
-  title: {
-    margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
-    textAlign: 'center',
-  },
-  list: {
-    width: 250,
-  },
-  fullList: {
-    width: 'auto',
-  },
-  root: {
-    display: 'flex',
-    flexGrow: 1,
-    flexWrap: 'wrap',
-    padding: `${theme.spacing.unit * 5}px`,
-  },
-  root2: {
-    flexGrow: 1,
-    flexWrap: 'wrap',
-    padding: `${theme.spacing.unit * 5}px`,
-  },
-});
-
 const cards = [1, 2, 3];
+
 
 function handleJoinClick() {
   console.log("clicked join us");
@@ -283,10 +169,9 @@ function Home(props) {
           {/* Main featured post */}
           <Paper className={classes.mainFeaturedPost}>
             <Grid container>
-              <Grid item>
-                <div>
-                  <div >
-                    <div className={classes.mainFeaturedPostContent}>
+              <Grid item >
+                <div className={classes.aboutDiv}>
+                    <div className={classes.aboutContent} >
                       <Typography variant="display1" color="inherit" gutterBottom align="center">
                         <b>Who are we?</b>
                       </Typography>
@@ -295,7 +180,7 @@ function Home(props) {
                         computer science education to students from under-resourced communities.
                       </Typography>
                     </div>
-                    <div className={classes.mainFeaturedPostContent}>
+                    <div className={classes.aboutContent}>
                       <Typography variant="display1" color="inherit" gutterBottom align="center">
                         <b>What is CSbyUs?</b>
                       </Typography>
@@ -316,7 +201,6 @@ function Home(props) {
                       </Grid>
                     </div>
                     {/* End join us button  */}
-                  </div>
                 </div>
               </Grid>
             </Grid>
@@ -412,4 +296,4 @@ Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Home);
+export default withStyles(homeComponentStyles)(Home);

@@ -6,17 +6,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-
-//TODO: resize the cards so that it fits the requirement
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    // ⚠️ object-fit is not supported by IE11.
-    objectFit: 'cover',
-  },
-};
+import courseCardComponentStyles from "../../assets/javascripts/jss/components/courseCardComponentStyles.js";
 
 class CourseCard extends React.Component {
   constructor(props) {
@@ -70,4 +60,4 @@ CourseCard.propTypes = {
 
 };
 
-export default withStyles(styles)(CourseCard);
+export default withStyles(courseCardComponentStyles)(CourseCard);

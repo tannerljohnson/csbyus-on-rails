@@ -3,17 +3,7 @@ import PropTypes from "prop-types"
 import CourseCard from "./CourseCard";
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
-
-//TODO: replace state with props when the server is ready
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    color: theme.palette.text.secondary,
-  },
-});
+import courseOverviewComponentStyles from "../../assets/javascripts/jss/components/courseOverviewComponentStyles.js";
 
 function CourseOverview(props) {
     const { classes } = props;
@@ -36,4 +26,4 @@ CourseOverview.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles) (CourseOverview);
+export default withStyles(courseOverviewComponentStyles) (CourseOverview);

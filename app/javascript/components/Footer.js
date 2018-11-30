@@ -8,13 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import { withRouter } from 'react-router-dom';
-
-const styles = theme => ({
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing.unit * 4,
-  },
-});
+import footerComponentStyles from "../../assets/javascripts/jss/components/footerComponentStyles.js";
 
 const theme = createMuiTheme();
 
@@ -41,4 +35,4 @@ class Footer extends React.Component {
 }
 
 const FooterWithRouter = withRouter(Footer);
-export default withStyles(styles)(FooterWithRouter);
+export default withStyles(footerComponentStyles)(FooterWithRouter);
