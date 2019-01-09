@@ -47,6 +47,11 @@ const courseVersionsPageComponentStyles = theme => ({
         marginTop: theme.spacing.unit * 8,
         padding: `${theme.spacing.unit * 6}px 0`,
     },
+    root2: {
+      flexGrow: 1,
+      flexWrap: 'wrap',
+      padding: `${theme.spacing.unit * 5}px`,
+    },
 });
 
 export default courseVersionsPageComponentStyles;

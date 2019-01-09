@@ -46,6 +46,12 @@ const homeComponentStyles = theme => ({
     marginRight: "4%",
     paddingBottom: "4%",
   },
+  missionContent: {
+    marginLeft: "4%",
+    marginRight: "4%",
+    paddingBottom: "4%",
+    padding: theme.spacing.unit * 6,
+  },
   video: {
     position: 'relative',
   },

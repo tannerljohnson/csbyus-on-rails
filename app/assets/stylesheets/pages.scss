@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // $base: #03A9F4;
-$base: #F44336;
+$base: #30b271;
 $text: #555;
 $invalid: #E91E63;
 $width: 400px;
@@ -178,6 +178,12 @@ a {
   i {
     margin-right: 5px;
   }
+}
+
+a2 {
+  display: inline-block;
+  text-decoration: none;
+  color: $base;
 }
 
 aForm {

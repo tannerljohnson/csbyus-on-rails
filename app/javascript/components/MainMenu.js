@@ -13,14 +13,20 @@ import {
   HashRouter
 } from "react-router-dom";
 
+// dev version
+// const options = [
+//   'Home',
+//   'About',
+//   'CurriculaHub',
+//   'Join Us',
+//   'Blog',
+//   'Donate',
+// ];
 
 const options = [
   'Home',
   'About',
-  'CurriculaHub',
   'Join Us',
-  'Blog',
-  'Donate',
 ];
 
 const ITEM_HEIGHT = 48;

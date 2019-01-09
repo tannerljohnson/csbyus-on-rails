@@ -54,10 +54,11 @@ class App extends React.Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/joinus" component={ContactForm} />
+              {/* 
               <Route exact path="/curriculahub" component={CourseVersionsPage} />
               <Route exact path="/blog" component={Blog} />
-              <Route exact path="/joinus" component={ContactForm} />
-              {/* catch-all redirects to home */}
+              catch-all redirects to home */}
               <Route render={this._redirectToHome} />
             </Switch>
             <Divider/>
