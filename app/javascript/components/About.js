@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Background from '../../assets/images/AboutUs.png';
-import InfoSegment from './InfoSegment';
+import InfoSegment from "./InfoSegment"
 import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
 
 
@@ -20,7 +20,7 @@ class About extends React.Component {
             <subtitle></subtitle>
           </div>
         </section>
-        
+
         <div className={classes.layout}>
           <InfoSegment />
         </div>
