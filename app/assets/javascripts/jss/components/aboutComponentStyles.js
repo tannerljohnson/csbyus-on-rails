@@ -1,8 +1,8 @@
-import Background from '../../../images/AboutUs.png';
+import BackgroundImg from '../../../images/AboutUs.png';
 
 const aboutComponentStyles = theme => ({
   backgroungImg: {
-    backgroundImage: `url(${Background})`,
+    backgroundImage: `url(${BackgroundImg})`,
     position: 'relative',
     width: '100%',
     height: 600,
