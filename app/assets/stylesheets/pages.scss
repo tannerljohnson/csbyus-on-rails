@@ -19,6 +19,14 @@ html, body {
     width: 50%;
 }
 
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
 html, body, form, span, h1special {
     box-sizing: border-box;
 }
@@ -170,7 +178,7 @@ formButton {
 
 a {
   display: inline-block;
-  width: 100%;
+  // width: 100%;
   text-align: center;
   font-family: 'roboto', sans-serif;
   text-decoration: none;

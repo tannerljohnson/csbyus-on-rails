@@ -14,20 +14,20 @@ import {
 } from "react-router-dom";
 
 // dev version
-// const options = [
-//   'Home',
-//   'About',
-//   'CurriculaHub',
-//   'Join Us',
-//   'Blog',
-//   'Donate',
-// ];
-
 const options = [
   'Home',
   'About',
+  'CurriculaHub',
+  'Blog',
   'Join Us',
+  // 'Donate',
 ];
+
+// const options = [
+//   'Home',
+//   'About',
+//   'Join Us',
+// ];
 
 const ITEM_HEIGHT = 48;
 

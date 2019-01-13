@@ -54,6 +54,10 @@ const homeComponentStyles = theme => ({
   },
   video: {
     position: 'relative',
+    width: '100%',
+    height: 'auto',
+    flexGrow: 1,
+    flexWrap: 'wrap',
   },
   heroContent: {
     maxWidth: 600,
@@ -72,6 +76,17 @@ const homeComponentStyles = theme => ({
     width: 'auto',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  layout2: {
+    width: 'auto',
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    paddingTop: '5%',
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
@@ -99,9 +114,9 @@ const homeComponentStyles = theme => ({
     marginRight: 20,
   },
   mainTitle: {
-    paddingTop: '10%',
+    paddingTop: '15%',
     flexGrow: 1,
-    marginLeft: '10%',
+    marginLeft: '9%',
     textAlign: 'left',
     padding: theme.spacing.unit * 6,
   },
@@ -125,6 +140,17 @@ const homeComponentStyles = theme => ({
     flexGrow: 1,
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 5}px`,
+  },
+  featuredPicture: {
+    backgroundColor: theme.palette.grey[800],
+    color: theme.palette.common.white,
+    marginBottom: theme.spacing.unit * 4,
+  },
+  courseName: {
+      padding: `${theme.spacing.unit * 6}px`,
+      [theme.breakpoints.up('md')]: {
+          paddingRight: 0,
+      },
   },
 });
 

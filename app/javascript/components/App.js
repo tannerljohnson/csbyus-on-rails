@@ -10,6 +10,7 @@ import Home from './Home'
 import About from './About'
 import CourseVersionsPage from './CourseVersionsPage'
 import Blog from './Blog'
+import CurriculaHubLanding from './CurriculaHubLanding'
 import Footer from './Footer';
 import ContactForm from './ContactForm'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
@@ -55,10 +56,9 @@ class App extends React.Component {
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/joinus" component={ContactForm} />
-              {/* 
-              <Route exact path="/curriculahub" component={CourseVersionsPage} />
+              <Route exact path="/curriculahub" component={CurriculaHubLanding} />
               <Route exact path="/blog" component={Blog} />
-              catch-all redirects to home */}
+              {/* catch-all redirects to home */}
               <Route render={this._redirectToHome} />
             </Switch>
             <Divider/>

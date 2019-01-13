@@ -17,7 +17,7 @@ class About extends React.Component {
       <React.Fragment>
         <section className={ classes.backgroungImg }>
           <div className={classes.title}>
-            <subtitle></subtitle>
+            <subtitle>About<b>Us</b></subtitle>
           </div>
         </section>
 

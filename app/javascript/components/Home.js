@@ -215,7 +215,7 @@ function Home(props) {
               </div>
 
             <div className={classes.video}>
-              <img src={ImpactChart} class="center"/>
+              <img src={ImpactChart} class="img-center"/>
             </div>
 
             <div className={classes.root}>

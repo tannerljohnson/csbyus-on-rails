@@ -38,7 +38,7 @@ function CourseVersionsPage(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <div className={classes.layout}>
+            <div className={classes.layout2}>
                 <Toolbar className={classes.toolbarMain}>
                     <Typography
                         component="h2"
@@ -117,16 +117,6 @@ function CourseVersionsPage(props) {
                 </main>
             </div>
 
-            {/* Footer */}
-            <footer className={classes.footer}>
-                <Typography variant="h6" align="center" gutterBottom>
-                    Footer
-                </Typography>
-                <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                    Something here to give the footer a purpose!
-                </Typography>
-            </footer>
-            {/* End footer */}
         </React.Fragment>
     );
 }

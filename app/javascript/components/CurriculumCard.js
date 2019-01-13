@@ -8,9 +8,9 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 
-class Post extends React.Component {
+class CurriculumCard extends React.Component {
   render () {
-      //use <br/> if you need to go to another line
+
     return (
       <React.Fragment>
         <Card>
@@ -21,15 +21,12 @@ class Post extends React.Component {
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
               {this.props.author}
             </Typography>
-            <Typography className={this.props.pos} color="textSecondary">
-              {this.props.timestamp}
-            </Typography>
             <Typography component="p">
               {this.props.content}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button href={this.props.url}  target="_blank" size="small">Read More</Button>
+            <Button href={this.props.url}  target="_blank" size="small">Explore</Button>
           </CardActions>
         </Card>
       </React.Fragment>
@@ -37,13 +34,10 @@ class Post extends React.Component {
   }
 }
 
-Post.propTypes = {
+CurriculumCard.propTypes = {
   author: PropTypes.string,
   title: PropTypes.string,
-  timestamp: PropTypes.string,
+  url: PropTypes.string,
   content: PropTypes.string
 };
-export default Post
-
-
-//put card stuff here to make a card
+export default CurriculumCard

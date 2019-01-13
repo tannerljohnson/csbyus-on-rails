@@ -9,6 +9,17 @@ const courseVersionsPageComponentStyles = theme => ({
             marginRight: 'auto',
         },
     },
+    layout2: {
+      width: 'auto',
+      marginLeft: theme.spacing.unit * 3,
+      marginRight: theme.spacing.unit * 3,
+      paddingTop: '5%',
+      [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+        width: 1100,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+      },
+    },
     toolbarMain: {
         borderBottom: `1px solid ${theme.palette.grey[300]}`,
     },
