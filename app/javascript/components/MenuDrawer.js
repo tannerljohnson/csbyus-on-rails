@@ -82,12 +82,14 @@ class MenuDrawer extends React.Component {
               <ListItemText primary={'CurriculaHub'} />
             </ListItem>
           </NavLink>
+          {/*
           <NavLink to={'/blog'}>
             <ListItem button key={'Blog'}>
               <ListItemIcon> <BookmarkBorderIcon /> </ListItemIcon>
               <ListItemText primary={'Blog'} />
             </ListItem>
           </NavLink>
+          */}
           <NavLink to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
