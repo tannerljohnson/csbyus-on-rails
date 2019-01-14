@@ -13,6 +13,7 @@ import Blog from './Blog'
 import CurriculaHubLanding from './CurriculaHubLanding'
 import Footer from './Footer';
 import ContactForm from './ContactForm'
+import ScrollToTop from './ScrollToTop'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import HeaderAppBar from './HeaderAppBar';
 import Divider from '@material-ui/core/Divider';
@@ -50,17 +51,18 @@ class App extends React.Component {
         <Router>
           <div>
             <HeaderAppBar/>
-
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/joinus" component={ContactForm} />
-              <Route exact path="/curriculahub" component={CurriculaHubLanding} />
-              // <Route exact path="/blog" component={Blog} />
-              {/* catch-all redirects to home */}
-              <Route render={this._redirectToHome} />
-            </Switch>
+            <ScrollToTop>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/joinus" component={ContactForm} />
+                <Route exact path="/curriculahub" component={CurriculaHubLanding} />
+                // <Route exact path="/blog" component={Blog} />
+                {/* catch-all redirects to home */}
+                <Route render={this._redirectToHome} />
+              </Switch>
+            </ScrollToTop>
             <Divider/>
             <Footer />
           </div>
