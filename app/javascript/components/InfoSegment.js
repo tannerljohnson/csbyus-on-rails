@@ -40,7 +40,7 @@ class InfoSegment extends React.Component {
                     {generate(
                       <ListItem>
                         <ListItemText
-                          primary="Our mission is to ignite future change-agents by providing quality computer science education to students from under-resourced communities."
+                          primary="Our mission is to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age."
                           align="center"
                         />
                       </ListItem>,

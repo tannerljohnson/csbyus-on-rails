@@ -20,7 +20,7 @@ class CurriculaHubLanding extends React.Component {
               url: 'https://drive.google.com/drive/folders/1qP1H3qu0Vx6NTtcpUucDQxqFgXs_Mj50'},
           {title:"Day of Data", author:"CSbyUs",
               content:"Introduction to the world of data science for middle school age students. In a full day, students and mentors work in teams through the data science process, answering research questions with real-world data.",
-              url: 'https://docs.google.com/document/d/1sSO993AyHSXKN-7dehMDq-aErv5m9zg1_JzVeZW_XTM/edit?usp=sharing'},
+              url: 'https://docs.google.com/document/d/1i5TnWBwk2yvZpTetN5yb3ByLC2J2oVcdh71c4XSVHno/edit?usp=sharing'},
           {title:"CS First with Scratch", author:"Google",
               content:"Intro to programming activities created by Google's CS First initiative for students ages 9-14",
               url: 'https://csfirst.withgoogle.com/c/cs-first/en/curriculum.html'},
