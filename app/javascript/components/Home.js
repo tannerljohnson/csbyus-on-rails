@@ -222,7 +222,7 @@ function Home(props) {
               <Grid container spacing={24}>
                 <Grid item xs>
                   <Typography variant="h3" className={classes.title}>
-                    40
+                    50
                   </Typography>
                   <div className={classes.heroUnit}>
                     <List>
