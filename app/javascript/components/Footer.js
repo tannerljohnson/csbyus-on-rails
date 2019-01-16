@@ -27,6 +27,9 @@ class Footer extends React.Component {
           <Typography variant="subheading" align="center" color="textSecondary" component="p">
             © 2018 CSbyUs.org. All rights reserved.
           </Typography>
+          <Typography variant="subheading" align="center" color="textSecondary" component="p">
+            CSbyUs.org aspires to publish all content under a <a href="https://creativecommons.org/licenses/" redirects="_blank">Creative Commons license</a> but may not be able to do so in all cases. You are responsible for ensuring that you have the necessary permission to reuse any work on this site.
+          </Typography>
         </footer>
         {/* End footer */}
       </React.Fragment>

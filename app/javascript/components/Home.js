@@ -176,8 +176,7 @@ function Home(props) {
                         <b>Who are we?</b>
                       </Typography>
                       <Typography variant="headline" color="inherit" paragraph align="center">
-                        CSbyUs is a nonprofit and affiliate of Duke University working to ignite future change-agents by providing quality
-                        computer science education to students from under-resourced communities.
+                        CSbyUs is a free after-school program that teaches digital era education as a way for students to share their unique stories and talents.
                       </Typography>
                     </div>
                     <div className={classes.aboutContent}>
