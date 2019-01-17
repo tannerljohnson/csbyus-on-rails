@@ -10,8 +10,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use sqlite3 as the database for Active Record --> changed to pg for prod
+# Use pg for local development 
 gem 'pg'
+# Use sqlite3 for local development
 # gem 'sqlite3'
 gem 'figaro'
 # Use Puma as the app server

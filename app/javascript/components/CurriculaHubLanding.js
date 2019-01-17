@@ -15,7 +15,8 @@ class CurriculaHubLanding extends React.Component {
       const { classes } = this.props;
 
       const data =
-          [{title:"Mobile Citizens", author:"CSbyUs",
+          [
+          {title:"Mobile Citizens", author:"CSbyUs",
               content:"Mobile app development for middle school age students. Students work in teams to create a mobile app using App Lab. Frequency: 90mins per week for 10 weeks",
               url: 'https://drive.google.com/drive/folders/1qP1H3qu0Vx6NTtcpUucDQxqFgXs_Mj50'},
           {title:"Day of Data", author:"CSbyUs",
@@ -35,7 +36,11 @@ class CurriculaHubLanding extends React.Component {
               url: 'https://code.org/hourofcode/overview'},
           {title:"Basic Programming in Scratch", author:"MIT Media Lab",
               content:"A collection of detailed guides for teaching basic programming concepts using Scratch, an interactive web-based drag-and-drop coding interface perfect for young learners with no prior experience. Choose from themes like animation, art, music, games, and stories.",
-              url: 'https://scratch.mit.edu/ideas'}];
+              url: 'https://scratch.mit.edu/ideas'},
+          {title:"Teaching Privacy", author:"CSForAll Teachers",
+              content:"From csforallteachers.org: The Teaching Privacy curriculum from the International Computer Science Institute and UC Berkeley has a full set of freely-available, classroom-tested lesson plans for teaching about how online privacy works. The lessons are aimed at high school and early undergrad; CSP-compatible but usable in any CS class (or other classes!).",
+              url: 'https://csforallteachers.org/resource/teaching-privacy-curriculum-0'}
+            ];
 
       const cards = data.map((card) =>
           <CurriculumCard title = {card.title} author = {card.author}
