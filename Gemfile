@@ -10,7 +10,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use pg for local development 
+# Use pg for local development
 gem 'pg'
 # Use sqlite3 for local development
 # gem 'sqlite3'
