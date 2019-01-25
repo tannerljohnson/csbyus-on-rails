@@ -119,7 +119,7 @@ function Home(props) {
                       {generate(
                         <ListItem>
                           <ListItemText
-                            primary="Provide a platform to share and adapt existing open-access curricula (like Mobile Citizens) to meet the unique learning needs of local communities"
+                            primary="Provide a platform to share and adapt existing open-access and open-source curricula (like Mobile Citizens) to meet the unique learning needs of local communities"
                             align="center"
                           />
                         </ListItem>,
