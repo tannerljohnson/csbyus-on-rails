@@ -54,26 +54,26 @@ class CurriculaHubLanding extends React.Component {
         <React.Fragment>
           <div className={classes.layout2}>
 
-            <Paper className={classes.featuredPicture}>
-                <Grid container>
-                    <Grid item md={12}>
-                        <div className={classes.courseName}>
-                            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                                Welcome to CurriculaHub
-                            </Typography>
-                            <Typography variant="h5" color="inherit" paragraph>
-                                A centralized page for open-access and open-source digital era curricula
-                            </Typography>
-                        </div>
-                    </Grid>
-                </Grid>
+            <Paper className={classes.titleHeader}>
+                <div className={classes.courseName}>
+                    <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                        CurriculaHub
+                    </Typography>
+                    <Typography variant="h5" color="inherit" paragraph>
+                        A one-stop platform for you to explore, adapt, add, and discuss open-source curricula
+                    </Typography>
+                </div>
             </Paper>
 
-            <div>
-              <ul>
-                  {cards}
-              </ul>
-            </div>
+
+              <Grid container spacing={24}>
+                  {cards.map(card => (
+                    // change xs setting to 12 for one card per row
+                     <Grid item xs={6} key={card.toString()}>
+                         {card}
+                     </Grid>
+                   ))}
+             </Grid>
 
             {/* Contribute */}
             <Divider/>

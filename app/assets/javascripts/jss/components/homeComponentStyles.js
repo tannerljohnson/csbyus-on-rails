@@ -93,6 +93,11 @@ const homeComponentStyles = theme => ({
       marginRight: 'auto',
     },
   },
+  titleHeader: {
+    backgroundColor: theme.palette.secondary.main,
+    // color: theme.palette.common.white,
+    marginBottom: theme.spacing.unit * 4,
+  },
   aboutDiv: {
       padding: theme.spacing.unit * 6,
       [theme.breakpoints.up('md')]: {
@@ -151,6 +156,10 @@ const homeComponentStyles = theme => ({
       [theme.breakpoints.up('md')]: {
           paddingRight: 0,
       },
+  },
+  largeIcon: {
+    width: 80,
+    height: 80,
   },
 });
 

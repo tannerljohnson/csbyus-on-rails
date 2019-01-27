@@ -24,11 +24,11 @@ import pink from '@material-ui/core/colors/pink';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#2f2c71'
+      main: '#2f2c71',
     //   light: '#50C878',
     //   main: '##50C878',
     //   dark: '#2E8B57',
-    //   contrastText: '#fff',
+      // contrastText: '#fff',
     },
     secondary: {
       // light: '#8F9779',

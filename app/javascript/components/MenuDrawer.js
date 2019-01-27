@@ -106,7 +106,7 @@ class MenuDrawer extends React.Component {
         <IconButton
           onClick={this.toggleDrawer('open', true)}
         >
-          <MenuIcon color="secondary" />
+          <MenuIcon fontSize="large" color="secondary" />
         </IconButton>
         <Drawer open={this.state.open} onClose={this.toggleDrawer('open', false)}>
           <div

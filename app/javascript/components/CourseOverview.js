@@ -17,7 +17,7 @@ function CourseOverview(props) {
                       {card}
                   </Grid>
                 ))}
-                </Grid>
+          </Grid>
        </div>
     );
   }
