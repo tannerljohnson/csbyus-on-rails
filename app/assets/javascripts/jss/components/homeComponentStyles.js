@@ -74,8 +74,9 @@ const homeComponentStyles = theme => ({
   },
   layout: {
     width: 'auto',
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
+    marginLeft: theme.spacing.unit * 2,
+    marginRight: theme.spacing.unit * 2,
+    paddingTop: '5%',
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
@@ -93,10 +94,25 @@ const homeComponentStyles = theme => ({
       marginRight: 'auto',
     },
   },
-  titleHeader: {
-    backgroundColor: theme.palette.secondary.main,
+  curriculaTitleHeader: {
+    backgroundColor: theme.palette.secondary.main, // change color here
     // color: theme.palette.common.white,
     marginBottom: theme.spacing.unit * 4,
+    [theme.breakpoints.up('md')]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  newsTitleHeader: {
+    backgroundColor: theme.palette.secondary.light, // change color here
+    // color: theme.palette.common.white,
+    marginBottom: theme.spacing.unit * 4,
+    [theme.breakpoints.up('md')]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
   },
   aboutDiv: {
       padding: theme.spacing.unit * 6,
@@ -160,6 +176,12 @@ const homeComponentStyles = theme => ({
   largeIcon: {
     width: 80,
     height: 80,
+  },
+  newsCard: {
+    maxWidth: 345,
+  },
+  newsMedia: {
+    height: 140,
   },
 });
 

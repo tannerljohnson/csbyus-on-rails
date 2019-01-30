@@ -11,6 +11,7 @@ import About from './About'
 import CourseVersionsPage from './CourseVersionsPage'
 import Blog from './Blog'
 import CurriculaHubLanding from './CurriculaHubLanding'
+import InTheNews from './InTheNews'
 import Footer from './Footer';
 import ContactForm from './ContactForm'
 import ScrollToTop from './ScrollToTop'
@@ -31,7 +32,7 @@ const theme = createMuiTheme({
       // contrastText: '#fff',
     },
     secondary: {
-      // light: '#8F9779',
+      light: '#ccc0ae',
       main: '#30b271'
       //main: '#F48FB1',
       // dark: ' #4F7942',
@@ -58,6 +59,7 @@ class App extends React.Component {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/joinus" component={ContactForm} />
                 <Route exact path="/curriculahub" component={CurriculaHubLanding} />
+                <Route exact path="/news" component={InTheNews} />
                 // <Route exact path="/blog" component={Blog} />
                 {/* catch-all redirects to home */}
                 <Route render={this._redirectToHome} />
