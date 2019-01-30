@@ -19,6 +19,7 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
+
 import {
   Redirect,
   Link,
@@ -103,10 +104,10 @@ class MenuDrawer extends React.Component {
 
     return (
       <div>
-        <IconButton
+        <IconButton color="inherit" fontsize="large"
           onClick={this.toggleDrawer('open', true)}
         >
-          <MenuIcon fontSize="large" color="secondary" />
+          <MenuIcon />
         </IconButton>
         <Drawer open={this.state.open} onClose={this.toggleDrawer('open', false)}>
           <div

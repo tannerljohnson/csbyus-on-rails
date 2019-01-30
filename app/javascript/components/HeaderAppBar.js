@@ -11,6 +11,9 @@ import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { withRouter } from 'react-router-dom';
 import headerComponentStyles from "../../assets/javascripts/jss/components/headerComponentStyles.js";
+import Button from '@material-ui/core/Button';
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 
 const theme = createMuiTheme();
@@ -19,18 +22,33 @@ class HeaderAppBar extends React.Component {
 
   render () {
     const { classes } = this.props;
+    const styles = {
+      root: {
+        flexGrow: 1,
+      },
+      grow: {
+        flexGrow: 1,
+      },
+      menuButton: {
+        marginLeft: -12,
+        marginRight: 20,
+      },
+    };
 
     return (
-      <AppBar className={classes.appBar}>
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            <MenuDrawer />
-          </IconButton>
-          <Typography variant="title" color="inherit" noWrap>
-            CSbyUs
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <div className={classes.root}>
+        <AppBar className={classes.appBar} position="static">
+          <Toolbar>
+            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+              <MenuDrawer />
+            </IconButton>
+            <Typography variant="title" color="inherit" noWrap>
+              CSbyUs
+            </Typography>
+            {/*<Button color="inherit" variant="title">Login</Button>*/}
+          </Toolbar>
+        </AppBar>
+      </div>
     );
   }
 }
