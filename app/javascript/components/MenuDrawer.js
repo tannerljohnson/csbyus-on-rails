@@ -16,6 +16,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import CommentIcon from '@material-ui/icons/Comment';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 
@@ -91,6 +92,12 @@ class MenuDrawer extends React.Component {
             </ListItem>
           </NavLink>
           */}
+          <NavLink to={'/news'}>
+            <ListItem button key={'In the News'}>
+              <ListItemIcon> <CommentIcon /> </ListItemIcon>
+              <ListItemText primary={'In the News'} />
+            </ListItem>
+          </NavLink>
           <NavLink to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
