@@ -224,10 +224,10 @@ function Home(props) {
             <div className={classes.root}>
               <Grid container spacing={24}>
                 <Grid item xs>
-                  <Typography variant="h3" className={classes.title}>
+                <div className={classes.title}>
+                  <Typography variant="h3">
                     196
                   </Typography>
-                  <div className={classes.heroUnit}>
                     <List>
                       {generate(
                         <ListItem>
@@ -242,10 +242,10 @@ function Home(props) {
                   </div>
                 </Grid>
                 <Grid item xs>
-                  <Typography variant="h3" className={classes.title}>
+                <div className={classes.title}>
+                  <Typography variant="h3">
                     100%
                   </Typography>
-                  <div className={classes.heroUnit}>
                     <List>
                       {generate(
                         <ListItem>
@@ -260,10 +260,10 @@ function Home(props) {
                   </div>
                 </Grid>
                 <Grid item xs>
-                  <Typography variant="h3" className={classes.title}>
-                    22
-                  </Typography>
-                  <div className={classes.heroUnit}>
+                  <div className={classes.title}>
+                    <Typography variant="h3">
+                      22
+                    </Typography>
                     <List>
                       {generate(
                         <ListItem>

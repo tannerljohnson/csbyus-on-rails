@@ -142,6 +142,7 @@ const homeComponentStyles = theme => ({
     padding: theme.spacing.unit * 6,
   },
   title: {
+    backgroundColor: theme.palette.background.paper,
     margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
     textAlign: 'center',
   },
