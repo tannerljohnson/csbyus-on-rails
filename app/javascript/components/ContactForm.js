@@ -80,7 +80,7 @@ class ContactForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div>
+      <div className={classes.container}>
       <form className={classes.container} autoComplete="off">
         <Paper elevation={1}>
           <div className={classes.mainTitle}>

@@ -9,11 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 
-// source: PropTypes.string,
-// imageLocation: PropTypes.string,
-// title: PropTypes.string,
-// url: PropTypes.string,
-// content: PropTypes.string
 
 class InTheNews extends React.Component {
 
@@ -42,6 +37,11 @@ class InTheNews extends React.Component {
               imageLocation:"https://hfactorwater.com/wp-content/uploads/2016/10/press-duke-today.jpg",
               content:"When Carter Zenke observed that computer science students have very few opportunities to gain real-world experience with the concepts they’re learning in the classroom, he decided to do something about it.",
               url: 'https://today.duke.edu/2018/08/harnessing-power-open-source-research-and-teaching-transform-education'},
+            { title:"Open Source Pedagogy, Research + Innovation (OSPRI) Lab (2018-2019) | Duke Bass Connections",
+              source:"Duke Bass Connections",
+              imageLocation:"https://bassconnections.duke.edu/sites/bassconnections.duke.edu/files/styles/large/public/ehd-ospri-fb-v2.png?itok=pdcBKbPO",
+              content:"During the 2018-19 academic year, OSPRI Lab’s project will focus on iterating and scaling CSbyUs. Co-founded by three Duke undergraduates and the founder of OSPRI, CSbyUs catalyzes networks of undergraduate students to expand access to quality CS education.",
+              url: 'https://bassconnections.duke.edu/project-teams/open-source-pedagogy-research-innovation-ospri-lab-2018-2019'},
           ];
 
       const cards = data.map((card) =>
