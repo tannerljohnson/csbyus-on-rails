@@ -18,9 +18,6 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import CommentIcon from '@material-ui/icons/Comment';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
-
-
 import {
   Redirect,
   Link,
@@ -67,39 +64,39 @@ class MenuDrawer extends React.Component {
       <div className={classes.list}>
         <List>
           <NavLink to={'/home'}>
-            <ListItem button key={'Home'}>
+            <ListItem className={classes.list} button key={'Home'}>
               <ListItemIcon> <HomeIcon /> </ListItemIcon>
               <ListItemText primary={'Home'} />
             </ListItem>
           </NavLink>
           <NavLink to={'/about'}>
-            <ListItem button key={'About'}>
+            <ListItem className={classes.list} button key={'About'}>
               <ListItemIcon> <InfoIcon /> </ListItemIcon>
               <ListItemText primary={'About'} />
             </ListItem>
           </NavLink>
           <NavLink to={'/curriculahub'}>
-            <ListItem button key={'CurriculaHub'}>
+            <ListItem className={classes.list} button key={'CurriculaHub'}>
               <ListItemIcon> <CloudDownloadIcon /> </ListItemIcon>
               <ListItemText primary={'CurriculaHub'} />
             </ListItem>
           </NavLink>
           {/*
           <NavLink to={'/blog'}>
-            <ListItem button key={'Blog'}>
+            <ListItem className={classes.list} button key={'Blog'}>
               <ListItemIcon> <BookmarkBorderIcon /> </ListItemIcon>
               <ListItemText primary={'Blog'} />
             </ListItem>
           </NavLink>
           */}
           <NavLink to={'/news'}>
-            <ListItem button key={'In the News'}>
+            <ListItem className={classes.list} button key={'In the News'}>
               <ListItemIcon> <CommentIcon /> </ListItemIcon>
               <ListItemText primary={'In the News'} />
             </ListItem>
           </NavLink>
           <NavLink to={'/joinus'}>
-            <ListItem button key={'Join Us'}>
+            <ListItem className={classes.list} button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
               <ListItemText primary={'Join Us'} />
             </ListItem>

@@ -26,17 +26,14 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#2f2c71',
-    //   light: '#50C878',
-    //   main: '##50C878',
-    //   dark: '#2E8B57',
-      // contrastText: '#fff',
+      rose: '#c2185b',
+      purple: '#7e57c2',
+      green: '#30b271',
+      blue: '#1976d2',
     },
     secondary: {
       light: '#ccc0ae',
-      main: '#30b271'
-      //main: '#F48FB1',
-      // dark: ' #4F7942',
-      // contrastText: '#000',
+      main: '#30b271',
     },
   }
 });

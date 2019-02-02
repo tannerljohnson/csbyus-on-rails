@@ -32,6 +32,8 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import ImpactChart from '../../assets/images/ImpactChart.png';
 import ShareIcon from '@material-ui/icons/Share';
+import BuildIcon from '@material-ui/icons/Build';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 
 
@@ -82,7 +84,6 @@ function Home(props) {
 
     return (
       <React.Fragment>
-
           <main>
             {/* Big picture */}
             <div className={classes.bgimg} >
@@ -111,57 +112,71 @@ function Home(props) {
 
             <div className={classes.root}>
               <Grid container spacing={24}>
-                <Grid item xs className={classes.title}>
+                <Grid item xs >
+                  <div className={classes.horizCards}>
+                    <Avatar className={classes.incubateAvatar}>
+                      <BuildIcon className={classes.icon} />
+                    </Avatar>
+                    <Typography variant="h4" >
+                      Incubate
+                    </Typography>
+                    <div className={classes.heroUnit}>
+                      <List>
+                        {generate(
+                          <ListItem>
+                            <ListItemText
+                              primary="We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need."
+                              align="center"
+                            />
+                          </ListItem>,
+                        )}
+                      </List>
+                    </div>
+                  </div>
 
-                  <Typography variant="h4" >
-                    Incubate
-                  </Typography>
-                  <div className={classes.heroUnit}>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                            primary="We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need."
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
+                </Grid>
+                <Grid item xs>
+                  <div className={classes.horizCards}>
+                    <Avatar className={classes.shareAvatar}>
+                      <ShareIcon className={classes.icon} />
+                    </Avatar>
+                    <Typography variant="h4" >
+                      Share
+                    </Typography>
+                    <div className={classes.heroUnit}>
+                      <List>
+                        {generate(
+                          <ListItem>
+                            <ListItemText
+                              primary="CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you."
+                              align="center"
+                            />
+                          </ListItem>,
+                        )}
+                      </List>
+                    </div>
                   </div>
                 </Grid>
-                <Grid item xs className={classes.title}>
-
-                  <Typography variant="h4" >
-                    Share
-                  </Typography>
-                  <div className={classes.heroUnit}>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                            primary="CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you."
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
-                  </div>
-                </Grid>
-                <Grid item xs  className={classes.title}>
-                  <Typography variant="h4">
-                     Support
-                  </Typography>
-                  <div className={classes.heroUnit}>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                            primary="We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier."
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
+                <Grid item xs>
+                  <div className={classes.horizCards}>
+                    <Avatar className={classes.supportAvatar}>
+                      <FavoriteIcon className={classes.icon}/>
+                    </Avatar>
+                    <Typography variant="h4">
+                       Support
+                    </Typography>
+                    <div className={classes.heroUnit}>
+                      <List>
+                        {generate(
+                          <ListItem>
+                            <ListItemText
+                              primary="We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier."
+                              align="center"
+                            />
+                          </ListItem>,
+                        )}
+                      </List>
+                    </div>
                   </div>
                 </Grid>
               </Grid>

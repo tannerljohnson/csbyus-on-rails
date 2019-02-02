@@ -9,27 +9,29 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
+import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+
 
 class CurriculumCard extends React.Component {
   render () {
+    const { classes } = this.props;
 
     return (
       <React.Fragment>
-        <Card>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              {this.props.title}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              {this.props.author}
-            </Typography>
-            <Typography component="p">
-              {this.props.content}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button href={this.props.url}  target="_blank" size="small">Explore</Button>
-          </CardActions>
+        <Card >
+          <CardActionArea className={classes.curriculumCard} href={this.props.url}  target="_blank">
+            <CardContent>
+              <Typography variant="h5" component="h2">
+                {this.props.title}
+              </Typography>
+              <Typography className={this.props.title} color="textSecondary" gutterBottom>
+                {this.props.author}
+              </Typography>
+              <Typography component="p">
+                {this.props.content}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
         </Card>
       </React.Fragment>
     );
@@ -42,4 +44,4 @@ CurriculumCard.propTypes = {
   url: PropTypes.string,
   content: PropTypes.string
 };
-export default CurriculumCard
+export default withStyles(homeComponentStyles)(CurriculumCard);
