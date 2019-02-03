@@ -187,6 +187,12 @@ const homeComponentStyles = theme => ({
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 5}px`,
   },
+  impactPicture: {
+
+    flexGrow: 1,
+    flexWrap: 'wrap',
+    paddingBottom: "0%",
+  },
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,

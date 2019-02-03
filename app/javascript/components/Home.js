@@ -236,6 +236,16 @@ function Home(props) {
               <img src={ImpactChart} class="img-center"/>
             </div>
 
+            <div className={classes.impactPicture}>
+              <Grid container spacing={24}>
+                <Grid item xs>
+                  <div className={classes.title}>
+                    <img src={ImpactChart} class="img-center"/>
+                  </div>
+                </Grid>
+              </Grid>
+            </div>
+
             <div className={classes.root}>
               <Grid container spacing={24}>
                 <Grid item xs>
