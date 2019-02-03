@@ -15,7 +15,6 @@ import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 
 
-
 const theme = createMuiTheme();
 
 class HeaderAppBar extends React.Component {
@@ -25,6 +24,7 @@ class HeaderAppBar extends React.Component {
     const styles = {
       root: {
         flexGrow: 1,
+        paddingBottom: "0%",
       },
       grow: {
         flexGrow: 1,
@@ -36,7 +36,8 @@ class HeaderAppBar extends React.Component {
     };
 
     return (
-      <div className={classes.root}>
+      <React.Fragment>
+      <div className={styles.root}>
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
@@ -49,6 +50,7 @@ class HeaderAppBar extends React.Component {
           </Toolbar>
         </AppBar>
       </div>
+      </React.Fragment>
     );
   }
 }

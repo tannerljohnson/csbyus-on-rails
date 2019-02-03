@@ -20,8 +20,8 @@ class NewsArticleCard extends React.Component {
     return (
 
       <React.Fragment>
-        <Card>
-          <CardActionArea>
+        <Card >
+          <CardActionArea className={classes.newsCard} href={this.props.url} target="_blank">
             <CardMedia
               className={classes.newsMedia}
               image={this.props.imageLocation}
@@ -36,11 +36,6 @@ class NewsArticleCard extends React.Component {
               </Typography>
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button href={this.props.url} target="_blank" size="small" color="primary">
-              Learn More
-            </Button>
-          </CardActions>
         </Card>
       </React.Fragment>
     );
