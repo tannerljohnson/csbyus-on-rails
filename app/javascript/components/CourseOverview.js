@@ -5,22 +5,35 @@ import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import courseOverviewComponentStyles from "../../assets/javascripts/jss/components/courseOverviewComponentStyles.js";
 
+var info = require('../../assets/data/coursesInfo.js');
+
 function CourseOverview(props) {
     const { classes } = props;
-    const cards = [<CourseCard/>, <CourseCard/>, <CourseCard/>, <CourseCard/>, <CourseCard/>];
+    var coursesInfo = info.courses;
+    var cards = [];
+
+    // TODO: add author attribute and add intro to the database
+    for (let i = 0; i < coursesInfo.length; i++) {
+        cards.push(<CourseCard
+            id={coursesInfo[i].id}
+            img={coursesInfo[i].img}
+            title={coursesInfo[i].title}
+            url={coursesInfo[i].url}
+            intro="random"/>)
+    }
 
     return (
-       <div>
-           <Grid container spacing={24}>
-               {cards.map(card => (
-                  <Grid item key={card.toString()}>
-                      {card}
-                  </Grid>
+        <div className={classes.layout2}>
+            <Grid container spacing={24}>
+                {cards.map(card => (
+                    <Grid item key={card.toString()}>
+                        {card}
+                    </Grid>
                 ))}
-          </Grid>
-       </div>
+            </Grid>
+        </div>
     );
-  }
+}
 
 CourseOverview.propTypes = {
     classes: PropTypes.object.isRequired

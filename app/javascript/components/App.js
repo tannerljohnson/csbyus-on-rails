@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
-import CourseVersionsPage from './CourseVersionsPage'
 import Blog from './Blog'
 import CurriculaHubLanding from './CurriculaHubLanding'
 import InTheNews from './InTheNews'
@@ -19,6 +18,8 @@ import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import HeaderAppBar from './HeaderAppBar';
 import Divider from '@material-ui/core/Divider';
 import { createMuiTheme } from '@material-ui/core/styles';
+import CourseOverview from './CourseOverview'
+import CourseVersionsPage from './CourseVersionsPage'
 import pink from '@material-ui/core/colors/pink';
 
 
@@ -26,14 +27,17 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#2f2c71',
-      rose: '#c2185b',
-      purple: '#7e57c2',
-      green: '#30b271',
-      blue: '#1976d2',
+      //   light: '#50C878',
+      //   main: '##50C878',
+      //   dark: '#2E8B57',
+      // contrastText: '#fff',
     },
     secondary: {
       light: '#ccc0ae',
-      main: '#30b271',
+      main: '#30b271'
+      //main: '#F48FB1',
+      // dark: ' #4F7942',
+      // contrastText: '#000',
     },
   }
 });
@@ -45,28 +49,30 @@ class App extends React.Component {
 
   render(){
     return (
-      <MuiThemeProvider theme={theme}>
-        <Router>
-          <div>
-            <HeaderAppBar/>
-            <ScrollToTop>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/joinus" component={ContactForm} />
-                <Route exact path="/curriculahub" component={CurriculaHubLanding} />
-                <Route exact path="/news" component={InTheNews} />
-                // <Route exact path="/blog" component={Blog} />
-                {/* catch-all redirects to home */}
-                <Route render={this._redirectToHome} />
-              </Switch>
-            </ScrollToTop>
-            <Divider/>
-            <Footer />
-          </div>
-        </Router>
-      </MuiThemeProvider>
+        <MuiThemeProvider theme={theme}>
+          <Router>
+            <div>
+              <HeaderAppBar/>
+              <ScrollToTop>
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/home" component={Home} />
+                  <Route exact path="/about" component={About} />
+                  <Route exact path="/joinus" component={ContactForm} />
+                  <Route exact path="/curriculahub" component={CurriculaHubLanding} />
+                  <Route exact path="/overview" component={CourseOverview} />
+                  <Route exact path="/version" component={CourseVersionsPage} />
+                  <Route exact path="/news" component={InTheNews} />
+                  // <Route exact path="/blog" component={Blog} />
+                  {/* catch-all redirects to home */}
+                  <Route render={this._redirectToHome} />
+                </Switch>
+              </ScrollToTop>
+              <Divider/>
+              <Footer />
+            </div>
+          </Router>
+        </MuiThemeProvider>
     )
   }
 }
