@@ -35,8 +35,11 @@ class CourseCard extends React.Component {
                         <Typography gutterBottom variant="h5" component="h2">
                             {this.props.title}
                         </Typography>
+                        <Typography className={this.props.title} color="textSecondary" gutterBottom>
+                            {this.props.author}
+                        </Typography>
                         <Typography component="p">
-                            {this.props.intro}
+                            {this.props.content}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -48,10 +51,11 @@ class CourseCard extends React.Component {
 CourseCard.propTypes = {
     classes: PropTypes.object.isRequired,
     img: PropTypes.string,
-    title: PropTypes.string,
-    intro: PropTypes.string,
-    url: PropTypes.string,
     id: PropTypes.string,
+    title: PropTypes.string,
+    content: PropTypes.string,
+    author: PropTypes.string,
+    url: PropTypes.string,
 };
 
 export default withStyles(courseCardComponentStyles)(CourseCard);

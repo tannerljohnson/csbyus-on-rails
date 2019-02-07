@@ -20,6 +20,10 @@ const courseOverviewComponentStyles = theme => ({
     },
   },
 
+  section :{
+  },
+
+
 });
 
 export default courseOverviewComponentStyles;
