@@ -20,7 +20,6 @@ class CourseCard extends React.Component {
     }
 
     render() {
-        // FIXME: change all the state to props when server is ready
         const { classes } = this.props;
         return (
             <Card className={classes.card}>

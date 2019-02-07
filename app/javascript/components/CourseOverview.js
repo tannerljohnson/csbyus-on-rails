@@ -16,6 +16,7 @@ function CourseOverview(props) {
     var otherCards = [];
 
     for (let i = 0; i < coursesInfo.length; i++) {
+        //TODO: check algorithm
         if (parseInt(coursesInfo[i].id) / 100 === 9) {
             csByUsCards.push(<CourseCard
                 img={coursesInfo[i].img}
@@ -37,6 +38,7 @@ function CourseOverview(props) {
         }
     }
 
+    //TODO: layout change
     return (
         <div className={classes.layout2}>
             <div className={classes.section}>
