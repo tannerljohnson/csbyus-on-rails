@@ -17,7 +17,7 @@ function CourseOverview(props) {
 
     for (let i = 0; i < coursesInfo.length; i++) {
         //TODO: check algorithm
-        if (parseInt(coursesInfo[i].id) / 100 === 9) {
+        if (coursesInfo[i].id[0] === "9") {
             csByUsCards.push(<CourseCard
                 img={coursesInfo[i].img}
                 id={coursesInfo[i].id}
@@ -41,48 +41,45 @@ function CourseOverview(props) {
     //TODO: layout change
     return (
         <div className={classes.layout2}>
-            <div className={classes.section}>
-                <Typography gutterBottom variant="h4">
-                    CSByUs Courses
-                </Typography>
-                <Typography variant="h8" color="textSecondary">
-                    This is a line of description
-                </Typography>
-            </div>
+            <Grid container spacing={40}>
+                <Grid item xs={12} md={8}>
+                    <Typography gutterBottom variant="h4">
+                        CSByUs Courses
+                    </Typography>
+                    <Typography gutterBottom variant="p" color="textSecondary">
+                        This is a line of description
+                    </Typography>
+                    <Divider component="li"/>
+                    <br/>
+                    <Grid container spacing = {24}>
+                        {csByUsCards.map(card => (
+                            <Grid item key={card.id}>
+                                {card}
+                            </Grid>
+                        ))}
+                    </Grid>
 
-            <Divider variant="middle" />
+                </Grid>
 
-            <div className={classes.section}>
-                <Grid container spacing={24}>
-                    {csByUsCards.map(card => (
+                <Grid item xs={12} md={8}>
+                    <Typography gutterBottom variant="h4">
+                        Other Courses
+                    </Typography>
+                    <Typography gutterBottom variant="p" color="textSecondary">
+                        This is another line of description
+                    </Typography>
+                    <Divider component="li"/>
+                    <br />
+
+                    <Grid container spacing={24}>
+                        {otherCards.map(card => (
                         <Grid item key={card.id}>
                             {card}
                         </Grid>
                     ))}
+                    </Grid>
                 </Grid>
-            </div>
-
-            <br />
-            <div className={classes.section}>
-                <Typography gutterBottom variant="h4">
-                    Other Courses
-                </Typography>
-                <Typography variant="h8" color="textSecondary">
-                    This is another line of description
-                </Typography>
-            </div>
-
-                <Divider variant="middle" />
-
-            <div className={classes.section}>
-                <Grid container spacing={24}>
-                    {otherCards.map(card => (
-                        <Grid item key={card.id}>
-                            {card}
-                        </Grid>
-                    ))}
-                </Grid>
-            </div>
+            </Grid>
         </div>
     );
 }
