@@ -40,13 +40,14 @@ function CourseOverview(props) {
 
     //TODO: layout change
     return (
+        <React.Fragment>
         <div className={classes.layout2}>
             <Grid container spacing={40}>
-                <Grid item xs={12} md={8}>
+                <Grid item>
                     <Typography gutterBottom variant="h4">
                         CSByUs Courses
                     </Typography>
-                    <Typography gutterBottom variant="p" color="textSecondary">
+                    <Typography gutterBottom variant="body2" color="textSecondary">
                         This is a line of description
                     </Typography>
                     <Divider/>
@@ -62,16 +63,16 @@ function CourseOverview(props) {
                 </Grid>
 
 
-                <Grid item xs={12} md={8}>
+                <Grid item >
                     <br />
                     <br />
                     <Typography gutterBottom variant="h4">
                         Other Courses
                     </Typography>
-                    <Typography gutterBottom variant="p" color="textSecondary">
+                    <Typography gutterBottom variant="body2" color="textSecondary">
                         This is another line of description
                     </Typography>
-                    <Divider />
+                    <Divider/>
                     <br />
 
                     <Grid container spacing={24}>
@@ -84,6 +85,7 @@ function CourseOverview(props) {
                 </Grid>
             </Grid>
         </div>
+        </React.Fragment>
     );
 }
 
