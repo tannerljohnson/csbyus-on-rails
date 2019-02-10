@@ -49,7 +49,7 @@ function CourseOverview(props) {
                     <Typography gutterBottom variant="p" color="textSecondary">
                         This is a line of description
                     </Typography>
-                    <Divider component="li"/>
+                    <Divider/>
                     <br/>
                     <Grid container spacing = {24}>
                         {csByUsCards.map(card => (
@@ -61,14 +61,17 @@ function CourseOverview(props) {
 
                 </Grid>
 
+
                 <Grid item xs={12} md={8}>
+                    <br />
+                    <br />
                     <Typography gutterBottom variant="h4">
                         Other Courses
                     </Typography>
                     <Typography gutterBottom variant="p" color="textSecondary">
                         This is another line of description
                     </Typography>
-                    <Divider component="li"/>
+                    <Divider />
                     <br />
 
                     <Grid container spacing={24}>
