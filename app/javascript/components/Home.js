@@ -31,6 +31,7 @@ import HeaderAppBar from './HeaderAppBar';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import ImpactChart from '../../assets/images/ImpactChart.png';
+import Logo from '../../assets/images/csbyuslogo.png';
 import ShareIcon from '@material-ui/icons/Share';
 import BuildIcon from '@material-ui/icons/Build';
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -85,22 +86,17 @@ function Home(props) {
     return (
       <React.Fragment>
           <main>
-            {/* Big picture */}
-            <div className={classes.bgimg} >
-              {/* insert picture as background here */}
-              <div className={classes.mainTitle}>
-              {/* defined in pages.scss */}
-                <subtitle>Committed to learning<br/>like the future depends on it</subtitle>
-              </div>
+
+
+            <div className={classes.logoFormat}>
+              <img src={Logo} class="img-center"/>
             </div>
 
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
-                <Typography variant="display4" align="center" color="textPrimary" gutterBottom>
-                  CSby<b>Us</b>
-                </Typography>
-                <Typography variant="title" align="center" color="textSecondary" paragraph>
+
+                <Typography variant="title" align="center" className={classes.newFont} color="textSecondary" paragraph>
                   Developing and sharing equity-oriented curricula in computer science and beyond
                 </Typography>
                 <div className={classes.video}>
@@ -117,15 +113,15 @@ function Home(props) {
                     <Avatar className={classes.incubateAvatar}>
                       <BuildIcon className={classes.icon} />
                     </Avatar>
-                    <Typography variant="h4" >
+                    <Typography variant="h4" className={classes.newFont}>
                       Incubate
                     </Typography>
-                    <div className={classes.heroUnit}>
+                    <div className={classes.whiteUnit}>
                       <List>
                         {generate(
                           <ListItem>
                             <ListItemText
-                              primary="We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need."
+                              primary={<Typography variant="subtitle2" className={classes.newFont}>We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need.</Typography>}
                               align="center"
                             />
                           </ListItem>,
@@ -140,20 +136,21 @@ function Home(props) {
                     <Avatar className={classes.shareAvatar}>
                       <ShareIcon className={classes.icon} />
                     </Avatar>
-                    <Typography variant="h4" >
+                    <Typography variant="h4" className={classes.newFont} >
                       Share
                     </Typography>
-                    <div className={classes.heroUnit}>
+                    <div className={classes.whiteUnit}>
                       <List>
                         {generate(
                           <ListItem>
                             <ListItemText
-                              primary="CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you."
+                              primary={<Typography variant="subtitle2" className={classes.newFont}>CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you.</Typography>}
                               align="center"
                             />
                           </ListItem>,
                         )}
                       </List>
+
                     </div>
                   </div>
                 </Grid>
@@ -162,15 +159,15 @@ function Home(props) {
                     <Avatar className={classes.supportAvatar}>
                       <FavoriteIcon className={classes.icon}/>
                     </Avatar>
-                    <Typography variant="h4">
+                    <Typography variant="h4" className={classes.newFont}>
                        Support
                     </Typography>
-                    <div className={classes.heroUnit}>
+                    <div className={classes.whiteUnit}>
                       <List>
                         {generate(
                           <ListItem>
                             <ListItemText
-                              primary="We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier."
+                              primary={<Typography variant="subtitle2" className={classes.newFont}>We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier.</Typography>}
                               align="center"
                             />
                           </ListItem>,
@@ -190,18 +187,18 @@ function Home(props) {
               <Grid item >
                 <div className={classes.aboutDiv}>
                     <div className={classes.aboutContent} >
-                      <Typography variant="display1" color="inherit" gutterBottom align="center">
+                      <Typography variant="display1" className={classes.orangeFont} color="inherit" gutterBottom align="center">
                         <b>Who are we?</b>
                       </Typography>
-                      <Typography variant="headline" color="inherit" paragraph align="center">
+                      <Typography variant="headline" className={classes.newFont} color="inherit" paragraph align="center">
                         We're a team of students, teachers, and professionals spread across the globe with a common goal: <br/>To democratize digital era education.
                       </Typography>
                     </div>
                     <div className={classes.aboutContent}>
-                      <Typography variant="display1" color="inherit" gutterBottom align="center">
+                      <Typography variant="display1" className={classes.orangeFont} color="inherit" gutterBottom align="center">
                         <b>What is CSbyUs?</b>
                       </Typography>
-                      <Typography variant="headline" color="inherit" paragraph align="center">
+                      <Typography variant="headline" className={classes.newFont} color="inherit" paragraph align="center">
                         We believe that to empower students, we have to empower educators.
                         We do the work of creating and testing curricula that deliver computer science to students in a way that is relevant to their lives.
                         Once we're confident in our work, we share it.
@@ -212,8 +209,8 @@ function Home(props) {
                     <div className={classes.heroButtons}>
                       <Grid container spacing={16} justify="center">
                         <Grid item>
-                          <Button variant="contained" color="primary" onClick={handleJoinClick}>
-                            Join us today
+                          <Button variant="contained" className={classes.newFont} color="inherit" onClick={handleJoinClick}>
+                            <b>Join us today</b>
                           </Button>
                         </Grid>
                       </Grid>
@@ -227,10 +224,11 @@ function Home(props) {
 
           <div className={classes.root2}>
               <div className={classes.ourImpactTitle}>
-                <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
-                  Our Impact
+                <Typography variant="h2" className={classes.darkFont} align="center" color="textPrimary" gutterBottom>
+                  <b>Our Impact</b>
                 </Typography>
               </div>
+
 
             <div className={classes.video}>
               <img src={ImpactChart} class="img-center"/>
@@ -240,15 +238,16 @@ function Home(props) {
               <Grid container spacing={24}>
                 <Grid item xs>
                 <div className={classes.title}>
-                  <Typography variant="h3">
+                  <Typography variant="h3" className={classes.newFont}>
                     196
                   </Typography>
                     <List>
                       {generate(
                         <ListItem>
                           <ListItemText
-                            primary="Public school students engaged"
-                            secondary="Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. Currently based in Durham, we are expanding across North Carolina and beyond."
+                            disableTypography
+                            primary={<Typography variant="subtitle2" className={classes.newFont}>Public school students engaged</Typography>}
+                            secondary={<Typography className={classes.newFont}>Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. Currently based in Durham, we are expanding across North Carolina and beyond.</Typography>}
                             align="center"
                           />
                         </ListItem>,
@@ -258,15 +257,16 @@ function Home(props) {
                 </Grid>
                 <Grid item xs>
                 <div className={classes.title}>
-                  <Typography variant="h3">
+                  <Typography variant="h3" className={classes.newFont}>
                     100%
                   </Typography>
                     <List>
                       {generate(
                         <ListItem>
                           <ListItemText
-                            primary="Students believe they can learn CS"
-                            secondary="Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence."
+                            disableTypography
+                            primary={<Typography variant="subtitle2" className={classes.newFont}>of students believe they can learn CS</Typography>}
+                            secondary={<Typography className={classes.newFont}>Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence.</Typography>}
                             align="center"
                           />
                         </ListItem>,
@@ -276,15 +276,16 @@ function Home(props) {
                 </Grid>
                 <Grid item xs>
                   <div className={classes.title}>
-                    <Typography variant="h3">
+                    <Typography variant="h3" className={classes.newFont}>
                       22
                     </Typography>
                     <List>
                       {generate(
                         <ListItem>
                           <ListItemText
-                            primary="Active educators"
-                            secondary="Informed mentorship is our secret sauce. We find that our students develop meaningful relationships with their trained mentors, which combined with their technical experience, results in final products students are proud of."
+                          disableTypography
+                            primary={<Typography variant="subtitle2" className={classes.newFont}>Active educators</Typography>}
+                            secondary={<Typography className={classes.newFont}>Informed mentorship is our secret sauce. We find that our students develop meaningful relationships with their trained mentors, which combined with their technical experience, results in final products students are proud of.</Typography>}
                             align="center"
                           />
                         </ListItem>,

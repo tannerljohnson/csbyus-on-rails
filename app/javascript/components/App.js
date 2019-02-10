@@ -20,20 +20,36 @@ import HeaderAppBar from './HeaderAppBar';
 import Divider from '@material-ui/core/Divider';
 import { createMuiTheme } from '@material-ui/core/styles';
 import pink from '@material-ui/core/colors/pink';
+import Typography from '@material-ui/core/Typography';
 
 
 const theme = createMuiTheme({
+  Typography: {
+    fontFamily: [
+      'Avenir Next',
+      'Gill Sans',
+
+
+    ]
+  },
   palette: {
     primary: {
       main: '#2f2c71',
       rose: '#c2185b',
       purple: '#7e57c2',
-      green: '#30b271',
+      green: '#3b945e',
       blue: '#1976d2',
+      lightblue: '#65ccb8',
+      darkturq: '#026670',
+      orangepink: '#f4976c',
+      yellow: '#fce181',
+      white: '#ffffff',
     },
     secondary: {
-      light: '#ccc0ae',
+      lightturq: '#57ba98',
+      light: '#fef9c7',
       main: '#30b271',
+      darkgrey: '#182628',
     },
   }
 });

@@ -28,10 +28,10 @@ class NewsArticleCard extends React.Component {
               title={this.props.source}
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" class={classes.newFont} component="h2">
                 {this.props.title}
               </Typography>
-              <Typography component="p">
+              <Typography component="p" class={classes.newFont}>
                 {this.props.content}
               </Typography>
             </CardContent>

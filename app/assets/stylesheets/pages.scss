@@ -32,7 +32,7 @@ html, body, form, span, h1special {
 }
 
 subtitle {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   color: white;
   font-size: 3em !important;
 }
@@ -47,7 +47,7 @@ h3form {
 }
 
 form {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   width: $width + 60px;
   margin: 100px auto 0;
   box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
@@ -106,7 +106,7 @@ input[type="email"] {
   &~span.validation-text {
     position: absolute;
     visibility: hidden;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     font-size: 0.6em;
     width: $width;
     margin-left: 25px;
@@ -158,7 +158,7 @@ input[type="email"] {
 }
 
 formButton {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
   transition: transform 0.2s $cubic,
      box-shadow 0.2s $cubic;
   border: none;
@@ -180,7 +180,7 @@ a {
   display: inline-block;
   // width: 100%;
   text-align: center;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   text-decoration: none;
   color: $base;
   i {

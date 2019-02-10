@@ -21,13 +21,13 @@ class CurriculumCard extends React.Component {
         <Card >
           <CardActionArea className={classes.curriculumCard} href={this.props.url}  target="_blank">
             <CardContent>
-              <Typography variant="h5" component="h2">
+              <Typography variant="h5" class={classes.orangeFont} component="h2">
                 {this.props.title}
               </Typography>
-              <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              <Typography className={this.props.title} class={classes.newFont} color="textSecondary" gutterBottom>
                 {this.props.author}
               </Typography>
-              <Typography component="p">
+              <Typography component="p" class={classes.newFont} >
                 {this.props.content}
               </Typography>
             </CardContent>
