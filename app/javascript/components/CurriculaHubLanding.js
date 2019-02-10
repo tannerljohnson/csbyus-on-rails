@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 
-var courseData = require('../../assets/data/coursesData.js');
+var courseData = require('../../assets/data/coursesInfo.js');
 
 class CurriculaHubLanding extends React.Component {
 
