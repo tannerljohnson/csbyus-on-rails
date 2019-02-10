@@ -28,14 +28,15 @@ class CurriculaHubLanding extends React.Component {
 
     return (
         <React.Fragment>
+        <div className={classes.root2}>
           <div className={classes.layout2}>
 
             <Paper className={classes.curriculaTitleHeader}>
                 <div className={classes.courseName}>
-                    <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                        Curricula Hub
+                    <Typography component="h1" class={classes.newFont} variant="h3" color="inherit" gutterBottom>
+                        CurriculaHub
                     </Typography>
-                    <Typography variant="h5" color="inherit" paragraph>
+                    <Typography variant="h5" class={classes.newFont} color="inherit" paragraph>
                         A one-stop platform for you to explore, adapt, add, and discuss open-source curricula
                     </Typography>
                 </div>
@@ -54,10 +55,10 @@ class CurriculaHubLanding extends React.Component {
             {/* Contribute */}
             <Divider/>
             <div className={classes.root2}>
-                  <Typography variant="h5" align="left" color="textPrimary" gutterBottom>
+                  <Typography variant="h3" class={classes.newFont} align="left" color="textPrimary" gutterBottom>
                     Contribute to CurriculaHub
                   </Typography>
-                <Typography variant="subtitle1" gutterBottom>
+                <Typography variant="h4" class={classes.newFont} gutterBottom>
                   <p>
                     Interested in contributing to the CurriculaHub community? We'd love to collaborate with you. Please fill out <NavLink to={'/joinus'}>this form</NavLink> and include the following in your message:
                     the resources you'd like to share or adapt and relevant links so we can view them. Our curriculum team will reach out to you via email after you submit the form as soon as possible.
@@ -65,6 +66,7 @@ class CurriculaHubLanding extends React.Component {
                 </Typography>
             </div>
             {/* End Contribute */}
+          </div>
           </div>
         </React.Fragment>
 

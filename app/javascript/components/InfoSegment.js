@@ -29,18 +29,19 @@ class InfoSegment extends React.Component {
       <React.Fragment>
 
           {/* Mission / vision */}
-          <div className={classes.root}>
+
+          <div className={classes.root3}>
             <Grid container spacing={24}>
               <Grid item xs>
-                <Typography variant="h3" className={classes.title}>
-                  Mission
+                <Typography variant="h3" className={classes.title2}>
+                  <b>Mission</b>
                 </Typography>
-                <div className={classes.heroUnit}>
+                <div className={classes.heroUnit2}>
                   <List>
                     {generate(
                       <ListItem>
                         <ListItemText
-                          primary="Our mission is to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age."
+                          primary={<Typography variant="subtitle2" className={classes.whiteFont}>Our mission is to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age.</Typography>}
                           align="center"
                         />
                       </ListItem>,
@@ -49,15 +50,15 @@ class InfoSegment extends React.Component {
                 </div>
               </Grid>
               <Grid item xs>
-                <Typography variant="h3" className={classes.title}>
-                  Vision
+                <Typography variant="h3" className={classes.title2}>
+                  <b>Vision</b>
                 </Typography>
-                <div className={classes.heroUnit}>
+                <div className={classes.heroUnit2}>
                   <List>
                     {generate(
                       <ListItem>
                         <ListItemText
-                          primary="We envision an educational system in which all students are empowered to learn computer science in a way that is relevant to their lives."
+                          primary={<Typography variant="subtitle2" className={classes.whiteFont}>We envision an educational system in which all students are empowered to learn computer science in a way that is relevant to their lives.</Typography>}
                           align="center"
                         />
                       </ListItem>,
@@ -74,11 +75,11 @@ class InfoSegment extends React.Component {
           {/* Our Story */}
           <div className={classes.root2}>
               <div className={classes.ourImpactTitle}>
-                <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
-                  Our Story
+                <Typography variant="h3" className={classes.orangeFont} align="center" color="inherit" gutterBottom>
+                  <b>Our Story</b>
                 </Typography>
               </div>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" className={classes.newFont} gutterBottom>
                 <p>
                   Our story begins in Durham, North Carolina, a community home to one of the most robust tech industries and least accessible
                   computer science (CS) education programming. We conducted <a href="https://drive.google.com/file/d/1mzQVjkViLtheaF52JBOaxXVTQF5Y6Xyc/view?usp=sharing"  target="_blank">award-winning
