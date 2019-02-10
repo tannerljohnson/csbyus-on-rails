@@ -6,6 +6,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -113,71 +114,76 @@ function Home(props) {
             <div className={classes.root}>
               <Grid container spacing={24}>
                 <Grid item xs >
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.incubateAvatar}>
-                      <BuildIcon className={classes.icon} />
-                    </Avatar>
-                    <Typography variant="h4" >
-                      Incubate
-                    </Typography>
-                    <div className={classes.heroUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary="We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need."
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
+                  <CardActionArea>
+                    <div className={classes.horizCards}>
+                      <Avatar className={classes.incubateAvatar}>
+                        <BuildIcon className={classes.icon} />
+                      </Avatar>
+                      <Typography variant="h4" >
+                        Incubate
+                      </Typography>
+                      <div className={classes.heroUnit}>
+                        <List>
+                          {generate(
+                            <ListItem>
+                              <ListItemText
+                                primary="We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need."
+                                align="center"
+                              />
+                            </ListItem>,
+                          )}
+                        </List>
+                      </div>
                     </div>
-                  </div>
-
+                  </CardActionArea>
                 </Grid>
                 <Grid item xs>
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.shareAvatar}>
-                      <ShareIcon className={classes.icon} />
-                    </Avatar>
-                    <Typography variant="h4" >
-                      Share
-                    </Typography>
-                    <div className={classes.heroUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary="CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you."
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
+                  <CardActionArea href="https://csbyus.herokuapp.com/curriculahub" >
+                    <div className={classes.horizCards}>
+                      <Avatar className={classes.shareAvatar}>
+                        <ShareIcon className={classes.icon} />
+                      </Avatar>
+                      <Typography variant="h4" >
+                        Share
+                      </Typography>
+                      <div className={classes.heroUnit}>
+                        <List>
+                          {generate(
+                            <ListItem>
+                              <ListItemText
+                                primary="CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you."
+                                align="center"
+                              />
+                            </ListItem>,
+                          )}
+                        </List>
+                      </div>
                     </div>
-                  </div>
+                  </CardActionArea>
                 </Grid>
                 <Grid item xs>
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.supportAvatar}>
-                      <FavoriteIcon className={classes.icon}/>
-                    </Avatar>
-                    <Typography variant="h4">
-                       Support
-                    </Typography>
-                    <div className={classes.heroUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary="We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier."
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
+                  <CardActionArea onClick={handleJoinClick}>
+                    <div className={classes.horizCards}>
+                      <Avatar className={classes.supportAvatar}>
+                        <FavoriteIcon className={classes.icon}/>
+                      </Avatar>
+                      <Typography variant="h4">
+                         Support
+                      </Typography>
+                      <div className={classes.heroUnit}>
+                        <List>
+                          {generate(
+                            <ListItem>
+                              <ListItemText
+                                primary="We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier."
+                                align="center"
+                              />
+                            </ListItem>,
+                          )}
+                        </List>
+                      </div>
                     </div>
-                  </div>
+                  </CardActionArea>
                 </Grid>
               </Grid>
             </div>
@@ -236,6 +242,17 @@ function Home(props) {
               <img src={ImpactChart} class="img-center"/>
             </div>
 
+            {/*
+            <div className={classes.impactPicture}>
+              <Grid container spacing={24}>
+                <Grid item xs>
+                  <div className={classes.title}>
+                    <img src={ImpactChart} class="img-center"/>
+                  </div>
+                </Grid>
+              </Grid>
+            </div>
+            */}
             <div className={classes.root}>
               <Grid container spacing={24}>
                 <Grid item xs>

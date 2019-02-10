@@ -40,6 +40,8 @@ const options = [
 const styles = {
   list: {
     width: 256,
+    dense: true,
+    alignItems: 'flex-start'
   },
   fullList: {
     width: 'auto',
