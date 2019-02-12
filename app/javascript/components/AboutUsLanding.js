@@ -1,34 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { withStyles } from '@material-ui/core/styles';
+import CurriculumCard from "./CurriculumCard"
+import { withStyles } from '@material-ui/core/styles'
+import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Background from '../../assets/images/AboutUs.png';
-import InfoSegment from "./InfoSegment"
-import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
+import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
+import { NavLink } from "react-router-dom";
 
-
-class About extends React.Component {
+class CurriculaHubLanding extends React.Component {
 
   render () {
+      const { classes } = this.props;
 
-    const { classes } = this.props;
-
-    return (
-      <React.Fragment>
-        <section className={ classes.backgroungImg }>
-          <div className={classes.title}>
-            <subtitle>About<b>Us</b></subtitle>
-          </div>
-        </section>
-
-        <div className={classes.layout}>
-          <InfoSegment />
-        </div>
-      </React.Fragment>
-    );
-
-    //to do: where to place this so it is below other info?
-    const data =
+      const data =
           [
           {name:"Curriculum Research and Development", 
               content:"CRD description",
@@ -46,7 +32,12 @@ class About extends React.Component {
                 content = {card.content} url = {card.url}/>
       );
 
+
+
+    return (
+        //TODO: see if this works
+       );
   }
 }
 
-export default withStyles(aboutComponentStyles)(About);
+export default withStyles(homeComponentStyles)(CurriculaHubLanding);
