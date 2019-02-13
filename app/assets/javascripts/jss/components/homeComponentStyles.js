@@ -75,7 +75,8 @@ const homeComponentStyles = theme => ({
   },
   heroUnit: {
     backgroundColor: theme.palette.secondary.light,
-    textAlign: 'center',
+    // textAlign: 'center',
+    alignItems: 'center',
   },
   heroUnit2: {
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -85,11 +86,7 @@ const homeComponentStyles = theme => ({
     backgroundColor: theme.palette.secondary.white,
     textAlign: 'center',
     color: theme.palette.primary.orangepink,
-  },
-  aboutContent: {
-    marginLeft: "4%",
-    marginRight: "4%",
-    paddingBottom: "4%",
+
   },
   missionContent: {
     marginLeft: "4%",
@@ -98,7 +95,9 @@ const homeComponentStyles = theme => ({
     padding: theme.spacing.unit * 6,
   },
   video: {
-    position: 'relative',
+    position: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     width: '100%',
     height: 'auto',
     flexGrow: 1,
@@ -106,7 +105,10 @@ const homeComponentStyles = theme => ({
   },
   heroContent: {
     maxWidth: 600,
-    margin: '0 auto',
+    // margin: '0 auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    alignItems: 'center',
     padding: `${theme.spacing.unit * 8}px 0 ${theme.spacing.unit * 6}px`,
   },
   ourImpactTitle: {
@@ -126,6 +128,12 @@ const homeComponentStyles = theme => ({
     paddingTop: '1%',
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  homeLayout: {
+    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       marginLeft: 'auto',
       marginRight: 'auto',
     },
@@ -165,8 +173,10 @@ const homeComponentStyles = theme => ({
   aboutDiv: {
       padding: theme.spacing.unit * 6,
       [theme.breakpoints.up('md')]: {
-          paddingRight: 0,
       },
+  },
+  aboutContent: {
+    paddingBottom: "4%",
   },
   cardGrid: {
     padding: `${theme.spacing.unit * 8}px 0`,
@@ -194,6 +204,8 @@ const homeComponentStyles = theme => ({
     fontFamily: theme.Typography.fontFamily[0],
     margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
     textAlign: 'center',
+    alignItems: 'stretch',
+    flexDirection: 'column',
   },
   title2: {
     backgroundColor: theme.palette.primary.darkgrey,
@@ -204,11 +216,11 @@ const homeComponentStyles = theme => ({
   },
   horizCards: {
     backgroundColor: theme.palette.background.paper,
-    margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
+    // margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
+    // padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
   },
   list: {
     width: 250,
@@ -228,29 +240,31 @@ const homeComponentStyles = theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.secondary.light,
     flexWrap: 'wrap',
-    padding: `${theme.spacing.unit * 5}px`,
-  },
-<<<<<<< HEAD
-  impactPicture: {
+    paddingBottom: `${theme.spacing.unit * 5}px`,
+    paddingTop: `${theme.spacing.unit * 5}px`,
 
-    flexGrow: 1,
-    flexWrap: 'wrap',
-    paddingBottom: "0%",
   },
-=======
   root3: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.darkgrey,
     flexWrap: 'wrap',
     paddingBottom: "0%",
   },
+  root4: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.secondary.light,
+    flexWrap: 'wrap',
+    paddingBottom: `${theme.spacing.unit * 5}px`,
+  },
   logoFormat: {
     flexGrow: 0,
     backgroundColor: theme.palette.secondary.light,
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 0}px`,
+    [theme.breakpoints.up('md')]: {
+
+    },
   },
->>>>>>> site/vivian_testing
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
@@ -275,6 +289,35 @@ const homeComponentStyles = theme => ({
   },
   curriculumCard: {
     height: 250,
+  },
+  descriptionCardGrid: {
+    padding: theme.spacing.unit * 2,
+  },
+  descriptionCard: {
+    display: 'flex',
+  },
+  descriptionCardDetails: {
+    flex: 1,
+  },
+  h2: {
+    [theme.breakpoints.up('sm')]: {
+    },
+  },
+  h5: {
+    [theme.breakpoints.up('sm')]: {
+    },
+  },
+  homeMainTitle: {
+    paddingTop: '0%',
+    backgroundColor: theme.palette.secondary.light,
+    flexWrap: 'wrap',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  videoTitle: {
+    fontFamily: theme.Typography.fontFamily[0],
+    marginTop: theme.spacing.unit * 3,
   }
 });
 

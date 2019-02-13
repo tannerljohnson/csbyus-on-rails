@@ -19,7 +19,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-var logo;
 
 function generate(element) {
   return [0].map(value =>
@@ -29,38 +28,11 @@ function generate(element) {
   );
 };
 
-class DescriptionCard extends React.Component {
-
-  generateLogo(classes) {
-    // incubate
-    if (this.props.avatar === "incubate" && this.props.icon === "build") {
-      logo = <Avatar className={classes.incubateAvatar}>
-                <BuildIcon className={classes.icon} />
-              </Avatar>;
-    // share
-    } else if (this.props.avatar === "share" && this.props.icon === "share") {
-      logo = <Avatar className={classes.shareAvatar}>
-                <ShareIcon className={classes.icon} />
-              </Avatar>;
-    // support
-    } else if (this.props.avatar === "support" && this.props.icon === "favorite") {
-      logo = <Avatar className={classes.supportAvatar}>
-                <FavoriteIcon className={classes.icon} />
-              </Avatar>;
-    }
-    else {
-      logo = null;
-    }
-  };
-
-
+class ImpactCard extends React.Component {
 
   render () {
 
     const { classes } = this.props;
-
-    this.generateLogo(classes);
-    // if no logo, adjust height or make flex
 
     return (
 
@@ -68,28 +40,25 @@ class DescriptionCard extends React.Component {
         <div className={classes.title}>
           <Card className={classes.descriptionCard}>
             <div className={classes.descriptionCardDetails}>
-              <CardActionArea className={classes.curriculumCard} href={this.props.url}  target="_blank">
                 <CardContent>
                   <div className={classes.horizCards}>
-                    {logo}
-                    <Typography variant="h4" className={classes.newFont}>
+                    <Typography variant="h3" className={classes.newFont}>
                       {this.props.title}
                     </Typography>
-                    <div className={classes.whiteUnit}>
                       <List>
                         {generate(
                           <ListItem>
                             <ListItemText
-                              primary={<Typography variant="subtitle2" className={classes.newFont}>{this.props.content}</Typography>}
-                              align="center"
+                            disableTypography
+                            primary={<Typography variant="subtitle1" className={classes.newFont}><b>{this.props.subtitle}</b></Typography>}
+                            secondary={<Typography className={classes.newFont}>{this.props.content}</Typography>}
+                            align="center"
                             />
                           </ListItem>,
                         )}
                       </List>
-                    </div>
                   </div>
                 </CardContent>
-              </CardActionArea>
             </div>
           </Card>
         </div>
@@ -98,9 +67,9 @@ class DescriptionCard extends React.Component {
   }
 }
 
-DescriptionCard.propTypes = {
+ImpactCard.propTypes = {
   title: PropTypes.string,
-  url: PropTypes.string,
+  subtitle: PropTypes.string,
   content: PropTypes.string
 };
-export default withStyles(homeComponentStyles)(DescriptionCard);
+export default withStyles(homeComponentStyles)(ImpactCard);

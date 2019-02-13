@@ -33,15 +33,23 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import ImpactChart from '../../assets/images/ImpactChart.png';
 import Logo from '../../assets/images/csbyuslogo.png';
+import HomeLogo from './HomeLogo';
 import ShareIcon from '@material-ui/icons/Share';
 import BuildIcon from '@material-ui/icons/Build';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import DescriptionCard from './DescriptionCard';
+import ImpactCard from './ImpactCard';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 
 
 const lightText = blue['A200'];
 const cards = [1, 2, 3];
-
+const incubateText = "We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need.";
+const shareText = "CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you.";
+const supportText = "We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier.";
+const impactText1 = {title: "196", subtitle: "Public school students engaged", content: "Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. Currently based in Durham, we are expanding across North Carolina and beyond."};
+const impactText2 = {title: "100%", subtitle: "of students believe they can learn CS", content: "Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence."};
+const impactText3 = {title: "22", subtitle: "Active educators", content: "Informed mentorship is our secret sauce. We find that our students develop meaningful relationships with their trained mentors, which combined with their technical experience, results in final products students are proud of."};
 
 function handleJoinClick() {
   console.log("clicked join us");
@@ -86,95 +94,33 @@ function Home(props) {
 
     return (
       <React.Fragment>
-          <main>
+          <div className={classes.homeLayout}>
 
-
-            <div className={classes.logoFormat}>
-              <img src={Logo} class="img-center"/>
-            </div>
+            <HomeLogo />
 
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
-
-                <Typography variant="title" align="center" className={classes.newFont} color="textSecondary" paragraph>
-                  Developing and sharing equity-oriented curricula in computer science and beyond
-                </Typography>
                 <div className={classes.video}>
                   {/* Embded video with react component */}
                   <Video link='https://www.youtube.com/watch?v=in1BfwaZ2rU'/>
                 </div>
+                <Typography variant="title" align="center" className={classes.videoTitle} color="textSecondary" paragraph gutterBottom>
+                  We help teachers across the globe access, share and adapt lessons and courses in computer science and beyond
+                </Typography>
               </div>
             </div>
 
             <div className={classes.root}>
-              <Grid container spacing={24}>
-                <Grid item xs >
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.incubateAvatar}>
-                      <BuildIcon className={classes.icon} />
-                    </Avatar>
-                    <Typography variant="h4" className={classes.newFont}>
-                      Incubate
-                    </Typography>
-                    <div className={classes.whiteUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary={<Typography variant="subtitle2" className={classes.newFont}>We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need.</Typography>}
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
-                    </div>
-                  </CardActionArea>
+              <Grid container spacing={24} className={classes.descriptionCardGrid} >
+                <Grid item xs={12} md={4}>
+                  <DescriptionCard avatar="incubate" icon="build" url="google.com" title="Incubate" content={incubateText} />
                 </Grid>
-                <Grid item xs>
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.shareAvatar}>
-                      <ShareIcon className={classes.icon} />
-                    </Avatar>
-                    <Typography variant="h4" className={classes.newFont} >
-                      Share
-                    </Typography>
-                    <div className={classes.whiteUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary={<Typography variant="subtitle2" className={classes.newFont}>CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you.</Typography>}
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
-
-                    </div>
-                  </CardActionArea>
+                <Grid item xs={12} md={4}>
+                  <DescriptionCard avatar="share" icon="share" url="csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
                 </Grid>
-                <Grid item xs>
-                  <div className={classes.horizCards}>
-                    <Avatar className={classes.supportAvatar}>
-                      <FavoriteIcon className={classes.icon}/>
-                    </Avatar>
-                    <Typography variant="h4" className={classes.newFont}>
-                       Support
-                    </Typography>
-                    <div className={classes.whiteUnit}>
-                      <List>
-                        {generate(
-                          <ListItem>
-                            <ListItemText
-                              primary={<Typography variant="subtitle2" className={classes.newFont}>We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier.</Typography>}
-                              align="center"
-                            />
-                          </ListItem>,
-                        )}
-                      </List>
-                    </div>
-                  </CardActionArea>
+                <Grid item xs={12} md={4}>
+                  <DescriptionCard avatar="support" icon="favorite" url="csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
                 </Grid>
               </Grid>
             </div>
@@ -182,8 +128,9 @@ function Home(props) {
 
 
           {/* Main featured post */}
+          <div className={classes.root4}>
           <Paper className={classes.mainFeaturedPost}>
-            <Grid container>
+            <Grid container >
               <Grid item >
                 <div className={classes.aboutDiv}>
                     <div className={classes.aboutContent} >
@@ -207,7 +154,7 @@ function Home(props) {
                     </div>
                     {/* Join us button here */}
                     <div className={classes.heroButtons}>
-                      <Grid container spacing={16} justify="center">
+                      <Grid container spacing={16} justify="center" className={classes.heroButtons}>
                         <Grid item>
                           <Button variant="contained" className={classes.newFont} color="inherit" onClick={handleJoinClick}>
                             <b>Join us today</b>
@@ -220,6 +167,7 @@ function Home(props) {
               </Grid>
             </Grid>
           </Paper>
+          </div>
           {/* End main featured post */}
 
           <div className={classes.root2}>
@@ -246,69 +194,22 @@ function Home(props) {
             </div>
             */}
             <div className={classes.root}>
-              <Grid container spacing={24}>
-                <Grid item xs>
-                <div className={classes.title}>
-                  <Typography variant="h3" className={classes.newFont}>
-                    196
-                  </Typography>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                            disableTypography
-                            primary={<Typography variant="subtitle2" className={classes.newFont}>Public school students engaged</Typography>}
-                            secondary={<Typography className={classes.newFont}>Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. Currently based in Durham, we are expanding across North Carolina and beyond.</Typography>}
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
-                  </div>
+              <Grid container spacing={24} className={classes.descriptionCardGrid} >
+                <Grid item xs={12} md={4}>
+                  <ImpactCard title={impactText1.title} subtitle={impactText1.subtitle} content={impactText1.content} />
                 </Grid>
-                <Grid item xs>
-                <div className={classes.title}>
-                  <Typography variant="h3" className={classes.newFont}>
-                    100%
-                  </Typography>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                            disableTypography
-                            primary={<Typography variant="subtitle2" className={classes.newFont}>of students believe they can learn CS</Typography>}
-                            secondary={<Typography className={classes.newFont}>Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence.</Typography>}
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
-                  </div>
+                <Grid item xs={12} md={4}>
+                  <ImpactCard title={impactText2.title} subtitle={impactText2.subtitle} content={impactText2.content} />
                 </Grid>
-                <Grid item xs>
-                  <div className={classes.title}>
-                    <Typography variant="h3" className={classes.newFont}>
-                      22
-                    </Typography>
-                    <List>
-                      {generate(
-                        <ListItem>
-                          <ListItemText
-                          disableTypography
-                            primary={<Typography variant="subtitle2" className={classes.newFont}>Active educators</Typography>}
-                            secondary={<Typography className={classes.newFont}>Informed mentorship is our secret sauce. We find that our students develop meaningful relationships with their trained mentors, which combined with their technical experience, results in final products students are proud of.</Typography>}
-                            align="center"
-                          />
-                        </ListItem>,
-                      )}
-                    </List>
-                  </div>
+                <Grid item xs={12} md={4}>
+                  <ImpactCard title={impactText3.title} subtitle={impactText3.subtitle} content={impactText3.content} />
                 </Grid>
               </Grid>
             </div>
+
           </div>
-            {/* End hero unit */}
-          </main>
+          {/* End hero unit */}
+          </div>
 
           <Divider/>
 
