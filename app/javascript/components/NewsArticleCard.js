@@ -21,7 +21,7 @@ class NewsArticleCard extends React.Component {
 
       <React.Fragment>
         <Card >
-          <CardActionArea className={classes.newsCard} href={this.props.url} target="_blank">
+          <CardActionArea href={this.props.url} target="_blank">
             <CardMedia
               className={classes.newsMedia}
               image={this.props.imageLocation}

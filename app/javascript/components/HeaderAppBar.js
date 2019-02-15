@@ -43,7 +43,7 @@ class HeaderAppBar extends React.Component {
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuDrawer />
             </IconButton>
-            <Typography variant="title" color="inherit" noWrap>
+            <Typography className={classes.theFont} variant="title" color="inherit" noWrap>
               CSbyUs
             </Typography>
             {/*<Button color="inherit" variant="title">Login</Button>*/}

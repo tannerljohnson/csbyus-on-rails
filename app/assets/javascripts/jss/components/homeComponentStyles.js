@@ -196,7 +196,7 @@ const homeComponentStyles = theme => ({
     },
   },
   newsTitleHeader: {
-    backgroundColor: theme.palette.secondary.light, // change color here
+    backgroundColor: theme.palette.primary.lightblue, // change color here
     // color: theme.palette.common.white,
     marginBottom: theme.spacing.unit * 4,
     [theme.breakpoints.up('md')]: {

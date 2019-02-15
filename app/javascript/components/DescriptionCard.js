@@ -68,7 +68,7 @@ class DescriptionCard extends React.Component {
         <div className={classes.title}>
           <Card className={classes.descriptionCard}>
             <div className={classes.descriptionCardDetails}>
-              <CardActionArea href={this.props.url}  target="_blank">
+              <CardActionArea href={this.props.url}>
                 <CardContent>
                   <div className={classes.horizCards}>
                     {logo}
