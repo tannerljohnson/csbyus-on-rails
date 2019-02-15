@@ -16,6 +16,7 @@ const styles = theme => ({
   },
   h2: {
     fontFamily: theme.Typography.fontFamily[0],
+    color: theme.palette.primary.white,
     marginTop: theme.spacing.unit * 20,
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing.unit * 35,

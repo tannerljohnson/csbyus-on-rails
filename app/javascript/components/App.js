@@ -77,7 +77,7 @@ class App extends React.Component {
                   {/*<Route exact path="/overview" component={CourseOverview} />*/}
                   {/*<Route exact path="/version" component={CourseVersionsPage} />*/}
                   <Route exact path="/news" component={InTheNews} />
-                  {/*// <Route exact path="/blog" component={Blog} />*/}
+                  {/*<Route exact path="/blog" component={Blog} />*/}
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
                 </Switch>

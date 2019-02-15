@@ -27,6 +27,20 @@ const homeComponentStyles = theme => ({
   newFont: {
     fontFamily: theme.Typography.fontFamily[0],
   },
+  newFontAbout: {
+    fontFamily: theme.Typography.fontFamily[0],
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 20,
+    },
+  },
+  aboutStory: {
+    fontFamily: theme.Typography.fontFamily[0],
+    paddingLeft: theme.spacing.unit * 2,
+    paddingRight: theme.spacing.unit * 2,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18,
+    },
+  },
   blueFont: {
     fontFamily: theme.Typography.fontFamily[0],
     color: theme.palette.primary.lightblue,
@@ -43,7 +57,11 @@ const homeComponentStyles = theme => ({
     fontFamily: theme.Typography.fontFamily[0],
     color: theme.palette.primary.white,
   },
-
+  whiteFontMission: {
+    fontFamily: theme.Typography.fontFamily[0],
+    color: theme.palette.primary.white,
+    fontSize: 20,
+  },
   bgimg: {
     backgroundImage: `url(${Background})`,
     position: 'relative',
@@ -77,6 +95,7 @@ const homeComponentStyles = theme => ({
     backgroundColor: theme.palette.secondary.light,
     // textAlign: 'center',
     alignItems: 'center',
+    paddingTop: '0%',
   },
   heroUnit2: {
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -102,6 +121,22 @@ const homeComponentStyles = theme => ({
     height: 'auto',
     flexGrow: 1,
     flexWrap: 'wrap',
+    display: 'flex',
+    [theme.breakpoints.down('xs')]: {
+      paddingLeft: theme.spacing.unit * 2,
+      paddingRight: theme.spacing.unit * 2,
+      display: 'flex',
+    },
+  },
+  impactPicture: {
+    position: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '100%',
+    height: '100%',
+    flexGrow: 1,
+    flexWrap: 'wrap',
+
   },
   heroContent: {
     maxWidth: 600,
@@ -171,9 +206,12 @@ const homeComponentStyles = theme => ({
     },
   },
   aboutDiv: {
-      padding: theme.spacing.unit * 6,
-      [theme.breakpoints.up('md')]: {
-      },
+    padding: theme.spacing.unit * 6,
+    [theme.breakpoints.down('sm')]: {
+      paddingRight: theme.spacing.unit * 2,
+      paddingLeft: theme.spacing.unit * 2,
+
+    },
   },
   aboutContent: {
     paddingBottom: "4%",

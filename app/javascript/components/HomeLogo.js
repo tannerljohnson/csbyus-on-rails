@@ -14,15 +14,24 @@ const styles = theme => ({
     backgroundImage: `url(${Logo})`,
     backgroundColor: theme.palette.secondary.light, // Average color of the background image.
     backgroundPosition: 'center',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      height: '60%',
+      paddingBottom: '0%',
+    },
   },
   h2: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 20,
     [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing.unit * 70,
-      marginRight: theme.spacing.unit * 50,
+      marginRight: theme.spacing.unit * 55,
       marginLeft: theme.spacing.unit * 10,
       marginBottom: theme.spacing.unit * 10,
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 30,
+      backgroundColor: theme.palette.secondary.light, // Average color of the background image.
     },
   },
   h5: {

@@ -19,7 +19,7 @@ class CurriculumCard extends React.Component {
     return (
       <React.Fragment>
         <Card >
-          <CardActionArea className={classes.curriculumCard} href={this.props.url}  target="_blank">
+          <CardActionArea href={this.props.url}  target="_blank">
             <CardContent>
               <Typography variant="h5" class={classes.orangeFont} component="h2">
                 {this.props.title}

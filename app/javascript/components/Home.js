@@ -137,7 +137,7 @@ function Home(props) {
                       <Typography variant="display1" className={classes.orangeFont} color="inherit" gutterBottom align="center">
                         <b>Who are we?</b>
                       </Typography>
-                      <Typography variant="headline" className={classes.newFont} color="inherit" paragraph align="center">
+                      <Typography variant="headline" className={classes.newFontAbout} color="inherit" paragraph align="center">
                         We're a team of students, teachers, and professionals spread across the globe with a common goal: <br/>To democratize digital era education.
                       </Typography>
                     </div>
@@ -145,7 +145,7 @@ function Home(props) {
                       <Typography variant="display1" className={classes.orangeFont} color="inherit" gutterBottom align="center">
                         <b>What is CSbyUs?</b>
                       </Typography>
-                      <Typography variant="headline" className={classes.newFont} color="inherit" paragraph align="center">
+                      <Typography variant="headline" className={classes.newFontAbout} color="inherit" paragraph align="center">
                         We believe that to empower students, we have to empower educators.
                         We do the work of creating and testing curricula that deliver computer science to students in a way that is relevant to their lives.
                         Once we're confident in our work, we share it.
@@ -178,21 +178,10 @@ function Home(props) {
               </div>
 
 
-            <div className={classes.video}>
+            <div className={classes.impactPicture}>
               <img src={ImpactChart} class="img-center"/>
             </div>
 
-            {/*
-            <div className={classes.impactPicture}>
-              <Grid container spacing={24}>
-                <Grid item xs>
-                  <div className={classes.title}>
-                    <img src={ImpactChart} class="img-center"/>
-                  </div>
-                </Grid>
-              </Grid>
-            </div>
-            */}
             <div className={classes.root}>
               <Grid container spacing={24} className={classes.descriptionCardGrid} >
                 <Grid item xs={12} md={4}>

@@ -21,7 +21,7 @@ class About extends React.Component {
       <CssBaseline/>
         {/* Big picture */}
         <AboutLogo />
-          <InfoSegment />
+        <InfoSegment />
       </React.Fragment>
     );
   }
