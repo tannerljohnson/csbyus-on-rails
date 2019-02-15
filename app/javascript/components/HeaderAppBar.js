@@ -41,40 +41,42 @@ class HeaderAppBar extends React.Component {
 
   render () {
     const { classes } = this.props;
+    const colors = {
+      color: '#FFFFFF',
+      fontcolor: '#FFFFFF',
+    };
 
     const sideList = (
       <div className={classes.list}>
         <List>
           <NavLink to={'/home'}>
             <ListItem button key={'Home'}>
-              <ListItemIcon> <HomeIcon /> </ListItemIcon>
-              <ListItemText primary={'Home'} />
+              {/*<ListItemIcon style={colors}> <HomeIcon /> </ListItemIcon>*/}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink to={'/about'}>
             <ListItem button key={'About'}>
-              <ListItemIcon> <InfoIcon /> </ListItemIcon>
-              <ListItemText primary={'About'} />
+              {/*<ListItemIcon style={colors}> <InfoIcon /> </ListItemIcon>*/}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
-              <ListItemIcon> <CloudDownloadIcon /> </ListItemIcon>
-              <ListItemText primary={'CurriculaHub'} />
-            </ListItem>
+              {/*<ListItemIcon style={colors}> <CloudDownloadIcon /> </ListItemIcon>*/}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />            </ListItem>
           </NavLink>
           {/*
           <NavLink to={'/blog'}>
             <ListItem button key={'Blog'}>
-              <ListItemIcon> <BookmarkBorderIcon /> </ListItemIcon>
-              <ListItemText primary={'Blog'} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Blog</Typography>} />
             </ListItem>
           </NavLink>
           */}
           <NavLink to={'/joinus'}>
             <ListItem button key={'Join Us'}>
-              <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
-              <ListItemText primary={'Join Us'} />
+              {/*<ListItemIcon style={colors}> <FavoriteIcon /> </ListItemIcon> */}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
             </ListItem>
           </NavLink>
         </List>

@@ -8,7 +8,10 @@ const headerComponentStyles = theme => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
-  },
+  }, 
+  text: {
+    color: 'white',
+  }
 });
 
 export default headerComponentStyles;
