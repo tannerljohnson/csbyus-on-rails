@@ -230,6 +230,7 @@ const homeComponentStyles = theme => ({
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 5}px`,
   },
+<<<<<<< HEAD
   root3: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -242,6 +243,14 @@ const homeComponentStyles = theme => ({
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 0}px`,
   },
+=======
+  impactPicture: {
+
+    flexGrow: 1,
+    flexWrap: 'wrap',
+    paddingBottom: "0%",
+  },
+>>>>>>> master
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,

@@ -142,3 +142,5 @@ At last, run
 ```
 $ yarn install
 ```
+## sqlite3 error
+Check issue #27 for sqlite3 error

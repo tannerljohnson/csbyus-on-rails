@@ -14,8 +14,8 @@ class About extends React.Component {
     const { classes } = this.props;
 
     return (
-      <React.Fragment>
-      
+      <React.Fragment> 
+
         {/* Big picture */}
         <div className={classes.bgimg} >
           {/* insert picture as background here */}
