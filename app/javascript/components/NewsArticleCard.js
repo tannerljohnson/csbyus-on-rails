@@ -12,20 +12,24 @@ import { Link } from 'react-router-dom';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 
 
-class CurriculumCard extends React.Component {
+class NewsArticleCard extends React.Component {
   render () {
+
     const { classes } = this.props;
 
     return (
+
       <React.Fragment>
         <Card >
-          <CardActionArea className={classes.curriculumCard} href={this.props.url}  target="_blank">
+          <CardActionArea className={classes.newsCard} href={this.props.url} target="_blank">
+            <CardMedia
+              className={classes.newsMedia}
+              image={this.props.imageLocation}
+              title={this.props.source}
+            />
             <CardContent>
-              <Typography variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="h2">
                 {this.props.title}
-              </Typography>
-              <Typography className={this.props.title} color="textSecondary" gutterBottom>
-                {this.props.author}
               </Typography>
               <Typography component="p">
                 {this.props.content}
@@ -38,10 +42,11 @@ class CurriculumCard extends React.Component {
   }
 }
 
-CurriculumCard.propTypes = {
-  author: PropTypes.string,
+NewsArticleCard.propTypes = {
+  source: PropTypes.string,
+  imageLocation: PropTypes.string,
   title: PropTypes.string,
   url: PropTypes.string,
   content: PropTypes.string
 };
-export default withStyles(homeComponentStyles)(CurriculumCard);
+export default withStyles(homeComponentStyles)(NewsArticleCard);

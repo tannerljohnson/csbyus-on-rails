@@ -1,9 +1,10 @@
 const headerComponentStyles = theme => ({
   appBar: {
-    position: 'fixed',
+    position: 'relative',
     margin: '0 auto',
     top: 0,
     padding: '0%',
+    // backgroundColor: theme.palette.primary.blue,
   },
   menuButton: {
     marginLeft: -12,

@@ -3,12 +3,25 @@ import Background from '../../../images/HomePageBackground.JPG';
 const homeComponentStyles = theme => ({
   appBar: {
     position: 'fixed',
-    paddingTop: '0%',
+    backgroundColor: theme.palette.primary.purple,
   },
-  avatar: {
-    margin: 10,
-    postition: 'relative',
-    textAlign: 'center',
+  incubateAvatar: {
+    margin: theme.spacing.unit,
+    backgroundColor: theme.palette.primary.purple,
+    width: 60,
+    height: 60,
+  },
+  shareAvatar: {
+    margin: theme.spacing.unit,
+    backgroundColor: theme.palette.primary.green,
+    width: 60,
+    height: 60,
+  },
+  supportAvatar: {
+    margin: theme.spacing.unit,
+    backgroundColor: theme.palette.primary.rose,
+    width: 60,
+    height: 60,
   },
   bgimg: {
     backgroundImage: `url(${Background})`,
@@ -22,7 +35,9 @@ const homeComponentStyles = theme => ({
     backgroundSize: 'cover',
   },
   icon: {
-    marginRight: theme.spacing.unit * 2,
+    margin: theme.spacing.unit * 2,
+    width: 40,
+    height: 40,
   },
   mainFeaturedPost: {
     backgroundColor: theme.palette.grey[800],
@@ -74,8 +89,9 @@ const homeComponentStyles = theme => ({
   },
   layout: {
     width: 'auto',
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
+    marginLeft: theme.spacing.unit * 2,
+    marginRight: theme.spacing.unit * 2,
+    paddingTop: '1%',
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
@@ -86,8 +102,28 @@ const homeComponentStyles = theme => ({
     width: 'auto',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
-    paddingTop: '5%',
+    paddingTop: '1%',
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  curriculaTitleHeader: {
+    backgroundColor: theme.palette.secondary.main, // change color here
+    // color: theme.palette.common.white,
+    marginBottom: theme.spacing.unit * 4,
+    [theme.breakpoints.up('md')]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  newsTitleHeader: {
+    backgroundColor: theme.palette.secondary.light, // change color here
+    // color: theme.palette.common.white,
+    marginBottom: theme.spacing.unit * 4,
+    [theme.breakpoints.up('md')]: {
       width: 1100,
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -121,8 +157,17 @@ const homeComponentStyles = theme => ({
     padding: theme.spacing.unit * 6,
   },
   title: {
+    backgroundColor: theme.palette.background.paper,
     margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
     textAlign: 'center',
+  },
+  horizCards: {
+    backgroundColor: theme.palette.background.paper,
+    margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
   },
   list: {
     width: 250,
@@ -134,12 +179,19 @@ const homeComponentStyles = theme => ({
     display: 'flex',
     flexGrow: 1,
     flexWrap: 'wrap',
-    padding: `${theme.spacing.unit * 5}px`,
+    // padding: `${theme.spacing.unit * 5}px`,
+    paddingBottom: "0%",
   },
   root2: {
     flexGrow: 1,
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 5}px`,
+  },
+  impactPicture: {
+
+    flexGrow: 1,
+    flexWrap: 'wrap',
+    paddingBottom: "0%",
   },
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
@@ -152,6 +204,19 @@ const homeComponentStyles = theme => ({
           paddingRight: 0,
       },
   },
+  largeIcon: {
+    width: 80,
+    height: 80,
+  },
+  newsCard: {
+    height: 365,
+  },
+  newsMedia: {
+    height: 140,
+  },
+  curriculumCard: {
+    height: 200,
+  }
 });
 
 export default homeComponentStyles;

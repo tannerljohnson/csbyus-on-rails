@@ -14,13 +14,15 @@ class About extends React.Component {
     const { classes } = this.props;
 
     return (
-      <React.Fragment>
-        <section className={ classes.backgroungImg }>
+      <React.Fragment> 
+
+        {/* Big picture */}
+        <div className={classes.bgimg} >
+          {/* insert picture as background here */}
           <div className={classes.title}>
             <subtitle>About<b>Us</b></subtitle>
           </div>
-        </section>
-
+        </div>
         <div className={classes.layout}>
           <InfoSegment />
         </div>
