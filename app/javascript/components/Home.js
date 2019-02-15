@@ -114,7 +114,7 @@ function Home(props) {
             <div className={classes.root}>
               <Grid container spacing={24} className={classes.descriptionCardGrid} >
                 <Grid item xs={12} md={4}>
-                  <DescriptionCard avatar="incubate" icon="build" url="google.com" title="Incubate" content={incubateText} />
+                  <DescriptionCard avatar="incubate" icon="build" title="Incubate" content={incubateText} />
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <DescriptionCard avatar="share" icon="share" url="csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
