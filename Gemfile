@@ -12,7 +12,7 @@ gem 'rails', '~> 5.1.4'
 # Use pg for local development
 gem 'pg'
 # Use sqlite3 for local development
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'figaro'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
