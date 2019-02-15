@@ -25,10 +25,16 @@ class IndividualBioCard extends React.Component {
                 {this.props.name}
               </Typography>
               <Typography className={this.props.title} color="textSecondary" gutterBottom>
-                {this.props.position}
+                {this.props.team}
+              </Typography>
+              <Typography className={this.props.study} color="textSecondary" gutterBottom>
+                {this.props.study}
               </Typography>
               <Typography component="p">
                 {this.props.caption}
+              </Typography>
+              <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                {this.props.email}
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -38,10 +44,11 @@ class IndividualBioCard extends React.Component {
   }
 }
 
-CurriculumCard.propTypes = {
-  author: PropTypes.string,
-  title: PropTypes.string,
-  url: PropTypes.string,
-  content: PropTypes.string
+IndividualBioCard.propTypes = {
+  name: PropTypes.string,
+  team: PropTypes.string,
+  study: PropTypes.string,
+  caption: PropTypes.string,
+  email: PropTypes.string
 };
 export default withStyles(homeComponentStyles)(IndividualBioCard);

@@ -21,6 +21,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import CourseOverview from './CourseOverview'
 import CourseVersionsPage from './CourseVersionsPage'
 import pink from '@material-ui/core/colors/pink';
+import IndividualBiosPage from './IndividualBiosPage'
 
 
 const theme = createMuiTheme({
@@ -61,6 +62,7 @@ class App extends React.Component {
                   {/*<Route exact path="/overview" component={CourseOverview} />*/}
                   {/*<Route exact path="/version" component={CourseVersionsPage} />*/}
                   <Route exact path="/news" component={InTheNews} />
+                  <Route exact path="/bios" component={IndividualBiosPage} />
                   {/*// <Route exact path="/blog" component={Blog} />*/}
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
