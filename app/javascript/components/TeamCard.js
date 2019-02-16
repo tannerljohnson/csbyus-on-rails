@@ -32,4 +32,4 @@ TeamCard.propTypes = {
   name: PropTypes.string,
   content: PropTypes.string
 };
-export default CurriculumCard
+export default TeamCard

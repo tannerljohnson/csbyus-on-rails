@@ -1,13 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Background from '../../assets/images/AboutUs.png';
 import InfoSegment from "./InfoSegment"
 import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
 import TeamCard from "./TeamCard";
-import Card from '@material-ui/core/Card';
-
+import Grid from '@material-ui/core/Grid';
 
 class About extends React.Component {
 
@@ -16,9 +12,9 @@ class About extends React.Component {
     const { classes } = this.props;
      const data =
           [
-          {name:"Curriculum Research and Development", 
+          {name:"Curriculum Research and Development",
               content:"The Curriculum Research & Development (CRD) team uses design-based research to create and test inclusive CS curricula. Currently, the curriculum development mini-team is designing a curriculum to self-empower students to take control of their data and act against algorithmic bias. The curriculum research mini-team is collecting data on the efficacy of our Mobile Citizens curriculum, using these insights to inform future curriculum iterations."},
-          {name:"Teaching Team", 
+          {name:"Teaching Team",
               content:"The Teaching Team (TT) is a community of mentors invested in building each other to become more excellent, caring mentors for our middle school students at StudentU and Durham Salvation Army Boys & Girls Club. Most members on TT are also involved in TRD and CRD so they use their work within classrooms to build better, respectively, technology and curriculum to improve the learning experiences of our students."},
           {name:"Technology Research and Development",
               content:"The Tech Research & Development team (TRD) created the web application you're currently using. TRD works to scale the CSbyUs mission beyond our classrooms in Durham. CurriculaHub, alongside other resources on this site, is a one-stop shop for fellow educators to explore, adapt, discuss, and teach our CSbyUs curricula and others. In a nutshell, TRD uses technology to make teaching digital era education easier for teachers."}
@@ -38,9 +34,13 @@ class About extends React.Component {
           <InfoSegment />
         </div>
 
-        const cards = data.map((card) =>
-          <TeamCard name= {card.name} 
-                content = {card.content}/>
+      <Grid container spacing = {24}>
+          {data.map(card => (
+              <Grid item key={card.name}>
+                  <TeamCard name={card.name} content={card.content}/>
+              </Grid>
+          ))}
+      </Grid>
 
       </React.Fragment>
 
