@@ -278,10 +278,16 @@ const homeComponentStyles = theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.secondary.light,
     flexWrap: 'wrap',
+<<<<<<< HEAD
     paddingBottom: `${theme.spacing.unit * 5}px`,
     paddingTop: `${theme.spacing.unit * 5}px`,
 
   },
+=======
+    padding: `${theme.spacing.unit * 5}px`,
+  },
+
+>>>>>>> vivian_testing
   root3: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -297,12 +303,20 @@ const homeComponentStyles = theme => ({
   logoFormat: {
     flexGrow: 0,
     backgroundColor: theme.palette.secondary.light,
+    justifyContent: 'center',
+    alignItems: 'center',
+    //width: '150%',
+    height: 200,
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 0}px`,
     [theme.breakpoints.up('md')]: {
 
     },
   },
+<<<<<<< HEAD
+=======
+
+>>>>>>> vivian_testing
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,
