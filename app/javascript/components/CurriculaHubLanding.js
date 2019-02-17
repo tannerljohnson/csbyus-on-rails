@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
+import CssBaseline from '@material-ui/core/CssBaseline';
+
 
 var courseData = require('../../assets/data/coursesInfo.js');
 
@@ -28,8 +30,9 @@ class CurriculaHubLanding extends React.Component {
 
     return (
         <React.Fragment>
+        <CssBaseline/>
         <div className={classes.root2}>
-          <div className={classes.layout2}>
+          <main className={classes.layout2}>
 
             <Paper className={classes.curriculaTitleHeader}>
                 <div className={classes.courseName}>
@@ -66,7 +69,7 @@ class CurriculaHubLanding extends React.Component {
                 </Typography>
             </div>
             {/* End Contribute */}
-          </div>
+            </main>
           </div>
         </React.Fragment>
 

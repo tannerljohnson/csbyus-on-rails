@@ -13,6 +13,15 @@ const headerComponentStyles = theme => ({
     marginLeft: -12,
     marginRight: 20,
   },
+  list: {
+    width: 256,
+    dense: true,
+    alignItems: 'flex-start',
+    fontFamily: theme.Typography.fontFamily[0],
+  },
+  fullList: {
+    width: 'auto',
+  },
 });
 
 export default headerComponentStyles;
