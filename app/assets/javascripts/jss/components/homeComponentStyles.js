@@ -278,7 +278,6 @@ const homeComponentStyles = theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.secondary.light,
     flexWrap: 'wrap',
-<<<<<<< HEAD
     paddingBottom: `${theme.spacing.unit * 5}px`,
     paddingTop: `${theme.spacing.unit * 5}px`,
 
