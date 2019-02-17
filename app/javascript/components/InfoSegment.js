@@ -29,18 +29,19 @@ class InfoSegment extends React.Component {
       <React.Fragment>
 
           {/* Mission / vision */}
-          <div className={classes.root}>
+
+          <div className={classes.root3}>
             <Grid container spacing={24}>
-              <Grid item xs>
-                <Typography variant="h3" className={classes.title}>
-                  Mission
+              <Grid item xs={12} md={6}>
+                <Typography variant="h3" className={classes.title2}>
+                  <b>Mission</b>
                 </Typography>
-                <div className={classes.heroUnit}>
+                <div className={classes.heroUnit2}>
                   <List>
                     {generate(
                       <ListItem>
                         <ListItemText
-                          primary="Our mission is to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age."
+                          primary={<Typography variant="subtitle1" className={classes.whiteFontMission}>Our mission is to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age.</Typography>}
                           align="center"
                         />
                       </ListItem>,
@@ -48,16 +49,16 @@ class InfoSegment extends React.Component {
                   </List>
                 </div>
               </Grid>
-              <Grid item xs>
-                <Typography variant="h3" className={classes.title}>
-                  Vision
+              <Grid item xs={12} md={6}>
+                <Typography variant="h3" className={classes.title2}>
+                  <b>Vision</b>
                 </Typography>
-                <div className={classes.heroUnit}>
+                <div className={classes.heroUnit2}>
                   <List>
                     {generate(
                       <ListItem>
                         <ListItemText
-                          primary="We envision an educational system in which all students are empowered to learn computer science in a way that is relevant to their lives."
+                          primary={<Typography variant="subtitle1" className={classes.whiteFontMission}>We envision an educational system in which all students are empowered to learn computer science in a way that is relevant to their lives.</Typography>}
                           align="center"
                         />
                       </ListItem>,
@@ -74,14 +75,17 @@ class InfoSegment extends React.Component {
           {/* Our Story */}
           <div className={classes.root2}>
               <div className={classes.ourImpactTitle}>
-                <Typography variant="h3" align="center" color="textPrimary" gutterBottom>
-                  Our Story
+                <Typography variant="h3" className={classes.orangeFont} align="center" color="inherit" gutterBottom>
+                  <b>Our Story</b>
                 </Typography>
               </div>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h6" className={classes.aboutStory} gutterBottom>
                 <p>
                   Our story begins in Durham, North Carolina, a community home to one of the most robust tech industries and least accessible
-                  computer science (CS) education programming. We conducted <a href="https://drive.google.com/file/d/1mzQVjkViLtheaF52JBOaxXVTQF5Y6Xyc/view?usp=sharing"  target="_blank">award-winning
+                  computer science (CS) education programming.
+                </p>
+                <p>
+                  We conducted <a href="https://drive.google.com/file/d/1mzQVjkViLtheaF52JBOaxXVTQF5Y6Xyc/view?usp=sharing"  target="_blank">award-winning
                   research</a> on the state of CS education, finding what Durham needs is
                   community-tailored, student-centered CS education. So, we created <a href="http://www.dukechronicle.com/article/2017/11/duke-students-develop-after-school-program-to-bring-computer-science-to-low-income-middle-schoolers" target="_blank">Mobile Citizens</a>, a program that empowers middle school
                   students to create mobile apps relevant to their communities’ needs.
@@ -95,7 +99,10 @@ class InfoSegment extends React.Component {
                 <p>
                   We are thrilled that our Mobile Citizens curriculum has expanded to three additional Durham communities.
                   However, the problem of access to relevant CS education extends past Durham; every community deserves CS education that
-                  complements its diversity and distinctiveness. CSbyUs is extending the pedagogy that served our Durham students to also serve
+                  complements its diversity and distinctiveness.
+                </p>
+                <p>
+                  CSbyUs is extending the pedagogy that served our Durham students to also serve
                   students in downtown Houston, suburbs of Idaho suburbs, and all other communities. It was undergraduates who created more personalized
                   CS education with our first curriculum, Mobile Citizens, and we believe that CSbyUs can empower more undergraduates to do the same.
                 </p>

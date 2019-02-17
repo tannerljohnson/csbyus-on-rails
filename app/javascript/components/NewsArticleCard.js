@@ -21,17 +21,17 @@ class NewsArticleCard extends React.Component {
 
       <React.Fragment>
         <Card >
-          <CardActionArea className={classes.newsCard} href={this.props.url} target="_blank">
+          <CardActionArea href={this.props.url} target="_blank">
             <CardMedia
               className={classes.newsMedia}
               image={this.props.imageLocation}
               title={this.props.source}
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" class={classes.newFont} component="h2">
                 {this.props.title}
               </Typography>
-              <Typography component="p">
+              <Typography component="p" class={classes.newFont}>
                 {this.props.content}
               </Typography>
             </CardContent>

@@ -4,6 +4,8 @@ import InfoSegment from "./InfoSegment"
 import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
 import TeamCard from "./TeamCard";
 import Grid from '@material-ui/core/Grid';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AboutLogo from './AboutLogo';
 
 class About extends React.Component {
 
@@ -21,8 +23,9 @@ class About extends React.Component {
             ];
 
     return (
-      <React.Fragment> 
-
+      <React.Fragment>
+      {/* Use CssBaseline to fix header bar spacing */}
+      <CssBaseline/>
         {/* Big picture */}
         <div className={classes.bgimg} >
           {/* insert picture as background here */}
@@ -42,6 +45,8 @@ class About extends React.Component {
           ))}
       </Grid>
 
+        <AboutLogo />
+        <InfoSegment />
       </React.Fragment>
 
     );

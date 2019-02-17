@@ -18,6 +18,7 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import CommentIcon from '@material-ui/icons/Comment';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import headerComponentStyles from "../../assets/javascripts/jss/components/headerComponentStyles.js";
 import {
   Redirect,
   Link,
@@ -37,16 +38,6 @@ const options = [
 ];
 
 
-const styles = {
-  list: {
-    width: 256,
-    dense: true,
-    alignItems: 'flex-start'
-  },
-  fullList: {
-    width: 'auto',
-  },
-};
 
 class MenuDrawer extends React.Component {
   state = {
@@ -134,4 +125,4 @@ MenuDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MenuDrawer);
+export default withStyles(headerComponentStyles)(MenuDrawer);
