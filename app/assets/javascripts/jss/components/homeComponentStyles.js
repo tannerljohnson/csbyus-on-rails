@@ -240,6 +240,10 @@ const homeComponentStyles = theme => ({
   logoFormat: {
     flexGrow: 0,
     backgroundColor: theme.palette.secondary.light,
+    justifyContent: 'center',
+    alignItems: 'center',
+    //width: '150%',
+    height: 200,
     flexWrap: 'wrap',
     padding: `${theme.spacing.unit * 0}px`,
   },

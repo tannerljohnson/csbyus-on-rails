@@ -93,6 +93,7 @@ function Home(props) {
               <img src={Logo} class="img-center"/>
             </div>
 
+
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
@@ -110,7 +111,7 @@ function Home(props) {
             <div className={classes.root}>
               <Grid container spacing={24}>
                 <Grid item xs >
-
+                <CardActionArea>
                   <div className={classes.horizCards}>
                     <Avatar className={classes.incubateAvatar}>
                       <BuildIcon className={classes.icon} />
@@ -129,12 +130,13 @@ function Home(props) {
                           </ListItem>,
                         )}
                       </List>
-
-                  </div>
+                      </div>
+                    </div>
                   </CardActionArea>
                 </Grid>
-                <Grid item xs>
 
+                <Grid item xs>
+                  <CardActionArea href="https://csbyus.herokuapp.com/curriculahub" >
                   <div className={classes.horizCards}>
                     <Avatar className={classes.shareAvatar}>
                       <ShareIcon className={classes.icon} />
@@ -153,13 +155,12 @@ function Home(props) {
                           </ListItem>,
                         )}
                       </List>
-
-
+                      </div>
                     </div>
                   </CardActionArea>
                 </Grid>
                 <Grid item xs>
-
+                  <CardActionArea onClick={handleJoinClick}>
                   <div className={classes.horizCards}>
                     <Avatar className={classes.supportAvatar}>
                       <FavoriteIcon className={classes.icon}/>
@@ -178,12 +179,11 @@ function Home(props) {
                           </ListItem>,
                         )}
                       </List>
-
+                      </div>
                     </div>
                   </CardActionArea>
                 </Grid>
               </Grid>
-            </div>
 
 
 
@@ -233,6 +233,7 @@ function Home(props) {
                 <Typography variant="h2" className={classes.darkFont} align="center" color="textPrimary" gutterBottom>
                   <b>Our Impact</b>
                 </Typography>
+              </div>
               </div>
 
 
