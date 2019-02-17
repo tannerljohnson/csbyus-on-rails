@@ -14,11 +14,7 @@ const {
   random: { uuid },
 } = faker;
 
-<<<<<<< HEAD
 var postData = require('../../assets/data/coursesInfo.js');
-=======
-var postData = require('../../assets/data/posts/1.js');
->>>>>>> c378d2e119fa9eccb06dd5a2379538a639be12a1
 
 class PostContainer extends React.Component {
   constructor(props) {
