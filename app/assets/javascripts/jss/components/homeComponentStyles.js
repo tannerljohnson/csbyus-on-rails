@@ -282,11 +282,9 @@ const homeComponentStyles = theme => ({
     paddingTop: `${theme.spacing.unit * 5}px`,
 
   },
-=======
     padding: `${theme.spacing.unit * 5}px`,
   },
 
->>>>>>> vivian_testing
   root3: {
     display: 'flex',
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -312,10 +310,7 @@ const homeComponentStyles = theme => ({
 
     },
   },
-<<<<<<< HEAD
-=======
 
->>>>>>> vivian_testing
   featuredPicture: {
     backgroundColor: theme.palette.grey[800],
     color: theme.palette.common.white,

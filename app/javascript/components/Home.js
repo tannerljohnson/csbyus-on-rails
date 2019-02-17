@@ -122,7 +122,6 @@ function Home(props) {
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <DescriptionCard avatar="support" icon="favorite" url="csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
-=======
 
                 </Grid>
               </Grid>
