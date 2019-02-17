@@ -11,6 +11,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import TeamCard from "./TeamCard"
 
 function generate(element) {
   return [0].map(value =>
@@ -24,6 +25,15 @@ class InfoSegment extends React.Component {
   render () {
 
     const { classes } = this.props;
+    const data =
+          [
+          {name:"Curriculum Research and Development",
+              content:"The Curriculum Research & Development (CRD) team uses design-based research to create and test inclusive CS curricula. Currently, the curriculum development mini-team is designing a curriculum to self-empower students to take control of their data and act against algorithmic bias. The curriculum research mini-team is collecting data on the efficacy of our Mobile Citizens curriculum, using these insights to inform future curriculum iterations."},
+          {name:"Teaching Team",
+              content:"The Teaching Team (TT) is a community of mentors invested in building each other to become more excellent, caring mentors for our middle school students at StudentU and Durham Salvation Army Boys & Girls Club. Most members on TT are also involved in TRD and CRD so they use their work within classrooms to build better, respectively, technology and curriculum to improve the learning experiences of our students."},
+          {name:"Technology Research and Development",
+              content:"The Tech Research & Development team (TRD) created the web application you're currently using. TRD works to scale the CSbyUs mission beyond our classrooms in Durham. CurriculaHub, alongside other resources on this site, is a one-stop shop for fellow educators to explore, adapt, discuss, and teach our CSbyUs curricula and others. In a nutshell, TRD uses technology to make teaching digital era education easier for teachers."}
+            ];
 
     return (
       <React.Fragment>
@@ -108,8 +118,24 @@ class InfoSegment extends React.Component {
                 </p>
               </Typography>
 
+               <div className={classes.ourImpactTitle}>
+                <Typography variant="h3" className={classes.orangeFont} align="center" color="inherit" gutterBottom>
+                  <b>Our Teams</b>
+                </Typography>
+              </div>
+
+              <Grid container spacing = {24} className={classes.descriptionCardGrid}>
+                {data.map(card => (
+                  <Grid item key={card.name} xs={12} md={4}>
+                      <TeamCard name={card.name} content={card.content}/>
+                  </Grid>
+              ))} 
+              </Grid>
+
 
             </div>
+
+
 
       </React.Fragment>
     );
