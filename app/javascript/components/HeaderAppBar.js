@@ -41,7 +41,7 @@ class HeaderAppBar extends React.Component {
     };
 
     const sideList = (
-      <div className={classes.list}>
+      <div>
         <List>
           <NavLink style={navLinkStyles} to={'/home'}>
             <ListItem button key={'Home'}>
@@ -67,8 +67,8 @@ class HeaderAppBar extends React.Component {
             </ListItem>
           </NavLink>
           */}
-         <NavLink to={'/news'}>
-            <ListItem className={classes.list} button key={'In the News'}>
+         <NavLink style={navLinkStyles} to={'/news'}>
+            <ListItem button key={'In the News'}>
               {/*<ListItemIcon> <CommentIcon /> </ListItemIcon> */}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
             </ListItem>

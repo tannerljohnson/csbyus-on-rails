@@ -11,15 +11,10 @@ const headerComponentStyles = theme => ({
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20,
+    marginRight: 50,
   }, 
   text: {
     color: 'white',
-  },
-  list: {
-    width: 256,
-    dense: true,
-    fontFamily: theme.Typography.fontFamily[0],
   },
   fullList: {
     width: 'auto',
