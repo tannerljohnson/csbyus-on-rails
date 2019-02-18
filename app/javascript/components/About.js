@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import Background from '../../assets/images/AboutUs.png';
 import InfoSegment from "./InfoSegment"
 import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AboutLogo from './AboutLogo';
 
 
 class About extends React.Component {
@@ -15,15 +17,11 @@ class About extends React.Component {
 
     return (
       <React.Fragment>
-        <section className={ classes.backgroungImg }>
-          <div className={classes.title}>
-            <subtitle>About<b>Us</b></subtitle>
-          </div>
-        </section>
-
-        <div className={classes.layout}>
-          <InfoSegment />
-        </div>
+      {/* Use CssBaseline to fix header bar spacing */}
+      <CssBaseline/>
+        {/* Big picture */}
+        <AboutLogo />
+        <InfoSegment />
       </React.Fragment>
     );
   }
