@@ -16,9 +16,9 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import CommentIcon from '@material-ui/icons/Comment';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
-
+import headerComponentStyles from "../../assets/javascripts/jss/components/headerComponentStyles.js";
 import {
   Redirect,
   Link,
@@ -38,14 +38,6 @@ const options = [
 ];
 
 
-const styles = {
-  list: {
-    width: 256,
-  },
-  fullList: {
-    width: 'auto',
-  },
-};
 
 class MenuDrawer extends React.Component {
   state = {
@@ -65,33 +57,39 @@ class MenuDrawer extends React.Component {
       <div className={classes.list}>
         <List>
           <NavLink to={'/home'}>
-            <ListItem button key={'Home'}>
+            <ListItem className={classes.list} button key={'Home'}>
               <ListItemIcon> <HomeIcon /> </ListItemIcon>
               <ListItemText primary={'Home'} />
             </ListItem>
           </NavLink>
           <NavLink to={'/about'}>
-            <ListItem button key={'About'}>
+            <ListItem className={classes.list} button key={'About'}>
               <ListItemIcon> <InfoIcon /> </ListItemIcon>
               <ListItemText primary={'About'} />
             </ListItem>
           </NavLink>
           <NavLink to={'/curriculahub'}>
-            <ListItem button key={'CurriculaHub'}>
+            <ListItem className={classes.list} button key={'CurriculaHub'}>
               <ListItemIcon> <CloudDownloadIcon /> </ListItemIcon>
               <ListItemText primary={'CurriculaHub'} />
             </ListItem>
           </NavLink>
           {/*
           <NavLink to={'/blog'}>
-            <ListItem button key={'Blog'}>
+            <ListItem className={classes.list} button key={'Blog'}>
               <ListItemIcon> <BookmarkBorderIcon /> </ListItemIcon>
               <ListItemText primary={'Blog'} />
             </ListItem>
           </NavLink>
           */}
+          <NavLink to={'/news'}>
+            <ListItem className={classes.list} button key={'In the News'}>
+              <ListItemIcon> <CommentIcon /> </ListItemIcon>
+              <ListItemText primary={'In the News'} />
+            </ListItem>
+          </NavLink>
           <NavLink to={'/joinus'}>
-            <ListItem button key={'Join Us'}>
+            <ListItem className={classes.list} button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
               <ListItemText primary={'Join Us'} />
             </ListItem>
@@ -103,10 +101,10 @@ class MenuDrawer extends React.Component {
 
     return (
       <div>
-        <IconButton
+        <IconButton color="inherit" fontsize="large"
           onClick={this.toggleDrawer('open', true)}
         >
-          <MenuIcon fontSize="large" color="secondary" />
+          <MenuIcon />
         </IconButton>
         <Drawer open={this.state.open} onClose={this.toggleDrawer('open', false)}>
           <div
@@ -127,4 +125,4 @@ MenuDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MenuDrawer);
+export default withStyles(headerComponentStyles)(MenuDrawer);
