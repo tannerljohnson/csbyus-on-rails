@@ -13,6 +13,17 @@ import { withRouter } from 'react-router-dom';
 import headerComponentStyles from "../../assets/javascripts/jss/components/headerComponentStyles.js";
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import {
+  Redirect,
+  Link,
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 
 const theme = createMuiTheme();
@@ -24,12 +35,9 @@ class HeaderAppBar extends React.Component {
     const colors = {
       color: '#FFFFFF',
       fontcolor: '#FFFFFF',
-      align: 'center'
     };
 
     const navLinkStyles = {
-      alignItems:"center",
-      justifyContent:"center",
     };
 
     const sideList = (
@@ -59,6 +67,12 @@ class HeaderAppBar extends React.Component {
             </ListItem>
           </NavLink>
           */}
+         <NavLink to={'/news'}>
+            <ListItem className={classes.list} button key={'In the News'}>
+              {/*<ListItemIcon> <CommentIcon /> </ListItemIcon> */}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
+            </ListItem>
+          </NavLink>
           <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               {/*<ListItemIcon style={colors}> <FavoriteIcon /> </ListItemIcon> */}

@@ -15,7 +15,6 @@ const headerComponentStyles = theme => ({
   }, 
   text: {
     color: 'white',
-  }
   },
   list: {
     width: 256,
