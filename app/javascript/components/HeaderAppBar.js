@@ -44,36 +44,42 @@ class HeaderAppBar extends React.Component {
     const colors = {
       color: '#FFFFFF',
       fontcolor: '#FFFFFF',
+      align: 'center'
+    };
+
+    const navLinkStyles = {
+      alignItems:"center",
+      justifyContent:"center",
     };
 
     const sideList = (
       <div className={classes.list}>
         <List>
-          <NavLink to={'/home'}>
+          <NavLink style={navLinkStyles} to={'/home'}>
             <ListItem button key={'Home'}>
               {/*<ListItemIcon style={colors}> <HomeIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
-          <NavLink to={'/about'}>
+          <NavLink style={navLinkStyles} to={'/about'}>
             <ListItem button key={'About'}>
               {/*<ListItemIcon style={colors}> <InfoIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
-          <NavLink to={'/curriculahub'}>
+          <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
               {/*<ListItemIcon style={colors}> <CloudDownloadIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />            </ListItem>
           </NavLink>
           {/*
-          <NavLink to={'/blog'}>
+          <NavLink style={navLinkStyles} to={'/blog'}>
             <ListItem button key={'Blog'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Blog</Typography>} />
             </ListItem>
           </NavLink>
           */}
-          <NavLink to={'/joinus'}>
+          <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               {/*<ListItemIcon style={colors}> <FavoriteIcon /> </ListItemIcon> */}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
@@ -87,7 +93,7 @@ class HeaderAppBar extends React.Component {
       <AppBar className={classes.appBar}>
         <Toolbar>
           <Typography variant="title" color="inherit" noWrap>
-            CSbyUs
+            CSbyUs        
           </Typography>
           <div>
             {sideList}
