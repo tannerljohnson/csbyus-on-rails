@@ -118,10 +118,10 @@ function Home(props) {
                   <DescriptionCard avatar="incubate" icon="build" title="Incubate" content={incubateText} />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                  <DescriptionCard avatar="share" icon="share" url="csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
+                  <DescriptionCard avatar="share" icon="share" url="https://csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                  <DescriptionCard avatar="support" icon="favorite" url="csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
+                  <DescriptionCard avatar="support" icon="favorite" url="https://csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
                 </Grid>
               </Grid>
 
