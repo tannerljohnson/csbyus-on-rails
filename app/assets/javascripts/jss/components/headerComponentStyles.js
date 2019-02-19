@@ -4,6 +4,7 @@ const headerComponentStyles = theme => ({
     margin: '0 auto',
     top: 0,
     padding: '0%',
+    display: 'flex',
     backgroundColor: theme.palette.primary.lightblue,
   },
   theFont: {
@@ -28,6 +29,23 @@ const headerComponentStyles = theme => ({
       flexShrink: 0,
     },
   },
+  menuOptions: {
+    paddingLeft: theme.spacing.unit * 1,
+    paddingRight: theme.spacing.unit * 1,
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: theme.spacing.unit * 0,
+      paddingRight: theme.spacing.unit * 0,
+    }
+  },
+  mainTitleStyles:{
+    fontFamily: theme.Typography.fontFamily[0],
+    paddingRight: theme.spacing.unit * 3,
+    color: '#FFFFFF',
+    fontcolor: '#FFFFFF',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+    }
+  }
 });
 
 export default headerComponentStyles;

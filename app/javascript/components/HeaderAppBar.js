@@ -68,6 +68,7 @@ class HeaderAppBar extends React.Component {
       color: '#FFFFFF',
       fontcolor: '#FFFFFF',
       textAlign: 'center',
+      padding: '0%'
     };
 
     const navLinkStyles = {
@@ -125,7 +126,7 @@ class HeaderAppBar extends React.Component {
     const sideList = (
       <div>
         <List>
-          <NavLink style={navLinkStyles} to={'/home'}>
+          <NavLink className={classes.menuOptions} to={'/home'}>
             <ListItem button key={'Home'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" textAlign="center">Home</Typography>} />
             </ListItem>
@@ -157,7 +158,7 @@ class HeaderAppBar extends React.Component {
       <AppBar className={classes.appBar}>
         <Toolbar>
           <NavLink to={'/home'}>
-          <Typography style={mainTitleStyles} variant="title" color="inherit" noWrap>
+          <Typography className={classes.mainTitleStyles} variant="title" color="inherit" noWrap>
             CSbyUs
           </Typography>
           </NavLink>
