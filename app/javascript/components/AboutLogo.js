@@ -11,7 +11,7 @@ const backgroundImage =
 const styles = theme => ({
   background: {
     backgroundImage: `url(${Background})`,
-    backgroundColor: theme.palette.secondary.light, // Average color of the background image.
+    backgroundColor: theme.palette.primary.white, // Average color of the background image.
     backgroundPosition: 'center',
   },
   h2: {
