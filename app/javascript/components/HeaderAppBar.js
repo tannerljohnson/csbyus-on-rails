@@ -15,13 +15,20 @@ import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import CommentIcon from '@material-ui/icons/Comment';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Hidden from '@material-ui/core/Hidden';
+
 import {
   Redirect,
   Link,
@@ -42,11 +49,20 @@ const theme = createMuiTheme({
 
 class HeaderAppBar extends React.Component {
 
+  state = {
+    mobileOpen: false,
+  };
+
+  handleDrawerToggle = () => {
+    this.setState(state => ({ mobileOpen: !state.mobileOpen }));
+  };
+
   onTitleClick() {
     window.open('https://csbyus.org/')
   };
 
   render () {
+
     const { classes } = this.props;
     const colors = {
       color: '#FFFFFF',
@@ -66,42 +82,70 @@ class HeaderAppBar extends React.Component {
       fontcolor: '#FFFFFF',
     }
 
+    {/* make visible when small screen */}
+    const drawer = (
+      <div className={classes.list}>
+        <List>
+          <NavLink to={'/home'}>
+            <ListItem className={classes.list} button key={'Home'}>
+              <ListItemIcon> <HomeIcon /> </ListItemIcon>
+              <ListItemText primary={'Home'} />
+            </ListItem>
+          </NavLink>
+          <NavLink to={'/about'}>
+            <ListItem className={classes.list} button key={'About'}>
+              <ListItemIcon> <InfoIcon /> </ListItemIcon>
+              <ListItemText primary={'About'} />
+            </ListItem>
+          </NavLink>
+          <NavLink to={'/curriculahub'}>
+            <ListItem className={classes.list} button key={'CurriculaHub'}>
+              <ListItemIcon> <CloudDownloadIcon /> </ListItemIcon>
+              <ListItemText primary={'CurriculaHub'} />
+            </ListItem>
+          </NavLink>
+          <NavLink to={'/news'}>
+            <ListItem className={classes.list} button key={'In the News'}>
+              <ListItemIcon> <CommentIcon /> </ListItemIcon>
+              <ListItemText primary={'In the News'} />
+            </ListItem>
+          </NavLink>
+          <NavLink to={'/joinus'}>
+            <ListItem className={classes.list} button key={'Join Us'}>
+              <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
+              <ListItemText primary={'Join Us'} />
+            </ListItem>
+          </NavLink>
+        </List>
+      </div>
+    );
+
+
+    {/* make visible when > small screen */}
     const sideList = (
       <div>
         <List>
           <NavLink style={navLinkStyles} to={'/home'}>
             <ListItem button key={'Home'}>
-              {/*<ListItemIcon style={colors}> <HomeIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" textAlign="center">Home</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/about'}>
             <ListItem button key={'About'}>
-              {/*<ListItemIcon style={colors}> <InfoIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
-              {/*<ListItemIcon style={colors}> <CloudDownloadIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />            </ListItem>
           </NavLink>
-          {/*
-          <NavLink style={navLinkStyles} to={'/blog'}>
-            <ListItem button key={'Blog'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Blog</Typography>} />
-            </ListItem>
-          </NavLink>
-          */}
          <NavLink style={navLinkStyles} to={'/news'}>
             <ListItem button key={'In the News'}>
-              {/*<ListItemIcon> <CommentIcon /> </ListItemIcon> */}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
-              {/*<ListItemIcon style={colors}> <FavoriteIcon /> </ListItemIcon> */}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
             </ListItem>
           </NavLink>

@@ -8,6 +8,12 @@ const homeComponentStyles = theme => ({
     fontFamily: theme.Typography.fontFamily[0],
 
   },
+  drawerMenuButton: {
+    marginRight: 20,
+    [theme.breakpoints.up('sm')]: {
+      display: 'none',
+    },
+  },
   headerList: {
     padding: theme.spacing.unit * 2,
   },

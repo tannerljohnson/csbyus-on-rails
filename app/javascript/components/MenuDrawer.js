@@ -103,6 +103,7 @@ class MenuDrawer extends React.Component {
       <div>
         <IconButton color="inherit" fontsize="large"
           onClick={this.toggleDrawer('open', true)}
+          className={classes.drawerMenuButton}
         >
           <MenuIcon />
         </IconButton>

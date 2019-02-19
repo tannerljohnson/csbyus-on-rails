@@ -12,12 +12,21 @@ const headerComponentStyles = theme => ({
   menuButton: {
     marginLeft: -12,
     marginRight: 50,
-  }, 
+    [theme.breakpoints.up('sm')]: {
+      display: 'none',
+    },
+  },
   text: {
     color: 'white',
   },
   fullList: {
     width: 'auto',
+  },
+  drawer: {
+    [theme.breakpoints.up('sm')]: {
+      width: 240,
+      flexShrink: 0,
+    },
   },
 });
 
