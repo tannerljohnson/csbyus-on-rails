@@ -21,11 +21,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
-import HomeIcon from '@material-ui/icons/Home';
-import InfoIcon from '@material-ui/icons/Info';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import {
   Redirect,
   Link,
@@ -46,34 +45,43 @@ class HeaderAppBar extends React.Component {
       fontcolor: '#FFFFFF',
     };
 
+    const navLinkStyles = {
+    };
+
     const sideList = (
-      <div className={classes.list}>
+      <div>
         <List>
-          <NavLink to={'/home'}>
+          <NavLink style={navLinkStyles} to={'/home'}>
             <ListItem button key={'Home'}>
               {/*<ListItemIcon style={colors}> <HomeIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
-          <NavLink to={'/about'}>
+          <NavLink style={navLinkStyles} to={'/about'}>
             <ListItem button key={'About'}>
               {/*<ListItemIcon style={colors}> <InfoIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
-          <NavLink to={'/curriculahub'}>
+          <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
               {/*<ListItemIcon style={colors}> <CloudDownloadIcon /> </ListItemIcon>*/}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />            </ListItem>
           </NavLink>
           {/*
-          <NavLink to={'/blog'}>
+          <NavLink style={navLinkStyles} to={'/blog'}>
             <ListItem button key={'Blog'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Blog</Typography>} />
             </ListItem>
           </NavLink>
           */}
-          <NavLink to={'/joinus'}>
+         <NavLink style={navLinkStyles} to={'/news'}>
+            <ListItem button key={'In the News'}>
+              {/*<ListItemIcon> <CommentIcon /> </ListItemIcon> */}
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
+            </ListItem>
+          </NavLink>
+          <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               {/*<ListItemIcon style={colors}> <FavoriteIcon /> </ListItemIcon> */}
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
