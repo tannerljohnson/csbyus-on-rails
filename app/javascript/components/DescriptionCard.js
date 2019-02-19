@@ -80,7 +80,7 @@ class DescriptionCard extends React.Component {
                         {generate(
                           <ListItem>
                             <ListItemText
-                              primary={<Typography variant="subtitle2" className={classes.newFont}>{this.props.content}</Typography>}
+                              primary={<Typography variant="subtitle2" className={classes.newFontDescription}>{this.props.content}</Typography>}
                               align="center"
                             />
                           </ListItem>,

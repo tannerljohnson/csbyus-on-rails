@@ -32,16 +32,16 @@ class PostContainer extends React.Component {
   componentDidMount() {
     const id = this.props.match.params.id;
     const slug = this.props.match.params.slug;
-    console.log(this.props);
+    // console.log(this.props);
     this.fetchPost(id, slug);
   }
 
   fetchPost(id, slug) {
-    console.log('fetching!');
-    console.log('id is: ' + id);
+    // console.log('fetching!');
+    // console.log('id is: ' + id);
     const samplePost =  this.findPostById(id, slug);
-    console.log(samplePost.title);
-    console.log(samplePost.content);
+    // console.log(samplePost.title);
+    // console.log(samplePost.content);
 
     this.setState({id: samplePost.id});
     this.setState({title: samplePost.title});
@@ -54,7 +54,7 @@ class PostContainer extends React.Component {
     // fetch file
     // TODO: do not assume index will correspond to post id
     const intId = parseInt(id);
-    console.log(intId);
+    // console.log(intId);
     const post = postData.posts[intId];
     return post;
   };

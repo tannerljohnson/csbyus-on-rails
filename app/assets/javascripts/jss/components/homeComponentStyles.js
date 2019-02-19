@@ -5,6 +5,11 @@ const homeComponentStyles = theme => ({
   appBar: {
     position: 'fixed',
     backgroundColor: theme.palette.primary.purple,
+    fontFamily: theme.Typography.fontFamily[0],
+
+  },
+  headerList: {
+    padding: theme.spacing.unit * 2,
   },
   incubateAvatar: {
     margin: theme.spacing.unit,
@@ -26,6 +31,10 @@ const homeComponentStyles = theme => ({
   },
   newFont: {
     fontFamily: theme.Typography.fontFamily[0],
+  },
+  newFontDescription: {
+    fontFamily: theme.Typography.fontFamily[0],
+    fontSize: 15,
   },
   newFontAbout: {
     fontFamily: theme.Typography.fontFamily[0],
@@ -92,7 +101,7 @@ const homeComponentStyles = theme => ({
     marginRight: theme.spacing.unit * 25,
   },
   heroUnit: {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     // textAlign: 'center',
     alignItems: 'center',
     paddingTop: '0%',
@@ -175,7 +184,7 @@ const homeComponentStyles = theme => ({
   },
   layout2: {
     width: 'auto',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     paddingTop: '1%',
@@ -254,7 +263,6 @@ const homeComponentStyles = theme => ({
   },
   horizCards: {
     backgroundColor: theme.palette.background.paper,
-    // margin: `${theme.spacing.unit * 4}px 0 ${theme.spacing.unit * 2}px`,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -268,7 +276,7 @@ const homeComponentStyles = theme => ({
   },
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     flexGrow: 1,
     flexWrap: 'wrap',
     // padding: `${theme.spacing.unit * 5}px`,
@@ -276,7 +284,7 @@ const homeComponentStyles = theme => ({
   },
   root2: {
     flexGrow: 1,
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     flexWrap: 'wrap',
     paddingBottom: `${theme.spacing.unit * 5}px`,
     paddingTop: `${theme.spacing.unit * 5}px`,
@@ -290,7 +298,7 @@ const homeComponentStyles = theme => ({
   },
   root4: {
     flexGrow: 1,
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     flexWrap: 'wrap',
     paddingBottom: `${theme.spacing.unit * 5}px`,
   },
@@ -334,6 +342,7 @@ const homeComponentStyles = theme => ({
   },
   descriptionCardGrid: {
     padding: theme.spacing.unit * 2,
+    elevation: 5,
   },
   descriptionCard: {
     display: 'flex',

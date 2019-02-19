@@ -6,7 +6,7 @@ import LayoutBody from './LayoutBody';
 
 const styles = theme => ({
   root: {
-    color: theme.palette.secondary.light,
+    color: theme.palette.primary.white,
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -29,7 +29,7 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.white,
     zIndex: -1,
   },
   background: {

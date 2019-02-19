@@ -12,7 +12,7 @@ const backgroundImage =
 const styles = theme => ({
   background: {
     backgroundImage: `url(${Logo})`,
-    backgroundColor: theme.palette.secondary.light, // Average color of the background image.
+    backgroundColor: theme.palette.primary.white, // Average color of the background image.
     backgroundPosition: 'center',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
@@ -31,7 +31,7 @@ const styles = theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 30,
-      backgroundColor: theme.palette.secondary.light, // Average color of the background image.
+      backgroundColor: theme.palette.primary.white, // Average color of the background image.
     },
   },
   h5: {
@@ -55,7 +55,7 @@ function HomeLogo(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="" />
       <Typography color="textSecondary" align="center" variant="h2" marked="center" className={classes.h2} >
-        It's time to make learning computer science easier
+        Computer science education from us, to you
       </Typography>
     </HomeLogoLayout>
   );

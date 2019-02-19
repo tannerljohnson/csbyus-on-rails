@@ -56,7 +56,6 @@ class CurriculaHubLanding extends React.Component {
              </Grid>
 
             {/* Contribute */}
-            <Divider/>
             <div className={classes.root2}>
                   <Typography variant="h3" class={classes.newFont} align="left" color="textPrimary" gutterBottom>
                     Contribute to CurriculaHub

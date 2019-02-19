@@ -15,13 +15,10 @@ import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
-import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -34,19 +31,40 @@ import {
 } from "react-router-dom";
 
 
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  Typography: {
+    fontFamily: [
+      'Avenir Next',
+      'Gill Sans',
+    ]
+  },
+});
 
 class HeaderAppBar extends React.Component {
+
+  onTitleClick() {
+    window.open('https://csbyus.org/')
+  };
 
   render () {
     const { classes } = this.props;
     const colors = {
       color: '#FFFFFF',
       fontcolor: '#FFFFFF',
+      textAlign: 'center',
     };
 
     const navLinkStyles = {
+      paddingLeft: theme.spacing.unit * 1,
+      paddingRight: theme.spacing.unit * 1,
     };
+
+    const mainTitleStyles = {
+      fontFamily: theme.Typography.fontFamily[0],
+      paddingRight: theme.spacing.unit * 3,
+      color: '#FFFFFF',
+      fontcolor: '#FFFFFF',
+    }
 
     const sideList = (
       <div>
@@ -54,7 +72,7 @@ class HeaderAppBar extends React.Component {
           <NavLink style={navLinkStyles} to={'/home'}>
             <ListItem button key={'Home'}>
               {/*<ListItemIcon style={colors}> <HomeIcon /> </ListItemIcon>*/}
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" textAlign="center">Home</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/about'}>
@@ -94,10 +112,12 @@ class HeaderAppBar extends React.Component {
     return (
       <AppBar className={classes.appBar}>
         <Toolbar>
-          <Typography variant="title" color="inherit" noWrap>
+          <NavLink to={'/home'}>
+          <Typography style={mainTitleStyles} variant="title" color="inherit" noWrap>
             CSbyUs
           </Typography>
-          <div>
+          </NavLink>
+          <div className={classes.headerList}>
             {sideList}
           </div>
         </Toolbar>
