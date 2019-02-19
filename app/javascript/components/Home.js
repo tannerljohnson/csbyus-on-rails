@@ -98,6 +98,7 @@ function Home(props) {
 
             <HomeLogo />
 
+
             {/* Hero unit */}
             <div className={classes.heroUnit}>
               <div className={classes.heroContent}>
@@ -123,7 +124,6 @@ function Home(props) {
                   <DescriptionCard avatar="support" icon="favorite" url="csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
                 </Grid>
               </Grid>
-            </div>
 
 
 
@@ -175,6 +175,7 @@ function Home(props) {
                 <Typography variant="h2" className={classes.darkFont} align="center" color="textPrimary" gutterBottom>
                   <b>Our Impact</b>
                 </Typography>
+              </div>
               </div>
 
 
