@@ -17,6 +17,12 @@ module.exports = {
             content:"Introduction to the world of data science for middle school age students. In a full day, students and mentors work in teams through the data science process, answering research questions with real-world data.",
             url: 'https://docs.google.com/document/d/1i5TnWBwk2yvZpTetN5yb3ByLC2J2oVcdh71c4XSVHno/edit?usp=sharing'},
         {
+            id: "902",
+            title:"Turtles and Algorithms",
+            author:"CSbyUs",
+            content:"Basic introductory lesson to how algorithms work for elementary school age students. In about an hour, students start with a physical representation of the turtle computer program and then convert their words and action into basic code.",
+            url: 'https://docs.google.com/document/d/1yveay_b4OUSS3mfKWYRV9UpytbdCsxRn79OqwtxVTMU/edit'},
+        {
             id: "100",
             title:"CS First with Scratch",
             author:"Google",

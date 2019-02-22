@@ -8,6 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
+import CssBaseline from '@material-ui/core/CssBaseline';
+
 
 
 class InTheNews extends React.Component {
@@ -59,14 +61,16 @@ class InTheNews extends React.Component {
     return (
         //TODO: see if this works
         <React.Fragment>
-          <div className={classes.layout}>
+        <CssBaseline/>
+          <div className={classes.root2}>
+            <main className={classes.layout2}>
 
             <Paper className={classes.newsTitleHeader}>
                 <div className={classes.courseName}>
-                    <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                    <Typography component="h1" class={classes.newFont} variant="h3" color="inherit" gutterBottom>
                         In the News
                     </Typography>
-                    <Typography variant="h5" color="inherit" paragraph>
+                    <Typography variant="h2" class={classes.newFont} color="inherit" paragraph>
                         Explore the latest coverage of CSbyUs
                     </Typography>
                 </div>
@@ -80,7 +84,7 @@ class InTheNews extends React.Component {
                      </Grid>
                    ))}
              </Grid>
-
+            </main>
           </div>
         </React.Fragment>
 

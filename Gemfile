@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby "2.4.1"
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -13,6 +14,7 @@ gem 'rails', '~> 5.1.4'
 gem 'pg'
 # Use sqlite3 for local development
 # gem 'sqlite3', '~> 1.3.13'
+
 gem 'figaro'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
