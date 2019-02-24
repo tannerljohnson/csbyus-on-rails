@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
-import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import individualBioCardComponentStyles from "../../assets/javascripts/jss/components/individualBioCardComponentStyles.js";
 
 
 class IndividualBioCard extends React.Component {
@@ -18,7 +18,7 @@ class IndividualBioCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card >
+        <Card>
           <CardActionArea className={classes.IndividualBioCard} href={this.props.url}  target="_blank">
             <CardContent>
               <Typography variant="h5" component="h2">
@@ -51,4 +51,4 @@ IndividualBioCard.propTypes = {
   caption: PropTypes.string,
   email: PropTypes.string
 };
-export default withStyles(homeComponentStyles)(IndividualBioCard);
+export default withStyles(individualBioCardComponentStyles)(IndividualBioCard);

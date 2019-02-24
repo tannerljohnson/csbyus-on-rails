@@ -2,14 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import IndividualBioCard from "./IndividualBioCard"
 import { withStyles } from '@material-ui/core/styles'
-import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import individualBiosComponentStyles from "../../assets/javascripts/jss/components/individualBiosComponentStyles.js";
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 
-class TechTeam extends React.Component {
+class IndividualBiosPage extends React.Component {
+
 
   render () {
       const { classes } = this.props;
@@ -100,9 +101,7 @@ class TechTeam extends React.Component {
             study: "Economics, 2019",
             caption:"I believe that educational equity is extremely important for reducing economic inequality. In an increasingly digital world, Computer Science education is especially important to ensure that innovation doesn’t increase the technology gap. I love collaborating with CSbyUs to work toward this vision.",
             email: "hayley.barton@duke.edu"
-          }
-
-            ];
+          }];
 
       const cards = data.map((card) =>
           <IndividualBioCard
@@ -113,28 +112,25 @@ class TechTeam extends React.Component {
           email = {card.email}/>
       );
 
-
-
     return (
-        //TODO: see if this works
-        <React.Fragment>
-          <div className={classes.layout2}>
+      //display cards
 
+      <div class="container-cards">
+      <h1>Meet Our Team!</h1>
+        <React.Fragment>
               <Grid container spacing={24}>
                   {cards.map(card => (
-                    // change xs setting to 12 for one card per row
+
                      <Grid item xs={12} sm={6} key={card.toString()}>
                          {card}
                      </Grid>
                    ))}
              </Grid>
-
-          </div>
         </React.Fragment>
-
+      </div>
 
     );
   }
 }
 
-export default withStyles(homeComponentStyles)(IndividualBiosPage);
+export default withStyles(individualBiosComponentStyles)(IndividualBiosPage);
