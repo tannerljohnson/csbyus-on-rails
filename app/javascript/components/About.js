@@ -1,31 +1,25 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Background from '../../assets/images/AboutUs.png';
 import InfoSegment from "./InfoSegment"
 import aboutComponentStyles from "../../assets/javascripts/jss/components/aboutComponentStyles.js";
-
+import TeamCard from "./TeamCard";
+import Grid from '@material-ui/core/Grid';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AboutLogo from './AboutLogo';
 
 class About extends React.Component {
 
   render () {
 
     const { classes } = this.props;
-
+    
     return (
-      <React.Fragment> 
-
+      <React.Fragment>
+      {/* Use CssBaseline to fix header bar spacing */}
+      <CssBaseline/>
         {/* Big picture */}
-        <div className={classes.bgimg} >
-          {/* insert picture as background here */}
-          <div className={classes.title}>
-            <subtitle>About<b>Us</b></subtitle>
-          </div>
-        </div>
-        <div className={classes.layout}>
-          <InfoSegment />
-        </div>
+        <AboutLogo />
+        <InfoSegment />
       </React.Fragment>
     );
   }

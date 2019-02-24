@@ -25,17 +25,33 @@ import IndividualBiosPage from './IndividualBiosPage'
 
 
 const theme = createMuiTheme({
+  Typography: {
+    fontFamily: [
+      'Avenir Next',
+      'Gill Sans',
+
+
+    ]
+  },
   palette: {
     primary: {
       main: '#2f2c71',
       rose: '#c2185b',
       purple: '#7e57c2',
-      green: '#30b271',
+      green: '#3b945e',
       blue: '#1976d2',
+      lightblue: '#65ccb8',
+      darkturq: '#026670',
+      orangepink: '#f4976c',
+      yellow: '#fce181',
+      white: '#ffffff',
     },
     secondary: {
-      light: '#ccc0ae',
+      lightturq: '#57ba98',
+      light: '#fef9c7',
+      // light: '#ffffff',
       main: '#30b271',
+      darkgrey: '#182628',
     },
   }
 });

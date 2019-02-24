@@ -131,69 +131,6 @@ class ContactForm extends React.Component {
             </Paper>
           </main>
 
-        {/*
-          <form className={classes.container} autoComplete="off">
-            <Paper elevation={1}>
-              <div className={classes.mainTitle}>
-                <Typography variant="h4" component="h3" align="center">
-                  Get in touch with <b>Us</b>
-                </Typography>
-                <Typography variant="h6" component="p" align="center">
-                  We're always looking for collaborators.
-                </Typography>
-              </div>
-            </Paper>
-            <div className={classes.textFieldContainer}>
-              <TextField
-                required
-                id="standard-name"
-                label="Your name"
-                className={classes.textField}
-                value={this.state.name}
-                onChange={this.handleChange('name')}
-                margin="normal"
-              />
-              <TextField
-                required
-                id="standard-required"
-                label="Email"
-                className={classes.textField}
-                onChange={this.handleChange('email')}
-                value={this.state.email}
-                margin="normal"
-              />
-              <TextField
-                required
-                id="standard-required"
-                label="Subject"
-                className={classes.textField}
-                onChange={this.handleChange('subject')}
-                value={this.state.subject}
-                margin="normal"
-              />
-              <TextField
-                required
-                id="standard-multiline-static"
-                label="Message"
-                multiline
-                rows="4"
-                className={classes.textField}
-                margin="normal"
-                value={this.state.message}
-                onChange={this.handleChange('message')}
-              />
-            </div>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={16} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary" onClick={this.handleDialogOpen}>
-                    Submit
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
-          </form>
-          */}
         <Dialog
           open={this.state.open}
           TransitionComponent={Transition}
