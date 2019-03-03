@@ -7,6 +7,8 @@ import courseOverviewComponentStyles from "../../assets/javascripts/jss/componen
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 import SearchBar from './SearchBar';
+import Paper from '@material-ui/core/Paper';
+
 
 var info = require('../../assets/data/coursesInfo.js');
 
@@ -57,8 +59,7 @@ class CourseOverview extends React.Component {
         return (
             <React.Fragment>
                 <div className={classes.layout2}>
-
-                    <Grid container spacing={40}>
+                    <Grid container spacing={40} justify ='flex-end'>
                         <Grid item>
                             <SearchBar onChange={(newValue) => this.setState({ value: newValue})}
                                         onRequestSearch={() => this.handleRequest()}/>
