@@ -70,6 +70,7 @@ GEM
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
+    ffi (1.10.0-x86-mingw32)
     figaro (1.1.1)
       thor (~> 0.14)
     globalid (0.4.2)
@@ -96,7 +97,8 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
-    pg (1.1.4)
+    nokogiri (1.10.1-x86-mingw32)
+      mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
@@ -160,11 +162,15 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.13)
+    sqlite3 (1.3.13-x86-mingw32)
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2018.9)
+      tzinfo (>= 1.0.0)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
     web-console (3.7.0)
@@ -184,6 +190,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   byebug
@@ -192,19 +199,16 @@ DEPENDENCIES
   figaro
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  pg
   puma (~> 3.7)
   rails (~> 5.1.4)
   react-rails
   sass-rails (~> 5.0)
   selenium-webdriver
+  sqlite3 (~> 1.3.13)
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
   webpacker
 
-RUBY VERSION
-   ruby 2.4.1p111
-
 BUNDLED WITH
-   1.17.1
+   2.0.1
