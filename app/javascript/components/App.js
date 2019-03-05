@@ -9,6 +9,7 @@ import {
 import Home from './Home'
 import About from './About'
 import Blog from './Blog'
+import IndividualBiosPage from './IndividualBiosPage'
 import CurriculaHubLanding from './CurriculaHubLanding'
 import InTheNews from './InTheNews'
 import Footer from './Footer';
@@ -21,7 +22,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import CourseOverview from './CourseOverview'
 import CourseVersionsPage from './CourseVersionsPage'
 import pink from '@material-ui/core/colors/pink';
-import IndividualBiosPage from './IndividualBiosPage'
+import Typography from '@material-ui/core/Typography';
 
 
 const theme = createMuiTheme({
@@ -49,7 +50,6 @@ const theme = createMuiTheme({
     secondary: {
       lightturq: '#57ba98',
       light: '#fef9c7',
-      // light: '#ffffff',
       main: '#30b271',
       darkgrey: '#182628',
     },
@@ -78,8 +78,8 @@ class App extends React.Component {
                   {/*<Route exact path="/overview" component={CourseOverview} />*/}
                   {/*<Route exact path="/version" component={CourseVersionsPage} />*/}
                   <Route exact path="/news" component={InTheNews} />
-                  <Route exact path="/bios" component={IndividualBiosPage} />
-                  {/*// <Route exact path="/blog" component={Blog} />*/}
+                  <Route exact path="/about/bios" component={IndividualBiosPage} />
+                  {/*<Route exact path="/blog" component={Blog} />*/}
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
                 </Switch>
