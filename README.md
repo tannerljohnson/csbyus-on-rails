@@ -55,6 +55,17 @@ You just made a `GET` request that is registered as a route in our rails `routes
 ```
 You can kill the server now (`Ctrl-C`).
 
+
+### Keep Gemfile clean
+Since we are using different Gemfiles locally and remotely, it might be helpful to tell git you want to start ignoring changes to Gem-related files. To do so, run:
+```
+git update-index --assume-unchanged path/to/file
+```
+When you make changes to Gemfile want to start keeping track again
+```
+git update-index --no-assume-unchanged path/to/file
+```
+
 ### Generate a React component
 Since we installed nice Rails-React tools at the beginning, we can use simple commands to start building React components. Try it out!
 
