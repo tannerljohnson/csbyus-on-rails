@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 class IndividualBiosPage extends React.Component {
 
@@ -118,7 +119,9 @@ class IndividualBiosPage extends React.Component {
     return (
         //TODO: see if this works
         <React.Fragment>
-          <div className={classes.layout2}>
+          <CssBaseline/>
+              <div className={classes.root2}>
+                <main className={classes.layout2}>
 
               <Grid container spacing={24}>
                   {cards.map(card => (
@@ -128,7 +131,7 @@ class IndividualBiosPage extends React.Component {
                      </Grid>
                    ))}
              </Grid>
-
+            </main>  
           </div>
         </React.Fragment>
 
