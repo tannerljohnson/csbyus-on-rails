@@ -7,31 +7,42 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import Paper from '@material-ui/core/Paper';
+import Divider from '@material-ui/core/Divider';
+import moment from 'moment';
 
 class Post extends React.Component {
   render () {
-      //use <br/> if you need to go to another line
+    const { classes } = this.props;
+
     return (
       <React.Fragment>
-        <Card>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              {this.props.title}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              {this.props.author}
-            </Typography>
-            <Typography className={this.props.pos} color="textSecondary">
-              {this.props.timestamp}
-            </Typography>
-            <Typography component="p">
-              {this.props.content}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button href={this.props.url}  target="_blank" size="small">Read More</Button>
-          </CardActions>
-        </Card>
+        <CssBaseline/>
+        <div className={classes.root2}>
+          <main className={classes.layout2}>
+            <Card>
+              <CardContent>
+                <Typography variant="h5" component="h2">
+                  {this.props.title}
+                </Typography>
+                <Typography className={this.props.title} color="textSecondary" gutterBottom>
+                  {this.props.author}
+                </Typography>
+                <Typography className={this.props.pos} color="textSecondary">
+                  {moment(this.props.timestamp).fromNow()}
+                </Typography>
+                <Typography component="p">
+                {this.props.content &&
+                  this.props.content
+                    .split('\n')
+                    .map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+                </Typography>
+              </CardContent>
+            </Card>
+          </main>
+        </div>
       </React.Fragment>
     );
   }
@@ -43,7 +54,7 @@ Post.propTypes = {
   timestamp: PropTypes.string,
   content: PropTypes.string
 };
-export default Post
+export default withStyles(homeComponentStyles)(Post);
 
 
 //put card stuff here to make a card

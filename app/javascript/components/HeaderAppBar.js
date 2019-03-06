@@ -145,6 +145,11 @@ class HeaderAppBar extends React.Component {
               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>In the News</Typography>} />
             </ListItem>
           </NavLink>
+          <NavLink style={navLinkStyles} to={'/blog'}>
+             <ListItem button key={'Blog'}>
+               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Blog</Typography>} />
+             </ListItem>
+           </NavLink>
           <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Join Us</Typography>} />

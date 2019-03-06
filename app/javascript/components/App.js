@@ -81,7 +81,7 @@ class App extends React.Component {
                   {/*<Route exact path="/version" component={CourseVersionsPage} />*/}
                   <Route exact path="/news" component={InTheNews} />
                   <Route exact path="/blog" component={Blog} />
-                  <Route path="/posts/:id/:slug" component={PostContainer} />
+                  <Route path="/blog/:id/:slug" component={PostContainer} />
                   <Route exact path="/about/bios" component={IndividualBiosPage} />
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
