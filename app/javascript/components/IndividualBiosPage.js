@@ -9,7 +9,10 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc1e3695452e83c33a5e4f414201953b7856e16
 
 class IndividualBiosPage extends React.Component {
 
@@ -120,7 +123,12 @@ class IndividualBiosPage extends React.Component {
     return (
         //TODO: see if this works
         <React.Fragment>
+<<<<<<< HEAD
         <CssBaseline/>
+=======
+          {/*<div className={classes.layout2}>*/}
+          <CssBaseline/>
+>>>>>>> 8dc1e3695452e83c33a5e4f414201953b7856e16
 
               <Grid container spacing={24}>
                   {cards.map(card => (
@@ -131,6 +139,10 @@ class IndividualBiosPage extends React.Component {
                    ))}
              </Grid>
 
+<<<<<<< HEAD
+=======
+          {/*</div>*/}
+>>>>>>> 8dc1e3695452e83c33a5e4f414201953b7856e16
         </React.Fragment>
 
 
