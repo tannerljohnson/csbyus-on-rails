@@ -1,6 +1,5 @@
 import Background from '../../../images/HomePageBackground.JPG';
 
-
 const homeComponentStyles = theme => ({
   appBar: {
     position: 'fixed',

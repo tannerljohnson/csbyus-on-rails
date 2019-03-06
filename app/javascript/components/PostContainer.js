@@ -14,7 +14,7 @@ const {
   random: { uuid },
 } = faker;
 
-var postData = require('../../assets/data/coursesInfo.js');
+var postData = require('../../assets/data/posts/1.js');
 
 class PostContainer extends React.Component {
   constructor(props) {
@@ -30,17 +30,20 @@ class PostContainer extends React.Component {
   }
 
   componentDidMount() {
-    const id = this.props.match.params.id;
+    var id = this.props.match.params.id;
+    var intId = parseInt(id);
     const slug = this.props.match.params.slug;
-    // console.log(this.props);
-    this.fetchPost(id, slug);
+    console.log(this.props);
+    console.log(typeof(intId));
+    console.log(intId);
+    this.fetchPost(intId, slug);
   }
 
   fetchPost(id, slug) {
     // console.log('fetching!');
     // console.log('id is: ' + id);
-    const samplePost =  this.findPostById(id, slug);
-    // console.log(samplePost.title);
+    var samplePost =  this.findPostById(id, slug);
+    console.log(samplePost.title);
     // console.log(samplePost.content);
 
     this.setState({id: samplePost.id});
@@ -53,9 +56,9 @@ class PostContainer extends React.Component {
   findPostById(id, slug) {
     // fetch file
     // TODO: do not assume index will correspond to post id
-    const intId = parseInt(id);
-    // console.log(intId);
-    const post = postData.posts[intId];
+    // const intId = parseInt(id);
+    console.log(id);
+    var post = postData.posts[id];
     return post;
   };
 

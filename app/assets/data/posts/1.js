@@ -6,7 +6,7 @@ module.exports = {
         {
           title:"The Importance of CS Education",
           author:"Megan Phibbons",
-          id: '0',
+          id: "0",
           slug: 'importance-of-cs-ed',
           content:"This is an interesting blog about why we should be focused on CS education at young ages!",
           timestamp:"2008-02-14 20:00",
