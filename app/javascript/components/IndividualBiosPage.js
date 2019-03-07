@@ -134,8 +134,9 @@ class IndividualBiosPage extends React.Component {
     return (
         //TODO: see if this works
         <React.Fragment>
-          {/*<div className={classes.layout2}>*/}
           <CssBaseline/>
+              <div className={classes.root2}>
+                <main className={classes.layout2}>
 
               <Grid container spacing={24}>
                   {cards.map(card => (
@@ -145,8 +146,8 @@ class IndividualBiosPage extends React.Component {
                      </Grid>
                    ))}
              </Grid>
-
-          {/*</div>*/}
+            </main>  
+          </div>
         </React.Fragment>
 
 
