@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.4.1"
+#ruby "2.4.1"
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -10,10 +10,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use pg for remote development
-gem 'pg'
+#Use pg for remote development
+#gem 'pg'
 # Use sqlite3 for local development
-#gem 'sqlite3', '~> 1.3.13'
+gem 'sqlite3', '~> 1.3.13'
 
 gem 'figaro'
 # Use Puma as the app server

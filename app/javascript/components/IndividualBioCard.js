@@ -20,6 +20,10 @@ class IndividualBioCard extends React.Component {
       <React.Fragment>
         <Card >
           <CardActionArea className={classes.IndividualBioCard} href={this.props.url}  target="_blank">
+          <CardMedia
+              className={classes.newsMedia}
+              myImage={this.props.myImage}
+            />
             <CardContent>
               <Typography variant="h5" component="h2">
                 {this.props.name}
@@ -49,6 +53,7 @@ IndividualBioCard.propTypes = {
   team: PropTypes.string,
   study: PropTypes.string,
   caption: PropTypes.string,
-  email: PropTypes.string
+  email: PropTypes.string,
+  myImage: PropTypes.string
 };
 export default withStyles(homeComponentStyles)(IndividualBioCard);
