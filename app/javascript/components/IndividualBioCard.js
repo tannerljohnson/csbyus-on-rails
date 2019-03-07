@@ -21,8 +21,12 @@ class IndividualBioCard extends React.Component {
         <Card>
           <CardActionArea className={classes.IndividualBioCard} href={this.props.url}  target="_blank">
             <CardContent>
+
               <Typography variant="h5" component="h2">
                 {this.props.name}
+              </Typography>
+              <Typography>
+
               </Typography>
               <Typography className={this.props.title} color="textSecondary" gutterBottom>
                 {this.props.team}

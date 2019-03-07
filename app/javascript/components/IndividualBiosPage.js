@@ -115,19 +115,21 @@ class IndividualBiosPage extends React.Component {
     return (
       //display cards
 
-      <div class="container-cards">
-      <h1>Meet Our Team!</h1>
+
         <React.Fragment>
+        <div class="container-cards">
+        <h1>Meet Our Team!</h1>
               <Grid container spacing={24}>
                   {cards.map(card => (
 
-                     <Grid item xs={12} sm={6} key={card.toString()}>
+                     <Grid item xs={12} md={6} sm={3} key={card.toString()}>
                          {card}
                      </Grid>
                    ))}
              </Grid>
+             </div>
         </React.Fragment>
-      </div>
+
 
     );
   }

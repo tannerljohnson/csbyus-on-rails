@@ -375,6 +375,10 @@ const homeComponentStyles = theme => ({
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
+  },
+  IndividualBioCard: {
+    backgroundColor: "green",
+    maxWidth: 30%,
   }
 });
 
