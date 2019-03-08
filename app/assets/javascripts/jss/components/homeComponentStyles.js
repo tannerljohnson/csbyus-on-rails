@@ -375,8 +375,6 @@ const homeComponentStyles = theme => ({
   bioMedia: {
     width: 150,
     height: 150,
-    marginLeft: 'auto',
-    marginRight: 'auto',
   },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
