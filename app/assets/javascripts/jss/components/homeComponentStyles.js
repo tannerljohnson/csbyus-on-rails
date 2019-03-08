@@ -372,6 +372,13 @@ const homeComponentStyles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  bioMedia: {
+    width: 150,
+    height: 150,
+    display: block,
+    margin-left: auto,
+    margin-right: auto,
+  },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
