@@ -18,8 +18,12 @@ class IndividualBioCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card>
+        <Card >
           <CardActionArea href={this.props.url}  target="_blank">
+          <CardMedia
+              className={classes.bioMedia}
+              image={this.props.myImage}
+            />
             <CardContent className={classes.individualBioCard}>
               <Typography variant="h5" component="h2">
                 {this.props.name}
@@ -34,7 +38,9 @@ class IndividualBioCard extends React.Component {
                 {this.props.caption}
               </Typography>
               <Typography className={this.props.email} color="textSecondary" gutterBottom>
+              <a target="mailto:">
                 {this.props.email}
+                </a>
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -49,6 +55,8 @@ IndividualBioCard.propTypes = {
   team: PropTypes.string,
   study: PropTypes.string,
   caption: PropTypes.string,
-  email: PropTypes.string
+  email: PropTypes.string,
+  myImage: PropTypes.string,
+  url: PropTypes.string
 };
 export default withStyles(homeComponentStyles)(IndividualBioCard);
