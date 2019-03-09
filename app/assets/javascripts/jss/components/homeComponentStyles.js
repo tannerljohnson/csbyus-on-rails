@@ -377,7 +377,7 @@ const homeComponentStyles = theme => ({
     height: 150,
   },
   bioCard: {
-    height: 450,
+    maxHeight: 550,
   },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
