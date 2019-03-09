@@ -127,7 +127,7 @@ class IndividualBiosPage extends React.Component {
               <Grid container spacing={24}>
                   {cards.map(card => (
                     // change xs setting to 12 for one card per row
-                     <Grid item xs={12} sm={6} key={card.toString()}>
+                     <Grid item xs={12} sm={6} md={4} key={card.toString()}>
                          {card}
                      </Grid>
                    ))}

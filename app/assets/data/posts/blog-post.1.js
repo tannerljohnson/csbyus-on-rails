@@ -1,10 +1,11 @@
-## Sample blog post
+module.exports = {
+  string: `## Sample blog post
 
 #### April 1, 2020 by Olivier
 
 This blog post shows a few different types of content that are supported and styled with
 Material styles. Basic typography, images, and code are all supported.
-You can extend these by modifying `Markdown.js`.
+You can extend these by modifying 'Markdown.js'.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
@@ -50,4 +51,5 @@ Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a p
  2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
  3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.`
+}

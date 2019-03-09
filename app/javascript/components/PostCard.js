@@ -28,7 +28,7 @@ class PostCard extends React.Component {
               {this.props.timestamp}
             </Typography>
             <Typography component="p">
-              {this.props.content}
+              {this.props.summary}
             </Typography>
           </CardContent>
           <CardActions>
@@ -44,7 +44,8 @@ PostCard.propTypes = {
   author: PropTypes.string,
   title: PropTypes.string,
   timestamp: PropTypes.string,
-  content: PropTypes.string
+  content: PropTypes.string,
+  summary: PropTypes.string,
 };
 export default PostCard
 

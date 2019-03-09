@@ -26,7 +26,7 @@ class Blog extends React.Component {
                 title = {post.title}
                 author = {post.author}
                 id = {post.id}
-                content = {truncate(post.content, TRUNCATION_LIMIT) + "..."}
+                summary = {truncate(post.summary, TRUNCATION_LIMIT) + "..."}
                 url = {"/blog/"+ post.id + "/" + post.slug}
                 timestamp = {moment(post.timestamp).fromNow()}
                 />

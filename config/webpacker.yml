@@ -27,6 +27,7 @@ default: &default
     - .gif
     - .jpeg
     - .jpg
+    - .md
 
 development:
   <<: *default

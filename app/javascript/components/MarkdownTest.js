@@ -14,13 +14,13 @@ import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
 import Remarkable from 'remarkable';
 
-// import RawMarkdown from '../../assets/data/posts/blog-post.1.md';
+const markdown = require('../../assets/data/posts/blog-post.1.js');
 
 class MarkdownTest extends React.Component {
 
   getProcessedMarkup() {
     var md = new Remarkable();
-    return { __html: md.render("# Test") };
+    return { __html: md.render(markdown.string) };
   }
 
   render () {

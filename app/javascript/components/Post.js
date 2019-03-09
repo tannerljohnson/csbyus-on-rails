@@ -12,8 +12,15 @@ import homeComponentStyles from "../../assets/javascripts/jss/components/homeCom
 import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
+import Remarkable from 'remarkable';
 
 class Post extends React.Component {
+
+  getProcessedMarkup(markdownString) {
+    var md = new Remarkable();
+    return { __html: md.render(markdownString) };
+  }
+
   render () {
     const { classes } = this.props;
 
@@ -22,25 +29,23 @@ class Post extends React.Component {
         <CssBaseline/>
         <div className={classes.root2}>
           <main className={classes.layout2}>
-            <Card>
-              <CardContent>
-                <Typography variant="h5" component="h2">
+            <Paper className={classes.newFont}>
+              <CardContent >
+                <Typography variant="h5" component="h2" className={classes.newFont}>
                   {this.props.title}
                 </Typography>
-                <Typography className={this.props.title} color="textSecondary" gutterBottom>
+                <Typography className={classes.newFont} color="textSecondary" gutterBottom>
                   {this.props.author}
                 </Typography>
-                <Typography className={this.props.pos} color="textSecondary">
+                <Typography className={classes.newFont} color="textSecondary">
                   {moment(this.props.timestamp).fromNow()}
                 </Typography>
-                <Typography component="p">
-                {this.props.content &&
-                  this.props.content
-                    .split('\n')
-                    .map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-                </Typography>
+                <div
+                  className={classes.newFont}
+                  dangerouslySetInnerHTML={this.getProcessedMarkup(this.props.content)}
+                  />
               </CardContent>
-            </Card>
+            </Paper>
           </main>
         </div>
       </React.Fragment>

@@ -29,6 +29,7 @@ class PostContainer extends React.Component {
         id: '',
         title: '',
         content: '',
+        summary: '',
         timestamp: '',
         slug: '',
         author: '',
