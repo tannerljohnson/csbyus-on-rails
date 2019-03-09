@@ -32,7 +32,3 @@ yarn-debug.log*
 
 # Ignore application configuration
 /config/application.yml
-
-# Ignore Gemfile
-Gemfile
-Gemfile.lock
