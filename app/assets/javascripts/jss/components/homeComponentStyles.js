@@ -55,6 +55,9 @@ const homeComponentStyles = theme => ({
       fontSize: 18,
     },
   },
+  individualBioCard: {
+    // backgroundColor: theme.palette.primary.green,
+  },
   blueFont: {
     fontFamily: theme.Typography.fontFamily[0],
     color: theme.palette.primary.lightblue,

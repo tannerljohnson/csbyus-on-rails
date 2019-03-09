@@ -12,8 +12,17 @@ import homeComponentStyles from "../../assets/javascripts/jss/components/homeCom
 import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
+import Remarkable from 'remarkable';
 
-class Post extends React.Component {
+// import RawMarkdown from '../../assets/data/posts/blog-post.1.md';
+
+class MarkdownTest extends React.Component {
+
+  getProcessedMarkup() {
+    var md = new Remarkable();
+    return { __html: md.render("# Test") };
+  }
+
   render () {
     const { classes } = this.props;
 
@@ -24,21 +33,10 @@ class Post extends React.Component {
           <main className={classes.layout2}>
             <Card>
               <CardContent>
-                <Typography variant="h5" component="h2">
-                  {this.props.title}
-                </Typography>
-                <Typography className={this.props.title} color="textSecondary" gutterBottom>
-                  {this.props.author}
-                </Typography>
-                <Typography className={this.props.pos} color="textSecondary">
-                  {moment(this.props.timestamp).fromNow()}
-                </Typography>
-                <Typography component="p">
-                {this.props.content &&
-                  this.props.content
-                    .split('\n')
-                    .map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-                </Typography>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={this.getProcessedMarkup()}
+                />
               </CardContent>
             </Card>
           </main>
@@ -48,10 +46,4 @@ class Post extends React.Component {
   }
 }
 
-Post.propTypes = {
-  author: PropTypes.string,
-  title: PropTypes.string,
-  timestamp: PropTypes.string,
-  content: PropTypes.string
-};
-export default withStyles(homeComponentStyles)(Post);
+export default withStyles(homeComponentStyles)(MarkdownTest);

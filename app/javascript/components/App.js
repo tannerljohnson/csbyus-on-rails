@@ -24,6 +24,7 @@ import CourseVersionsPage from './CourseVersionsPage'
 import pink from '@material-ui/core/colors/pink';
 import Typography from '@material-ui/core/Typography';
 import PostContainer from './PostContainer';
+import MarkdownTest from './MarkdownTest';
 
 
 
@@ -83,6 +84,7 @@ class App extends React.Component {
                   <Route exact path="/blog" component={Blog} />
                   <Route path="/blog/:id/:slug" component={PostContainer} />
                   <Route exact path="/about/bios" component={IndividualBiosPage} />
+                  <Route exact path="/markdown" component={MarkdownTest} />
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
                 </Switch>

@@ -18,9 +18,9 @@ class IndividualBioCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card >
-          <CardActionArea className={classes.IndividualBioCard} href={this.props.url}  target="_blank">
-            <CardContent>
+        <Card>
+          <CardActionArea href={this.props.url}  target="_blank">
+            <CardContent className={classes.individualBioCard}>
               <Typography variant="h5" component="h2">
                 {this.props.name}
               </Typography>
