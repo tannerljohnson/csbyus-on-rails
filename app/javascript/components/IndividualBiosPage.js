@@ -33,6 +33,22 @@ class IndividualBiosPage extends React.Component {
             myImage: "https://farm8.staticflickr.com/7859/47268067852_9896c8a123_q.jpg",
             url: "mailto:sj214@duke.edu"
           },{
+            name:"Carter Zenke",
+            team:"Curriculum R&D Team Leader, Teaching Team",
+            study: "Digital Era Education, 2020",
+            caption:"Computer science education opens the digital era’s door to opportunity. I believe every student has a right to an education that will prepare them to thrive in their world.",
+            email: "carter.zenke@duke.edu",
+            myImage: "https://farm8.staticflickr.com/7887/33444721758_3e9e741bae_q.jpg",
+             url: "mailto:carter.zenke@duke.edu"
+          },{
+            name:"Tanner Johnson",
+            team:"Technology R&D Team Leader",
+            study: "Computer Science, 2018",
+            caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
+            email: "johnsontanner3@gmail.com",
+            myImage: "https://www.flickr.com/photos/drdavidferry/47299516021/in/pool-publicdomain/",
+            url: "mailto:johnsontanner3@gmail.com"
+          },{
             name:"Bozhena Etin",
             team:"Curriculum R&D Team Leader, Project Manager for CSByUs",
             study: "General Liberal Studies, Graduate Student",
@@ -48,14 +64,6 @@ class IndividualBiosPage extends React.Component {
             email: "brian.njoroge@duke.edu",
             myImage: "https://farm8.staticflickr.com/7899/47268067742_6e2595c1ac_q.jpg",
              url: "mailto:brian.njoroge@duke.edu"
-          },{
-            name:"Carter Zenke",
-            team:"Curriculum R&D Team Leader, Teaching Team",
-            study: "Digital Era Education, 2020",
-            caption:"Computer science education opens the digital era’s door to opportunity. I believe every student has a right to an education that will prepare them to thrive in their world.",
-            email: "carter.zenke@duke.edu",
-            myImage: "https://farm8.staticflickr.com/7887/33444721758_3e9e741bae_q.jpg",
-             url: "mailto:carter.zenke@duke.edu"
           },{
             name:"Daniel Yoontae Hwang",
             team:"Curriculum R&D Team, Teaching Team",
@@ -137,14 +145,6 @@ class IndividualBiosPage extends React.Component {
             myImage: "https://farm8.staticflickr.com/7901/32378612597_ab9dceb352_q.jpg",
             url: "mailto:vivian.kirby@duke.edu"
           },{
-            name:"Tanner Johnson",
-            team:"Technology R&D Team Leader",
-            study: "Computer Science, 2018",
-            caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
-            email: "johnsontanner3@gmail.com",
-            myImage: "https://www.flickr.com/photos/drdavidferry/47299516021/in/pool-publicdomain/",
-            url: "mailto:johnsontanner3@gmail.com"
-          },{
             name:"Yeonju Suh",
             team:"Curriculum R&D Team",
             study: "Psychology, 2020",
@@ -172,13 +172,16 @@ class IndividualBiosPage extends React.Component {
         //TODO: see if this works
         <React.Fragment>
           <CssBaseline/>
+          <Typography color="inherit" align="center" variant="h1" marked="center" className={classes.orangeFont} >
+          Meet <b>Us</b>
+          </Typography>
               <div className={classes.root2}>
                 <main className={classes.layout2}>
 
               <Grid container spacing={24} justify="center">
                   {cards.map(card => (
                     // change xs setting to 12 for one card per row
-                     <Grid item style={{ textAlign: 'center' }} xs={12} sm={6} key={card.toString()}>
+                     <Grid item style={{ textAlign: 'center' }} xs={12} sm={6} md={4} key={card.toString()}>
                          {card}
                      </Grid>
                    ))}
