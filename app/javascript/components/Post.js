@@ -6,13 +6,19 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Link } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
 import Remarkable from 'remarkable';
+import {
+  Redirect,
+  Link,
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 class Post extends React.Component {
 
@@ -31,13 +37,13 @@ class Post extends React.Component {
           <main className={classes.layout2}>
             <Paper className={classes.newFont}>
               <CardContent >
-                <Typography variant="h5" component="h2" className={classes.newFont}>
+                <Typography variant="h4" component="h2" className={classes.newFont}>
                   {this.props.title}
                 </Typography>
-                <Typography className={classes.newFont} color="textSecondary" gutterBottom>
-                  {this.props.author}
+                <Typography variant="h6" className={classes.newFont} color="textSecondary" gutterBottom>
+                  {this.props.isTeamMember ? <NavLink to={'/about/bios'}>{this.props.author}</NavLink> : this.props.author}
                 </Typography>
-                <Typography className={classes.newFont} color="textSecondary">
+                <Typography variant="subtitle2" className={classes.newFont} color="textSecondary">
                   {moment(this.props.timestamp).fromNow()}
                 </Typography>
                 <div

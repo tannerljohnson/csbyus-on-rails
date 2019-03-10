@@ -72,10 +72,10 @@ class InTheNews extends React.Component {
 
             <Paper className={classes.newsTitleHeader}>
                 <div className={classes.courseName}>
-                    <Typography component="h1" class={classes.newFont} variant="h3" color="inherit" gutterBottom>
+                    <Typography component="h1" className={classes.newFont} variant="h3" color="inherit" gutterBottom>
                         In the News
                     </Typography>
-                    <Typography variant="h2" class={classes.newFont} color="inherit" paragraph>
+                    <Typography variant="h5" className={classes.newFont} color="inherit" paragraph>
                         Explore the latest coverage of CSbyUs
                     </Typography>
                 </div>

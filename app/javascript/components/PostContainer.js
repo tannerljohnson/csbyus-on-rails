@@ -33,6 +33,7 @@ class PostContainer extends React.Component {
         timestamp: '',
         slug: '',
         author: '',
+        isTeamMember: false,
     }
     this.fetchPost = this.fetchPost.bind(this)
   }
@@ -53,7 +54,7 @@ class PostContainer extends React.Component {
     this.setState({timestamp: samplePost.timestamp});
     this.setState({slug: samplePost.slug});
     this.setState({author: samplePost.author});
-
+    this.setState({isTeamMember: samplePost.isTeamMember})
   };
 
   findPostById(id, slug) {
@@ -77,7 +78,7 @@ class PostContainer extends React.Component {
 
   render () {
     return (
-      <Post author={this.state.author} title={this.state.title} timestamp={this.state.timestamp} content={this.state.content}/>
+      <Post author={this.state.author} isTeamMember={this.state.isTeamMember} title={this.state.title} timestamp={this.state.timestamp} content={this.state.content}/>
     );
   }
 }

@@ -13,26 +13,31 @@ import { truncate } from '../helpers/utilities';
 import moment from 'moment';
 
 
-const data = require('../../assets/data/blogPosts.js');
+var data = require('../../assets/data/blogPosts.js');
 const TRUNCATION_LIMIT = 260;
 
 class Blog extends React.Component {
 
+  sortPostsByDate() {
+    data.posts.sort(function(a,b){
+      return new Date(b.timestamp) - new Date(a.timestamp);
+    })
+  }
+
   render () {
       const { classes } = this.props;
-
-      const posts = data.posts.map((post) =>
+      this.sortPostsByDate();
+      var posts = data.posts.map((post) =>
           <PostCard
                 title = {post.title}
                 author = {post.author}
+                isTeamMember = {post.isTeamMember}
                 id = {post.id}
                 summary = {truncate(post.summary, TRUNCATION_LIMIT) + "..."}
                 url = {"/blog/"+ post.id + "/" + post.slug}
                 timestamp = {moment(post.timestamp).fromNow()}
                 />
       );
-
-
 
     return (
         <React.Fragment>

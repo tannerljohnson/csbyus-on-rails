@@ -36,10 +36,10 @@ class CurriculaHubLanding extends React.Component {
 
             <Paper className={classes.curriculaTitleHeader}>
                 <div className={classes.courseName}>
-                    <Typography component="h1" class={classes.newFont} variant="h3" color="inherit" gutterBottom>
+                    <Typography component="h1" className={classes.newFont} variant="h3" color="inherit" gutterBottom>
                         CurriculaHub
                     </Typography>
-                    <Typography variant="h5" class={classes.newFont} color="inherit" paragraph>
+                    <Typography variant="h5" className={classes.newFont} color="inherit" paragraph>
                         A one-stop platform for you to explore, adapt, add, and discuss open-source curricula
                     </Typography>
                 </div>
