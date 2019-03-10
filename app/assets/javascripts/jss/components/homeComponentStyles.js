@@ -379,11 +379,17 @@ const homeComponentStyles = theme => ({
     height: 150,
   },
   bioCard: {
-    maxHeight: 550,
+    height: 450,
   },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
+  },
+  meetUsTitle: {
+    paddingTop: '4%',
+  },
+  bioMediaGrid: {
+    paddingTop: '4%',
   }
 });
 

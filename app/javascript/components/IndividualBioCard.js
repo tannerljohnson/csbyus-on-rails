@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 
 
@@ -19,11 +20,21 @@ class IndividualBioCard extends React.Component {
     return (
       <React.Fragment>
         <Card className = {classes.bioCard}>
-          <CardActionArea className={classes.individualBioCard} href={this.props.url}  target="_blank">
-          <CardMedia
-              className={classes.bioMedia}
-              image={this.props.myImage}
-            />
+            <Grid
+              container
+              spacing={0}
+              direction="column"
+              alignItems="center"
+              justify="center"
+
+            >
+              <Grid item className={classes.bioMediaGrid}>
+              <CardMedia
+                  className={classes.bioMedia}
+                  image={this.props.myImage}
+                />
+              </Grid>
+            </Grid>
             <CardContent className={classes.individualBioCard}>
               <Typography variant="h5" component="h2">
                 {this.props.name}
@@ -37,13 +48,12 @@ class IndividualBioCard extends React.Component {
               <Typography component="p">
                 {this.props.caption}
               </Typography>
-              <Typography className={this.props.email} color="textSecondary" gutterBottom>
-              <a target="mailto:">
-                {this.props.email}
-                </a>
-              </Typography>
+              <CardActionArea href={this.props.url}  target="_blank">
+                <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                  {this.props.email}
+                </Typography>
+              </CardActionArea>
             </CardContent>
-          </CardActionArea>
         </Card>
       </React.Fragment>
     );
