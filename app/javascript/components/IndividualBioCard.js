@@ -48,13 +48,11 @@ class IndividualBioCard extends React.Component {
               <Typography component="p">
                 {this.props.caption}
               </Typography>
-              <CardActionArea href={this.props.url}  target="_blank">
                 <Typography className={this.props.email} color="textSecondary" gutterBottom>
-                <a target="mailto:">
-                  {this.props.email}
+                  <a href={this.props.url}>
+                    {this.props.email}
                   </a>
                 </Typography>
-              </CardActionArea>
             </CardContent>
         </Card>
       </React.Fragment>

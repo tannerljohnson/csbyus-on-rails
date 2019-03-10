@@ -162,7 +162,7 @@ I think the goal is to have this kind of back and forth where the curriculum is 
 
 I think, they are learning about how to make an app in App Lab, but there’s a more important type of learning we’re hoping they’re going to get. When you think about computer science, or at least me before I knew anything about it, I thought that it seemed really complicated and challenging, and I didn’t think it was something I would be able to do. I think importantly for a lot of students, after you’ve made an app you *are* a computer scientist. Coming to Duke they can the cool things that computer science can do even more than with the actual concepts we’re teaching them or how we’re teaching them to build an app. I think we’re hoping to inspire in them an interest in computer science and tech and hoping that if they do go into college-- like 90% of the students in the program do go on to graduate from college-- maybe they would consider doing computer science or a more technical field just because they feel like it’s more accessible or they feel like it’s something they can say they have a little bit of experience in.
 
-*Hayley Barton is a senior at Duke University majoring in Economics and **minoring in Computer Science**.*`
+*Hayley Barton is a senior at Duke University majoring in Economics and minoring in Computer Science.*`
         },
         {
           title:"How our non-profit works openly to make education accessible",

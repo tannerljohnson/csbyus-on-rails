@@ -12,6 +12,8 @@ import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
 import Remarkable from 'remarkable';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import IconButton from '@material-ui/core/IconButton';
 import {
   Redirect,
   Link,
@@ -22,7 +24,7 @@ import {
 
 class Post extends React.Component {
 
-  getProcessedMarkup(markdownString) {
+  getProcessedMarkup = (markdownString) => {
     var md = new Remarkable();
     return { __html: md.render(markdownString) };
   }
@@ -33,7 +35,15 @@ class Post extends React.Component {
     return (
       <React.Fragment>
         <CssBaseline/>
-        <div className={classes.root2}>
+        <div className={classes.postRoot}>
+        <NavLink to={'/blog'}>
+          <IconButton
+            aria-label="More"
+            aria-haspopup="true"
+          >
+            <ArrowBackIcon style={{ fontSize: 30 }}/>
+          </IconButton>
+        </NavLink>
           <main className={classes.layout2}>
             <Paper className={classes.newFont}>
               <CardContent >

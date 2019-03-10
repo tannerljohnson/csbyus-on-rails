@@ -59,7 +59,8 @@ class Blog extends React.Component {
             <Grid container spacing={24}>
                 {posts.map(post => (
                   // change xs setting to 12 for one card per row
-                   <Grid item xs={12} sm={6} key={post.toString()}>
+                  // old: xs={12} sm={6}
+                   <Grid item xs={12} key={post.toString()}>
                        {post}
                    </Grid>
                  ))}

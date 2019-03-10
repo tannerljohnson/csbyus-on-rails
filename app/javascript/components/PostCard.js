@@ -30,7 +30,7 @@ class PostCard extends React.Component {
               <Typography className={classes.newFont} color="textSecondary">
                 {this.props.timestamp}
               </Typography>
-              <Typography className={classes.newFont} component="p">
+              <Typography variant="subtitle1" component="p" className={classes.newFont}>
                 {this.props.summary}
               </Typography>
             </CardContent>

@@ -28,7 +28,7 @@ class IndividualBiosPage extends React.Component {
             name:"Amy Jiang",
             team:"Teaching Team Leader",
             study: "Public Policy, 2020",
-            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSByUs working on this mission",
+            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission",
             email: "sj214@duke.edu",
             myImage: "https://farm8.staticflickr.com/7859/47268067852_9896c8a123_q.jpg",
             url: "mailto:sj214@duke.edu"
@@ -46,11 +46,11 @@ class IndividualBiosPage extends React.Component {
             study: "Computer Science, 2018",
             caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
             email: "johnsontanner3@gmail.com",
-            myImage: "https://www.flickr.com/photos/drdavidferry/47299516021/in/pool-publicdomain/",
+            myImage: "https://keep.google.com/u/0/media/v2/1niKYYJ009UjaBaxc_okTGfww2wdP3x1PoYNA9Od6RMn2praaTOiyY214IH4LZB8/1eBhFlgqxls0yayKCp5tusP5yVPUJniTfEiUlV19u7sbr69XVb6dxpIhWlB1IwEw?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=622",
             url: "mailto:johnsontanner3@gmail.com"
           },{
             name:"Bozhena Etin",
-            team:"Curriculum R&D Team Leader, Project Manager for CSByUs",
+            team:"Curriculum R&D Team Leader, Project Manager for CSbyUs",
             study: "General Liberal Studies, Graduate Student",
             caption:"It is exciting to be part of this interdisciplinary team that is doing research in computer science and education, creating open source curriculum and teaching the curriculum. This is a unique opportunity at Duke to be part of a team that creates, implements and delivers a product that is impactful on the community of young people.",
             email: "bozhena.etin@duke.edu",
@@ -60,7 +60,7 @@ class IndividualBiosPage extends React.Component {
             name:"Brian Njoroge",
             team:"Curriculum R&D Team",
             study: "Public Policy and International Comparative Studies, 2020",
-            caption:"I believe that creating not only diverse but also inclusive classrooms is one of the ways to provide equal education opportunities to students regardless of their background, and CSByUs is dedicated to this cause by teaching CS while incorporating social justice issues in its curriculum.",
+            caption:"I believe that creating not only diverse but also inclusive classrooms is one of the ways to provide equal education opportunities to students regardless of their background, and CSbyUs is dedicated to this cause by teaching CS while incorporating social justice issues in its curriculum.",
             email: "brian.njoroge@duke.edu",
             myImage: "https://farm8.staticflickr.com/7899/47268067742_6e2595c1ac_q.jpg",
              url: "mailto:brian.njoroge@duke.edu"
@@ -68,7 +68,7 @@ class IndividualBiosPage extends React.Component {
             name:"Daniel Yoontae Hwang",
             team:"Curriculum R&D Team, Teaching Team",
             study: "Mathematics & Computer Science, 2022",
-            caption:"I joined CSByUs because I saw a need for CS classes that bring critical thinking skills to students of all backgrounds, while encouraging these children to be creative and design projects that truly spoke to their needs. I hope my work through CSByUs will work to marry these two sides together into an engaging and effective education.",
+            caption:"I joined CSbyUs because I saw a need for CS classes that bring critical thinking skills to students of all backgrounds, while encouraging these children to be creative and design projects that truly spoke to their needs. I hope my work through CSbyUs will work to marry these two sides together into an engaging and effective education.",
             email: "daniel.hwang@duke.edu",
             myImage: "https://farm8.staticflickr.com/7903/47268067792_05f58bd204_q.jpg",
              url: "mailto:daniel.hwang@duke.edu"
@@ -94,13 +94,13 @@ class IndividualBiosPage extends React.Component {
             study: "Economics, 2019",
             caption:"I believe that educational equity is extremely important for reducing economic inequality. In an increasingly digital world, Computer Science education is especially important to ensure that innovation doesn’t increase the technology gap. I love collaborating with CSbyUs to work toward this vision.",
             email: "hayley.barton@duke.edu",
-            myImage: "https://www.flickr.com/photos/drdavidferry/47299516021/in/pool-publicdomain",
+            myImage: "https://media.licdn.com/dms/image/C4E03AQEWorukaFCdEQ/profile-displayphoto-shrink_800_800/0?e=1557964800&v=beta&t=VtX5lfZSx8fvlb5O56ylLw7Tt9h-_co7CmnMFQ5DX1M",
              url: "mailto:hayley.barton@duke.edu"
           },{
             name:"Jay Patel",
             team:"Teaching Team, Curriculum R&D Team",
             study: "Computer Science, 2021",
-            caption:"I was raised in a small town in rural East Texas with no access to computer science education. I want to help make learning computer science more accessible for students in towns and schools with less resources than others and hope to do so by working with CSByUs.",
+            caption:"I was raised in a small town in rural East Texas with no access to computer science education. I want to help make learning computer science more accessible for students in towns and schools with less resources than others and hope to do so by working with CSbyUs.",
             email: "j.patel@duke.edu",
             myImage: "https://farm8.staticflickr.com/7824/33444721778_86ba9abc5f_q.jpg",
              url: "mailto:j.patel@duke.edu"
@@ -108,7 +108,7 @@ class IndividualBiosPage extends React.Component {
             name:"Judyth Estrada Salinas",
             team:"Technology R&D Team, Teaching Team",
             study: "Computer Science, 2020",
-            caption:"I joined CSByUs because I care about helping everyone, regardless of SES, race or background, to be able to fall in love with CS liked I did!",
+            caption:"I joined CSbyUs because I care about helping everyone, regardless of SES, race or background, to be able to fall in love with CS liked I did!",
             email: "judyth.estrada.salinas@duke.edu",
             myImage: "https://farm8.staticflickr.com/7845/47268067922_d90fec6fc0_q.jpg",
              url: "mailto:judyth.estrada.salinas@duke.edu"
@@ -182,7 +182,7 @@ class IndividualBiosPage extends React.Component {
 
               <Grid container spacing={24} justify="center">
                   {cards.map(card => (
-                    // change xs setting to 12 for one card per row
+                    // four cards per row xs={3}
                      <Grid item style={{ textAlign: 'center' }} xs={12} sm={6} md={4} key={card.toString()}>
                          {card}
                      </Grid>

@@ -296,7 +296,15 @@ const homeComponentStyles = theme => ({
     flexWrap: 'wrap',
     paddingBottom: `${theme.spacing.unit * 5}px`,
     paddingTop: `${theme.spacing.unit * 5}px`,
-
+  },
+  postRoot: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.primary.white,
+    flexWrap: 'wrap',
+    paddingBottom: `${theme.spacing.unit * 5}px`,
+    paddingTop: `${theme.spacing.unit * 1}px`,
+    marginLeft: theme.spacing.unit * 1,
+    marginRight: theme.spacing.unit * 1,
   },
   root3: {
     display: 'flex',
