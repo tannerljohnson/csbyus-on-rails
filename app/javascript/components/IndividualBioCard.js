@@ -50,7 +50,9 @@ class IndividualBioCard extends React.Component {
               </Typography>
               <CardActionArea href={this.props.url}  target="_blank">
                 <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                <a target="mailto:">
                   {this.props.email}
+                  </a>
                 </Typography>
               </CardActionArea>
             </CardContent>
