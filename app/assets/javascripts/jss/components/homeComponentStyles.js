@@ -376,10 +376,10 @@ const homeComponentStyles = theme => ({
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
   },
-  IndividualBioCard: {
-    backgroundColor: "green",
-    maxWidth: 30%,
-  }
+  individualBioCard: {
+    backgroundColor: theme.palette.primary.red,
+    width: 100%,
+  },
 });
 
 export default homeComponentStyles;
