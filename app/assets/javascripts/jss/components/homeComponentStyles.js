@@ -1,6 +1,5 @@
 import Background from '../../../images/HomePageBackground.JPG';
 
-
 const homeComponentStyles = theme => ({
   appBar: {
     position: 'fixed',
@@ -55,6 +54,9 @@ const homeComponentStyles = theme => ({
     [theme.breakpoints.down('sm')]: {
       fontSize: 18,
     },
+  },
+  individualBioCard: {
+    // backgroundColor: theme.palette.primary.green,
   },
   blueFont: {
     fontFamily: theme.Typography.fontFamily[0],
@@ -294,7 +296,15 @@ const homeComponentStyles = theme => ({
     flexWrap: 'wrap',
     paddingBottom: `${theme.spacing.unit * 5}px`,
     paddingTop: `${theme.spacing.unit * 5}px`,
-
+  },
+  postRoot: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.primary.white,
+    flexWrap: 'wrap',
+    paddingBottom: `${theme.spacing.unit * 5}px`,
+    paddingTop: `${theme.spacing.unit * 1}px`,
+    marginLeft: theme.spacing.unit * 1,
+    marginRight: theme.spacing.unit * 1,
   },
   root3: {
     display: 'flex',
@@ -372,9 +382,22 @@ const homeComponentStyles = theme => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  bioMedia: {
+    width: 150,
+    height: 150,
+  },
+  bioCard: {
+    height: 450,
+  },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
+  },
+  meetUsTitle: {
+    paddingTop: '4%',
+  },
+  bioMediaGrid: {
+    paddingTop: '4%',
   }
 });
 

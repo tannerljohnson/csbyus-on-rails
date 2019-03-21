@@ -23,6 +23,9 @@ import CourseOverview from './CourseOverview'
 import CourseVersionsPage from './CourseVersionsPage'
 import pink from '@material-ui/core/colors/pink';
 import Typography from '@material-ui/core/Typography';
+import PostContainer from './PostContainer';
+import MarkdownTest from './MarkdownTest';
+
 
 
 const theme = createMuiTheme({
@@ -78,8 +81,9 @@ class App extends React.Component {
                   {/*<Route exact path="/overview" component={CourseOverview} />*/}
                   {/*<Route exact path="/version" component={CourseVersionsPage} />*/}
                   <Route exact path="/news" component={InTheNews} />
+                  <Route exact path="/blog" component={Blog} />
+                  <Route path="/blog/:id/:slug" component={PostContainer} />
                   <Route exact path="/about/bios" component={IndividualBiosPage} />
-                  {/*<Route exact path="/blog" component={Blog} />*/}
                   {/* catch-all redirects to home */}
                   <Route render={this._redirectToHome} />
                 </Switch>

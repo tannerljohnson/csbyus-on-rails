@@ -128,26 +128,31 @@ class HeaderAppBar extends React.Component {
         <List>
           <NavLink className={classes.menuOptions} to={'/home'}>
             <ListItem button key={'Home'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" textAlign="center">Home</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/about'}>
             <ListItem button key={'About'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />            </ListItem>
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Curricula Hub</Typography>} />            </ListItem>
           </NavLink>
          <NavLink style={navLinkStyles} to={'/news'}>
             <ListItem button key={'In the News'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>In the News</Typography>} />
             </ListItem>
           </NavLink>
+          <NavLink style={navLinkStyles} to={'/blog'}>
+             <ListItem button key={'Blog'}>
+               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Blog</Typography>} />
+             </ListItem>
+           </NavLink>
           <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Join Us</Typography>} />
             </ListItem>
           </NavLink>
         </List>

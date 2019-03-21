@@ -4,6 +4,10 @@
 import React from "react"
 import { capitalizeWords } from '../helpers/utilities';
 import faker from 'faker';
+import Paper from '@material-ui/core/Paper';
+import Divider from '@material-ui/core/Divider';
+import moment from 'moment';
+
 
 
 import Post from './Post';
@@ -14,7 +18,9 @@ const {
   random: { uuid },
 } = faker;
 
-var postData = require('../../assets/data/coursesInfo.js');
+const paperStyle = { padding: 16 };
+
+var postData = require('../../assets/data/blogPosts.js');
 
 class PostContainer extends React.Component {
   constructor(props) {
@@ -23,39 +29,36 @@ class PostContainer extends React.Component {
         id: '',
         title: '',
         content: '',
+        summary: '',
         timestamp: '',
         slug: '',
+        author: '',
+        isTeamMember: false,
     }
     this.fetchPost = this.fetchPost.bind(this)
   }
 
   componentDidMount() {
-    const id = this.props.match.params.id;
+    var id = this.props.match.params.id;
+    var intId = parseInt(id);
     const slug = this.props.match.params.slug;
-    // console.log(this.props);
-    this.fetchPost(id, slug);
+    this.fetchPost(intId, slug);
   }
 
   fetchPost(id, slug) {
-    // console.log('fetching!');
-    // console.log('id is: ' + id);
-    const samplePost =  this.findPostById(id, slug);
-    // console.log(samplePost.title);
-    // console.log(samplePost.content);
+    var samplePost =  this.findPostById(id, slug);
 
     this.setState({id: samplePost.id});
     this.setState({title: samplePost.title});
     this.setState({content: samplePost.content});
     this.setState({timestamp: samplePost.timestamp});
     this.setState({slug: samplePost.slug});
+    this.setState({author: samplePost.author});
+    this.setState({isTeamMember: samplePost.isTeamMember})
   };
 
   findPostById(id, slug) {
-    // fetch file
-    // TODO: do not assume index will correspond to post id
-    const intId = parseInt(id);
-    // console.log(intId);
-    const post = postData.posts[intId];
+    var post = postData.posts[id];
     return post;
   };
 
@@ -75,7 +78,7 @@ class PostContainer extends React.Component {
 
   render () {
     return (
-        <Post fetchPost={this.fetchPost} id={this.state.id} title={this.state.title} content={this.state.content} timestamp={this.state.timestamp} slug={this.state.slug} />
+      <Post author={this.state.author} isTeamMember={this.state.isTeamMember} title={this.state.title} timestamp={this.state.timestamp} content={this.state.content}/>
     );
   }
 }

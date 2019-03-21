@@ -180,7 +180,7 @@ function Home(props) {
 
 
             <div className={classes.impactPicture}>
-              <img src={ImpactChart} class="img-center"/>
+              <img src={ImpactChart} className="img-center"/>
             </div>
 
             <div className={classes.root}>

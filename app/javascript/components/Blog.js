@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Post from "./Post"
+import PostCard from "./PostCard"
 import { withStyles } from '@material-ui/core/styles'
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 import Paper from '@material-ui/core/Paper';
@@ -9,41 +9,37 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
+import { truncate } from '../helpers/utilities';
+import moment from 'moment';
 
 
+var data = require('../../assets/data/blogPosts.js');
+const TRUNCATION_LIMIT = 260;
 
 class Blog extends React.Component {
 
+  sortPostsByDate() {
+    data.posts.sort(function(a,b){
+      return new Date(b.timestamp) - new Date(a.timestamp);
+    })
+  }
+
   render () {
       const { classes } = this.props;
-
-      const data =
-          [{title:"The Importance of CS Education", author:"Megan Phibbons",
-              content:"This is an interesting blog about why we should be focused on CS education at young ages!",
-              timestamp:"Friday, October 19th at 2:34 pm",
-              url: 'https://docs.google.com/document/d/19IMnuMVTnc7IGcx7RKxECNn7inCPE2h14FEy7_6tHPY/edit?usp=sharing'}, // TODO: App.js connect these, make components too
-          {title:"Reflections on Teaching Computer Science", author:"Eliza Paradise",
-              content:"This is a blog from one of our teaching team members and her reflections on how teaching goes.",
-              timestamp:"Saturday, October 20th at 8:45 am",
-              url: 'https://docs.google.com/document/d/1Y1Vhm027rMMdwGF9AgRa-EBsi1wLtj4_8XWObFEc6kY/edit?usp=sharing'},
-          {title:"Get Involved in Open-Source CS Education", author:"Cady Zhou",
-              content:"When searching for the “definition of open-source”, results return: “Denoting software for which the original source code is made freely available and may be redistributed and modified.”",
-              timestamp:"Sunday, October 21st at 10:52 am",
-              url: 'https://docs.google.com/document/d/1ytFHPHpNj_CjN1Eaab-4Za4M1kwUwWKyuvbAZRPdy0Q/edit?usp=sharing'},
-          {title:"Equitable CS Education and the Future of Tech", author:"Judyth Estrada Salinas",
-              content:"Undergraduate education today is still a luxury reserved to those who can afford it. Even as institutions provide financial aid to students, most of the individuals being admitted are those who have a high-performance track record.",
-              timestamp:"Sunday, October 21st at 1:50 am",
-              url: 'https://docs.google.com/document/d/1whjAGzFTnvbDTpLJKtHV2A33_F_zc8XVkm09ymzN-jQ/edit?usp=sharing'}];
-
-      const posts = data.map((post) =>
-          <Post title = {post.title} author = {post.author}
-                content = {post.content} url = {post.url} timestamp = {post.timestamp}/>
+      this.sortPostsByDate();
+      var posts = data.posts.map((post) =>
+          <PostCard
+                title = {post.title}
+                author = {post.author}
+                isTeamMember = {post.isTeamMember}
+                id = {post.id}
+                summary = {truncate(post.summary, TRUNCATION_LIMIT) + "..."}
+                url = {"/blog/"+ post.id + "/" + post.slug}
+                timestamp = {moment(post.timestamp).fromNow()}
+                />
       );
 
-
-
     return (
-        //TODO: see if this works
         <React.Fragment>
         <CssBaseline/>
         <div className={classes.root2}>
@@ -51,10 +47,10 @@ class Blog extends React.Component {
 
             <Paper className={classes.curriculaTitleHeader}>
                 <div className={classes.courseName}>
-                    <Typography component="h1" class={classes.newFont} variant="h3" color="inherit" gutterBottom>
+                    <Typography component="h1" className={classes.newFont} variant="h3" color="inherit" gutterBottom>
                         All Things Digital Education
                     </Typography>
-                    <Typography variant="h5" class={classes.newFont} color="inherit" paragraph>
+                    <Typography variant="h5" className={classes.newFont} color="inherit" paragraph>
                         A blog space for written thoughts gathered throughout our community
                     </Typography>
                 </div>
@@ -63,14 +59,14 @@ class Blog extends React.Component {
             <Grid container spacing={24}>
                 {posts.map(post => (
                   // change xs setting to 12 for one card per row
-                   <Grid item xs={12} sm={6} key={post.toString()}>
+                  // old: xs={12} sm={6}
+                   <Grid item xs={12} key={post.toString()}>
                        {post}
                    </Grid>
                  ))}
            </Grid>
 
             {/* Contribute */}
-            <Divider/>
             <div className={classes.root2}>
                   <Typography variant="h3" class={classes.newFont} align="left" color="textPrimary" gutterBottom>
                     Write for Us!
