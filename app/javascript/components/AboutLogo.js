@@ -10,7 +10,8 @@ const backgroundImage =
 
 const styles = theme => ({
   background: {
-    backgroundImage: `url(${Background})`,
+    // backgroundImage: `url(${Background})`,
+    backgroundImage: `url('https://media.licdn.com/media/gcrc/dms/image/C4E12AQEyGoUBCWCSuw/article-cover_image-shrink_720_1280/0?e=1558569600&v=beta&t=yQO1fYU5DUj0xnCOYteUZK00yt6rsTgV-pzp2Df17yE')`,
     backgroundColor: theme.palette.primary.white, // Average color of the background image.
     backgroundPosition: 'center',
   },
