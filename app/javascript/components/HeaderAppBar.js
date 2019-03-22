@@ -155,8 +155,16 @@ class HeaderAppBar extends React.Component {
               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
+          {/*
+            use this code to reenable dropdown for about us
+            <NavLink style={navLinkStyles} to={'/about'}>
+              <ListItem button key={'About'} onClick={this.handleAboutClick}>
+                <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">About Us</Typography>} />
+              </ListItem>
+            </NavLink>
+            */}
           <NavLink style={navLinkStyles} to={'/about'}>
-            <ListItem button key={'About'} onClick={this.handleAboutClick}>
+            <ListItem button key={'About'} >
               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
