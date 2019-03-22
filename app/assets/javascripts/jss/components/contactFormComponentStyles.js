@@ -26,6 +26,7 @@ const contactFormComponentStyles = theme => ({
   button: {
     marginTop: theme.spacing.unit * 3,
     marginLeft: theme.spacing.unit,
+    backgroundColor: theme.palette.primary.lightblue,
   },
   container: {
     display: 'flex',

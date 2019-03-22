@@ -115,7 +115,7 @@ function Home(props) {
             <div className={classes.root}>
               <Grid container spacing={24} className={classes.descriptionCardGrid} >
                 <Grid item xs={12} md={4}>
-                  <DescriptionCard avatar="incubate" icon="build" title="Incubate" content={incubateText} />
+                  <DescriptionCard avatar="incubate" icon="build" url="https://csbyus.herokuapp.com/about" title="Incubate" content={incubateText} />
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <DescriptionCard avatar="share" icon="share" url="https://csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
@@ -180,7 +180,7 @@ function Home(props) {
 
 
             <div className={classes.impactPicture}>
-              <img src={ImpactChart} className="img-center"/>
+              <img src={'https://media.licdn.com/dms/image/C4E12AQFgBOhzn56Vjg/article-inline_image-shrink_1500_2232/0?e=1558569600&v=beta&t=DUVgjJhKEp5UVJ_uf-5rLOYkJ3BpkI1ElVaguC06zzg'} className="img-center"/>
             </div>
 
             <div className={classes.root}>

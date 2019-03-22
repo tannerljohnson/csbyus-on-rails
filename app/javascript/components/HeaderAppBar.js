@@ -5,6 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MainMenu from './MainMenu';
 import MenuDrawer from './MenuDrawer';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
@@ -47,10 +49,24 @@ const theme = createMuiTheme({
   },
 });
 
+const options = [
+  { title: 'About', src: '/about' },
+  { title: 'Team', src: '/about/bios' },
+];
+
 class HeaderAppBar extends React.Component {
 
   state = {
     mobileOpen: false,
+    anchorEl: null,
+  };
+
+  handleAboutClick = event => {
+    this.setState({ anchorEl: event.currentTarget });
+  };
+
+  handleAboutClose = () => {
+    this.setState({ anchorEl: null });
   };
 
   handleDrawerToggle = () => {
@@ -64,6 +80,9 @@ class HeaderAppBar extends React.Component {
   render () {
 
     const { classes } = this.props;
+    const { anchorEl } = this.state;
+    const open = Boolean(anchorEl);
+
     const colors = {
       color: '#FFFFFF',
       fontcolor: '#FFFFFF',
@@ -72,6 +91,11 @@ class HeaderAppBar extends React.Component {
     };
 
     const navLinkStyles = {
+      paddingLeft: theme.spacing.unit * 1,
+      paddingRight: theme.spacing.unit * 1,
+    };
+
+    const aboutLinkStyles = {
       paddingLeft: theme.spacing.unit * 1,
       paddingRight: theme.spacing.unit * 1,
     };
@@ -132,13 +156,35 @@ class HeaderAppBar extends React.Component {
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/about'}>
-            <ListItem button key={'About'}>
+            <ListItem button key={'About'} onClick={this.handleAboutClick}>
               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
+          {/* below about us menu is hidden until triggered*/}
+          <Menu
+            id="long-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={this.handleAboutClose}
+            PaperProps={{
+              style: {
+                width: 150,
+              },
+            }}
+          >
+            {options.map(option => (
+              <NavLink to={option.src} style={aboutLinkStyles} >
+                <MenuItem key={option.src} onClick={this.handleAboutClose}>
+                  {option.title}
+                </MenuItem>
+              </NavLink>
+            ))}
+          </Menu>
+          {/* end about us dropdown */}
           <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Curricula Hub</Typography>} />            </ListItem>
+              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Curricula Hub</Typography>} />
+            </ListItem>
           </NavLink>
          <NavLink style={navLinkStyles} to={'/news'}>
             <ListItem button key={'In the News'}>
