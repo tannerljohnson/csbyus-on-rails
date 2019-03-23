@@ -20,6 +20,9 @@ const headerComponentStyles = theme => ({
   text: {
     color: 'white',
   },
+  list: {
+    width: 250,
+  },
   fullList: {
     width: 'auto',
   },
@@ -45,6 +48,10 @@ const headerComponentStyles = theme => ({
     [theme.breakpoints.down('xs')]: {
       display: 'none',
     }
+  },
+  headerDrawer: {
+    width: 40,
+    flexShrink: 0,
   }
 });
 

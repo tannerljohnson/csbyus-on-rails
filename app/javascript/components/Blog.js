@@ -36,6 +36,7 @@ class Blog extends React.Component {
                 summary = {truncate(post.summary, TRUNCATION_LIMIT) + "..."}
                 url = {"/blog/"+ post.id + "/" + post.slug}
                 timestamp = {moment(post.timestamp).fromNow()}
+                image = {post.image} 
                 />
       );
 

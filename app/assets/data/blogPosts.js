@@ -6,6 +6,7 @@ module.exports = {
         {
           title:"The Importance of CS Education",
           author:"Megan Phibbons",
+          image:"https://snworksceo.imgix.net/dtc/3e9717b8-17e1-424a-b421-f60f7d2e3603.sized-1000x1000.jpg?w=1000",
           isTeamMember: true,
           id: "0",
           slug: 'importance-of-cs-ed',
@@ -30,11 +31,12 @@ Looking forward, I hope that one day Computer Science education can be accessibl
         {
           title:"Get Involved in Open-Source CS Education",
           author:"Cady Zhou",
+          image:"https://farm8.staticflickr.com/7801/33572984968_d0d100f205.jpg",
           isTeamMember: true,
           id: "1",
           slug: 'get-involved-in-open-source-cs-ed',
           timestamp:"2019-01-31 20:00",
-          summary: `When searching for the “definition of open-source”, results return: “Denoting software for which the original source code is made freely available and may be redistributed and modified.”`,
+          summary: `When searching for the “definition of open-source”, results return: “Denoting software for which the original source code is made freely available and may be redistributed and modified.” When we talk about open-source education, we talk about a similar idea: a way that allows everyone to redistribute and modify courses.`,
           content:
 `### *How to join us*
 
@@ -75,6 +77,7 @@ At last, **everyone**, we are open to any suggestions on how to improve our webs
         {
           title:"Teaching Computer Science",
           author:"Eliza Paradise",
+          image:"https://farm8.staticflickr.com/7867/32507322627_4f9dbd77a3.jpg",
           isTeamMember: true,
           id: "2",
           slug: 'teaching-cs',
@@ -101,6 +104,7 @@ These experiences indicate that a combination of coding examples and hands-on ac
         {
           title:"The Importance of Open Source Pedagogy",
           author:"Amarachi Achonu",
+          image:"https://farm8.staticflickr.com/7890/46726020364_b76187b86d.jpg",
           isTeamMember: true,
           id: "3",
           slug: 'importance-of-open-source-pedagogy',
@@ -167,11 +171,12 @@ I think, they are learning about how to make an app in App Lab, but there’s a 
         {
           title:"How our non-profit works openly to make education accessible",
           author:"Tanner Johnson",
+          image:"https://lh3.googleusercontent.com/PBFKnOV2xx3uEngbfW0SLYzQilS2NHxjMtXZGahJEOb7HEoJZQ8kHQguFptYBxRXXqSTl6kRoePkMkeIxaIjVCdHOBYMGr4P_kCn_X9nN982RsHLDs6ppbW5zahLaHR-lTRnbeYlpGv5-4UsARGc7X0UFdrqrgkiK3IHhnCTlz1vLbNd3UqYGAz7SQ8nEFvsMgyCN-ml7smIG8i5lMfxs5ggCBbn22fm8NtSgemoxgxsjErwwe_5n8rSIJdr3QH2Kibf6SLdT5GyVs4l08dYUYJhZITM3oLGUpOV-WvE4dyDCFPlHhn4dLCrpf7URA56_K2HUG8ff0NYFLcjddyacM7D9CHszeOYwRObqsWSXMuSOGjR1WwztXtdJes965ElQWmWfu1d2SxEwF7_8v3pNWTJz6lQHanR8eGramM5cIx9rWgtaapp2ooBOFw6H0U5SHE92QWic-oh5-rRxPxkAEeK5bcK8FolmLaW8ZyG4uytv-oYMpSf83nJ70lN6wzGUwD7uWN39JgeFL3UXAzPfHy_df45qnxnN1fdr3oodnjDOpWG_aYo0NuniVVnFkEoUO57_SJq3bsl6uEcRGwkh1ogN5DmzsK5re1gRbWrlNOa6gXacC7I6dWJW7Kr43pL9-UBa3BRZ1VtKh8TK_bEioYwDjCkPPe37zCYBBaDyYnwconsbLOgMUy47WyuPMHYRiem11c9cqA1vz_m3uFVO_nG=w2298-h1532-no",
           isTeamMember: true,
           id: "4",
           slug: 'how-our-team-works',
           timestamp:"2019-02-19 20:00",
-          summary: `To build an open access education hub, our team practiced the same open methods we teach our students.`,
+          summary: `The CSbyUs Tech R&D team (TRD for short) recently set an ambitious goal to build and deploy a powerful web application over the course of one fall semester. Our team of six knew we had to do something about our workflow to ship a product by winter break. In our middle school classrooms, we teach our learners to use agile methodologies and design thinking to create mobile applications. On the TRD team, we realized we needed to practice what we preach in those classrooms to ship a quality product by semester's end. This is the story of how and why we utilized the principles we teach our students in order to deploy technology that will scale our mission and make our teaching resources open and accessible.`,
           content:
 `
 *CSbyUs Tech R&D team’s workflow and special sauces*
