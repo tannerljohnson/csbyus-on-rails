@@ -19,6 +19,16 @@ class InTheNews extends React.Component {
 
       const data =
           [
+            { title:"Day of Data at Duke brings open source learning to K-16 education",
+              source:"Aria Chernik on LinkedIn",
+              imageLocation:"https://media.licdn.com/media/gcrc/dms/image/C4E12AQEyGoUBCWCSuw/article-cover_image-shrink_720_1280/0?e=1557360000&v=beta&t=1SwF-ry5FjBLaUwjo4F6fJ_riW5To8URC_1Ak8h9IZg",
+              content:"Day of Data is a lesson in how open source learning catalyzes impactful innovation across disciplines, grade levels, and institutions. The day's mission? Create an empowered learning experience for girls centered around igniting their curiosity about data.",
+              url: 'https://www.linkedin.com/pulse/day-data-duke-brings-open-source-learning-k-16-aria-chernik/'},
+            { title:"Duke Student Mentors Help Local Girls Build Skills in Data Science",
+              source:"Duke Bass Connections",
+              imageLocation:"https://bassconnections.duke.edu/sites/bassconnections.duke.edu/files/site-images/day-data-ospri-tw.png",
+              content:"On February 22, CSbyUs, a Bass Connections project team with the Open Source Pedagogy, Research + Innovation (OSPRI) Lab, hosted Day of Data, a hands-on learning event that culminated in a drop-in showcase of data science projects developed by 16 Durham middle-school girls.",
+              url: 'https://bassconnections.duke.edu/about/news/duke-student-mentors-help-local-girls-build-skills-data-science'},
             { title:"Duke students develop after-school computer science program",
               source:"Duke Chronicle",
               imageLocation:"https://ds4q8c259towh.cloudfront.net/d38ebfa9f5525e9160d139a11d4f0b96/dist/img/dtc-fb-fallback.jpg",
