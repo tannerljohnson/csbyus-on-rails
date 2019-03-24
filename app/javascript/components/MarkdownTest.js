@@ -14,7 +14,6 @@ import Divider from '@material-ui/core/Divider';
 import moment from 'moment';
 import Remarkable from 'remarkable';
 
-const markdown = require('../../assets/data/posts/blog-post.1.js');
 
 class MarkdownTest extends React.Component {
 
