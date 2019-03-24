@@ -135,6 +135,12 @@ class HeaderAppBar extends React.Component {
               <ListItemText primary={'In the News'} />
             </ListItem>
           </NavLink>
+          <NavLink to={'/blog'}>
+            <ListItem className={classes.list} button key={'Blog'}>
+              <ListItemIcon> <BookmarkBorderIcon /> </ListItemIcon>
+              <ListItemText primary={'Blog'} />
+            </ListItem>
+           </NavLink>
           <NavLink to={'/joinus'}>
             <ListItem className={classes.list} button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
@@ -152,7 +158,7 @@ class HeaderAppBar extends React.Component {
         <List>
           <NavLink className={classes.menuOptions} to={'/home'}>
             <ListItem button key={'Home'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Home</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
           {/*
@@ -165,7 +171,7 @@ class HeaderAppBar extends React.Component {
             */}
           <NavLink style={navLinkStyles} to={'/about'}>
             <ListItem button key={'About'} >
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">About Us</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">About Us</Typography>} />
             </ListItem>
           </NavLink>
           {/* below about us menu is hidden until triggered*/}
@@ -191,22 +197,22 @@ class HeaderAppBar extends React.Component {
           {/* end about us dropdown */}
           <NavLink style={navLinkStyles} to={'/curriculahub'}>
             <ListItem button key={'CurriculaHub'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit">Curricula Hub</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Curricula Hub</Typography>} />
             </ListItem>
           </NavLink>
          <NavLink style={navLinkStyles} to={'/news'}>
             <ListItem button key={'In the News'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>In the News</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>In the News</Typography>} />
             </ListItem>
           </NavLink>
           <NavLink style={navLinkStyles} to={'/blog'}>
              <ListItem button key={'Blog'}>
-               <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Blog</Typography>} />
+               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Blog</Typography>} />
              </ListItem>
            </NavLink>
           <NavLink style={navLinkStyles} to={'/joinus'}>
             <ListItem button key={'Join Us'}>
-              <ListItemText style={colors} primary={<Typography variant="subtitle1" color="inherit" noWrap>Join Us</Typography>} />
+              <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
             </ListItem>
           </NavLink>
         </List>
@@ -214,18 +220,49 @@ class HeaderAppBar extends React.Component {
     );
 
     return (
-      <AppBar className={classes.appBar}>
-        <Toolbar>
-          <NavLink to={'/home'}>
-          <Typography className={classes.mainTitleStyles} variant="title" color="inherit" noWrap>
-            CSbyUs
-          </Typography>
-          </NavLink>
-          <div className={classes.headerList}>
-            {sideList}
-          </div>
-        </Toolbar>
-      </AppBar>
+      <React.Fragment>
+        <AppBar className={classes.appBar}>
+          <Toolbar>
+            <NavLink to={'/home'}>
+              <Typography className={classes.mainTitleStyles} variant="title" color="inherit" noWrap>
+                CSbyUs
+              </Typography>
+            </NavLink>
+            <Hidden mdUp>
+              <IconButton
+                color="inherit" fontsize="large"
+                onClick={this.handleDrawerToggle}
+                className={classes.drawerMenuButton}
+              >
+                  <MenuIcon />
+              </IconButton>
+            </Hidden>
+            <Hidden smUp implementation="css">
+              <Drawer
+                className={classes.headerDrawer}
+                variant="temporary"
+                anchor='left'
+                open={this.state.mobileOpen}
+                onClose={this.handleDrawerToggle}
+              >
+                <div
+                  tabIndex={0}
+                  role="button"
+                  onClick={this.handleDrawerToggle}
+                  onKeyDown={this.handleDrawerToggle}
+                >
+                  {drawer}
+                </div>
+              </Drawer>
+            </Hidden>
+            <Hidden smDown>
+            <div className={classes.headerList}>
+              {sideList}
+            </div>
+            </Hidden>
+          </Toolbar>
+        </AppBar>
+      </React.Fragment>
     );
   }
 }

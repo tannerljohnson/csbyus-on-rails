@@ -202,6 +202,18 @@ const homeComponentStyles = theme => ({
       marginRight: 'auto',
     },
   },
+  postLayout: {
+    width: 'auto',
+    backgroundColor: theme.palette.primary.white,
+    marginLeft: theme.spacing.unit * 0,
+    marginRight: theme.spacing.unit * 0,
+    paddingTop: '1%',
+    [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
+      width: 1100,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
   curriculaTitleHeader: {
     backgroundColor: theme.palette.primary.green, // change color here
     color: theme.palette.common.white,
@@ -398,7 +410,22 @@ const homeComponentStyles = theme => ({
   },
   bioMediaGrid: {
     paddingTop: '4%',
-  }
+  },
+  postCardImage: {
+    width: 200,
+  },
+  postCard: {
+    display: 'flex',
+  },
+  postCardDetails: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 1,
+  },
+  postCardContent: {
+    flex: '1 0 auto',
+  },
+
 });
 
 export default homeComponentStyles;

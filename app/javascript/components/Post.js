@@ -44,7 +44,7 @@ class Post extends React.Component {
             <ArrowBackIcon style={{ fontSize: 30 }}/>
           </IconButton>
         </NavLink>
-          <main className={classes.layout2}>
+          <main className={classes.postLayout}>
             <Paper className={classes.newFont}>
               <CardContent >
                 <Typography variant="h4" component="h2" className={classes.newFont}>

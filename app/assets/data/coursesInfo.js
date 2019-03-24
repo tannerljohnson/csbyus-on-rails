@@ -8,7 +8,7 @@ module.exports = {
             id: "900",
             title:"Mobile Citizens",
             author:"CSbyUs",
-            content:"Engaging in the same processes as computer scientists at Google, middle students work in teams to build a mobile app that addresses a self-determined community need. Recommended frequency: 90 mins per week for 5 weeks",
+            content:"Engaging in the same processes as computer scientists at Google, middle school students work in teams to build a mobile app that addresses a self-determined community need. Recommended frequency: 90 mins per week for 5 weeks",
             url: 'https://docs.google.com/document/d/14HhURHo2u9WwidZ83Px70qQ8U8411ClAh--IZ4Oxz20/edit?usp=sharing',
             img: 'http://csbyus.org/wp-content/uploads/2018/03/amy.png'},
         {
