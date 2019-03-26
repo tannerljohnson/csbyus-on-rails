@@ -146,7 +146,7 @@ class InfoSegment extends React.Component {
                   </Grid>
               ))}
               </Grid>
-               {/* Individual bios button here
+               {/* Individual bios button here */}
                     <div className={classes.heroButtons}>
                       <Grid container spacing={16} justify="center" className={classes.heroButtons}>
                         <Grid item>
@@ -158,7 +158,7 @@ class InfoSegment extends React.Component {
                         </Grid>
                       </Grid>
                     </div>
-               End individual bios button  */}
+               {/* End individual bios button  */}
               </div>
 
 
