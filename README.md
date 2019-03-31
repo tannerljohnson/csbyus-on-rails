@@ -144,3 +144,14 @@ $ yarn install
 ```
 ## sqlite3 error
 Check issue #27 for sqlite3 error
+
+## Stop git from Tracking
+If you want git to stop tracking your Gemfile, do
+```
+$ git update-index --assume-unchanged [path]
+```
+To undo that:
+```
+$ git update-index --no-assume-unchanged [path]
+```
+
