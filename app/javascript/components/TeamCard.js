@@ -15,7 +15,7 @@ class TeamCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card>
+        <Card className = {classes.aboutCard}>
           <CardContent>
             <Typography variant="h5" component="h2" className={classes.aboutStory}>
               <b>{this.props.name}</b>

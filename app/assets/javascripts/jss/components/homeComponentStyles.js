@@ -401,6 +401,9 @@ const homeComponentStyles = theme => ({
   bioCard: {
     height: 450,
   },
+  aboutCard: {
+    height: 400,
+  },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,
