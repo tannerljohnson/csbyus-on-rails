@@ -49,14 +49,14 @@ class IndividualBiosPage extends React.Component {
             study: "Duke Computer Science, 2018",
             caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
             email: "johnsontanner3@gmail.com",
-            myImage: "https://keep.google.com/u/0/media/v2/1niKYYJ009UjaBaxc_okTGfww2wdP3x1PoYNA9Od6RMn2praaTOiyY214IH4LZB8/1eBhFlgqxls0yayKCp5tusP5yVPUJniTfEiUlV19u7sbr69XVb6dxpIhWlB1IwEw?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=622",
+            myImage: "https://farm8.staticflickr.com/7859/33640729318_482cbc78a7.jpg",
             emailurl: "mailto:johnsontanner3@gmail.com",
-            linkedinurl: "google.com"
+            linkedinurl: "https://www.linkedin.com/in/tanner-johnson-4ba701b8/"
           },{
             name:"Bozhena Etin",
             team:"Curriculum R&D Team Leader, Project Manager for CSbyUs",
             study: "Duke General Liberal Studies, Graduate Student",
-            caption:"It is exciting to be part of this interdisciplinary team that is doing research in computer science and education, creating open source curriculum and teaching the curriculum. This is a unique opportunity at Duke to be part of a team that creates, implements and delivers a product that is impactful on the community of young people.",
+            caption:"CSbyUS is a unique opportunity for me to be part of a team that creates, implements and delivers a program that is impactful on the community of young people.",
             email: "bozhena.etin@duke.edu",
             myImage: "https://farm8.staticflickr.com/7862/47268067682_ab9dceb352_q.jpg",
             emailurl: "mailto:bozhena.etin@duke.edu"
@@ -68,7 +68,7 @@ class IndividualBiosPage extends React.Component {
             email: "brian.njoroge@duke.edu",
             myImage: "https://farm8.staticflickr.com/7899/47268067742_6e2595c1ac_q.jpg",
             emailurl: "mailto:brian.njoroge@duke.edu",
-            linkedinurl: "google.com"
+            linkedinurl: "http://linkedin.com/in/brian-njoroge-167654102"
           },{
             name:"Daniel Yoontae Hwang",
             team:"Curriculum R&D Team, Teaching Team",
@@ -104,7 +104,7 @@ class IndividualBiosPage extends React.Component {
             email: "hayley.barton@duke.edu",
             myImage: "https://media.licdn.com/dms/image/C4E03AQEWorukaFCdEQ/profile-displayphoto-shrink_800_800/0?e=1557964800&v=beta&t=VtX5lfZSx8fvlb5O56ylLw7Tt9h-_co7CmnMFQ5DX1M",
             emailurl: "mailto:hayley.barton@duke.edu",
-            linkedinurl: "google.com"
+            linkedinurl: "https://www.linkedin.com/in/hayley-barton/"
           },{
             name:"Jay Patel",
             team:"Teaching Team, Curriculum R&D Team",
@@ -113,7 +113,7 @@ class IndividualBiosPage extends React.Component {
             email: "j.patel@duke.edu",
             myImage: "https://farm8.staticflickr.com/7824/33444721778_86ba9abc5f_q.jpg",
             emailurl: "mailto:j.patel@duke.edu",
-            linkedinurl: "google.com"
+            linkedinurl: "http://linkedin.com/in/jay-p-patel"
           },{
             name:"Judyth Estrada Salinas",
             team:"Technology R&D Team, Teaching Team",
@@ -140,12 +140,12 @@ class IndividualBiosPage extends React.Component {
             email: "megan.phibbons@gmail.com",
             myImage: "https://farm8.staticflickr.com/7881/47268067562_fe0067d348_q.jpg",
             emailurl: "mailto:megan.phibbons@gmail.edu",
-            linkedinurl: "google.com"
+            linkedinurl: "https://www.linkedin.com/in/meganphibbons/"
           },{
             name:"Nick Turecky",
             team:"Teaching Team",
             study: "Duke Visual and Media Studies, 2021",
-            caption:"Placeholder- Nick hasn't submitted.",
+            caption:"For the vast majority of my education, I never had the opportunity to take computer science classes because they weren’t offered in my schools. In today’s world, I believe it is essential that all students have access to a CS education at an early age. I think the unique problem-solving aspects that CS brings to education really strengthen and refresh the learning process.",
             email: "nicholas.turecky@duke.edu",
             myImage: "https://farm8.staticflickr.com/7846/33444721818_504397cfba_q.jpg",
             emailurl: "mailto:nicholas.turecky@duke.edu",
@@ -167,7 +167,7 @@ class IndividualBiosPage extends React.Component {
             email: "yeon.ju.suh@duke.edu",
             myImage: "https://farm8.staticflickr.com/7854/33444721688_66b3752232_q.jpg",
             emailurl: "mailto:yeon.ju.suh@duke.edu",
-            linkedinurl: "google.com"
+            linkedinurl: "https://www.linkedin.com/in/yeonju-suh-a55b11135/"
           }
             ];
 
