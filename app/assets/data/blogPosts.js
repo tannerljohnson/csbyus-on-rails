@@ -276,7 +276,7 @@ Regardless of whether you work—on a software development team, in a classroom,
           isTeamMember: true,
           id: "5",
           slug: 'what-a-more-equitable-cs-ed-means-for-the-future',
-          timestamp:"2019-04-01 20:00",
+          timestamp:"2019-04-02 20:00",
           summary: `One of today’s best careers is software developing or software engineering. As our world becomes more and more digitized, the need for people to build and manage these computers is growing. Across media, there are calls for an increase in diversity in the tech industry.`,
           content:
 `
