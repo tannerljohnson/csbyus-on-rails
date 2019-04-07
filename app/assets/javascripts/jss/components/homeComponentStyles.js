@@ -377,8 +377,12 @@ const homeComponentStyles = theme => ({
     marginTop: theme.spacing.unit * 3,
   },
   individualBioCard: {
-    backgroundColor: theme.palette.primary.red,
-    width: 100%,
+    height: 500,
+  },
+  fab: {
+    position: 'fixed',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 2,
   },
 });
 
