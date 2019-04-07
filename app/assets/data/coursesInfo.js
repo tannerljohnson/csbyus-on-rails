@@ -66,6 +66,13 @@ module.exports = {
             author: "CSForAll Teachers",
             content: "From csforallteachers.org: The Teaching Privacy curriculum from the International Computer Science Institute and UC Berkeley has a full set of freely-available, classroom-tested lesson plans for teaching about how online privacy works. The lessons are aimed at high school and early undergrad; CSP-compatible but usable in any CS class (or other classes!).",
             url: 'https://csforallteachers.org/resource/teaching-privacy-curriculum'
+        },
+        {
+            id: "106",
+            title: "Steam Splash",
+            author: "Rebecca Zuo",
+            content: "Steam Splash is a highly engaging, hands-on introductory lesson to cryptography. During the 75 minute lesson, young learners will work in groups creating their own cipher through creative encryption/decryption algorithms. Great for active learners, no computers required.",
+            url: 'https://docs.google.com/document/d/1EKEGVvSpn8uuuLmiDzGDYF4N3vfTngQlEjfBXwQAxsQ/edit?usp=sharing'
         }
     ]
 };
