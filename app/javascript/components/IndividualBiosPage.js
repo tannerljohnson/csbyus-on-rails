@@ -199,8 +199,9 @@ class IndividualBiosPage extends React.Component {
 
               <Grid container spacing={24} justify="center">
                   {cards.map(card => (
-                    // four cards per row xs={3}
-                     <Grid item style={{ textAlign: 'center' }} xs={12} sm={6} md={4} key={card.toString()}>
+                    // two cards per row xs={3}
+                    <Grid item xs={12} sm={6} key={card.toString()}>
+                     {/*<Grid item style={{ textAlign: 'center' }} xs={12} sm={6} md={4} key={card.toString()}>8*/}
                          {card}
                      </Grid>
                    ))}
