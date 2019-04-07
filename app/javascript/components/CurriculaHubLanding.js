@@ -9,6 +9,9 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import { NavLink } from "react-router-dom";
 import CssBaseline from '@material-ui/core/CssBaseline';
+import Fab from '@material-ui/core/Fab';
+import Icon from '@material-ui/core/Icon';
+import AddIcon from '@material-ui/icons/Add';
 
 
 var courseData = require('../../assets/data/coursesInfo.js');
@@ -46,6 +49,8 @@ class CurriculaHubLanding extends React.Component {
             </Paper>
 
 
+
+
               <Grid container spacing={24}>
                   {cards.map(card => (
                     // change xs setting to 12 for one card per row
@@ -69,6 +74,9 @@ class CurriculaHubLanding extends React.Component {
             </div>
             {/* End Contribute */}
             </main>
+            <Fab size="large" color="primary" aria-label="Add" className={classes.fab} href="https://docs.google.com/forms/d/1h5JijmQKdxwCT1NkfPKXUl2zVZcMXx38Z8t9QYUgnEo/edit" target ="_blank">
+              <AddIcon />
+            </Fab>
           </div>
         </React.Fragment>
 

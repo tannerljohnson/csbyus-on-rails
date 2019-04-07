@@ -428,6 +428,11 @@ const homeComponentStyles = theme => ({
   postCardContent: {
     flex: '1 0 auto',
   },
+  fab: {
+    position: 'fixed',
+    bottom: theme.spacing.unit * 2,
+    right: theme.spacing.unit * 2,
+  },
 
 });
 

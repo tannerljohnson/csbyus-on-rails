@@ -179,7 +179,7 @@ class IndividualBiosPage extends React.Component {
           caption = {card.caption}
           email = {card.email}
           myImage = {card.myImage}
-          emailurl = {card.emailurl} 
+          emailurl = {card.emailurl}
           linkedinurl = {card.linkedinurl} />
       );
 

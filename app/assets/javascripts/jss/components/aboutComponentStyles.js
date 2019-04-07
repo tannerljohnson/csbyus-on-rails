@@ -1,4 +1,4 @@
-import BackgroundImg from '../../../images/AboutUs.png';
+import BackgroundImg from '../../../images/AboutUs.png'
 
 const aboutComponentStyles = theme => ({
   bgimg: {
