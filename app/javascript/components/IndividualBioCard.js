@@ -49,8 +49,13 @@ class IndividualBioCard extends React.Component {
                 {this.props.caption}
               </Typography>
                 <Typography className={this.props.email} color="textSecondary" gutterBottom>
-                  <a href={this.props.url}>
+                  <a href={this.props.emailurl}>
                     {this.props.email}
+                  </a>
+                </Typography>
+                <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                  <a href={this.props.linkedinurl}>
+                    LinkedIn
                   </a>
                 </Typography>
             </CardContent>
@@ -67,6 +72,7 @@ IndividualBioCard.propTypes = {
   caption: PropTypes.string,
   email: PropTypes.string,
   myImage: PropTypes.string,
-  url: PropTypes.string
+  emailurl: PropTypes.string,
+  linkedinurl: PropTypes.string
 };
 export default withStyles(homeComponentStyles)(IndividualBioCard);
