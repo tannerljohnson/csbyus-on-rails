@@ -156,11 +156,13 @@ class HeaderAppBar extends React.Component {
     const sideList = (
       <div>
         <List>
+        {/*
           <NavLink className={classes.menuOptions} to={'/home'}>
             <ListItem button key={'Home'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit">Home</Typography>} />
             </ListItem>
           </NavLink>
+        */}
           {/*
             use this code to reenable dropdown for about us
             <NavLink style={navLinkStyles} to={'/about'}>
