@@ -141,12 +141,12 @@ class HeaderAppBar extends React.Component {
               <ListItemText primary={'Blog'} />
             </ListItem>
            </NavLink>
-          <NavLink to={'/joinus'}>
+          <NavHashLink style={navLinkStyles} to={'/home#contact-form'}>
             <ListItem className={classes.list} button key={'Join Us'}>
               <ListItemIcon> <FavoriteIcon /> </ListItemIcon>
               <ListItemText primary={'Join Us'} />
             </ListItem>
-          </NavLink>
+          </NavHashLink>
         </List>
       </div>
     );
