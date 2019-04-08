@@ -30,7 +30,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Hidden from '@material-ui/core/Hidden';
-
+import { NavHashLink as NavHashLink } from 'react-router-hash-link';
 import {
   Redirect,
   Link,
@@ -212,11 +212,11 @@ class HeaderAppBar extends React.Component {
                <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Blog</Typography>} />
              </ListItem>
            </NavLink>
-          <NavLink style={navLinkStyles} to={'/joinus'}>
+          <NavHashLink style={navLinkStyles} to={'/home#contact-form'}>
             <ListItem button key={'Join Us'}>
               <ListItemText style={colors} primary={<Typography variant="subtitle" color="inherit" noWrap>Join Us</Typography>} />
             </ListItem>
-          </NavLink>
+          </NavHashLink>
         </List>
       </div>
     );
