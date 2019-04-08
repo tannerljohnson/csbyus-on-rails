@@ -56,7 +56,7 @@ const homeComponentStyles = theme => ({
     },
   },
   individualBioCard: {
-    // backgroundColor: theme.palette.primary.green,
+    flex: '1 0 auto',
   },
   blueFont: {
     fontFamily: theme.Typography.fontFamily[0],
@@ -395,11 +395,11 @@ const homeComponentStyles = theme => ({
     alignItems: 'center',
   },
   bioMedia: {
-    width: 150,
-    height: 150,
+    width: 200,
   },
   bioCard: {
-    height: 450,
+    display: 'flex',
+    height: 300,
   },
   aboutCard: {
     height: 400,

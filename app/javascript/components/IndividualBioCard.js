@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import Hidden from '@material-ui/core/Hidden';
 
 
 class IndividualBioCard extends React.Component {
@@ -19,8 +20,9 @@ class IndividualBioCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card className = {classes.bioCard}>
-            <Grid
+        <Card className={classes.bioCard}>		
+        	<div className={classes.postCardDetails}>
+           {/*} <Grid
               container
               spacing={0}
               direction="column"
@@ -35,7 +37,12 @@ class IndividualBioCard extends React.Component {
                 />
               </Grid>
             </Grid>
-            <CardContent className={classes.individualBioCard}>
+        */}
+        	{/*<CardMedia 
+        		className={classes.bioMedia}
+        		image={this.props.myImage}
+        		/> */}
+            <CardContent className={classes.postCardContent}>		
               <Typography variant="h5" component="h2">
                 {this.props.name}
               </Typography>
@@ -59,6 +66,13 @@ class IndividualBioCard extends React.Component {
                   </a>
                 </Typography>
             </CardContent>
+            </div>
+            <Hidden xsDown>
+            <CardMedia
+              className={classes.postCardImage}				
+              image={this.props.myImage}
+            />
+          </Hidden>
         </Card>
       </React.Fragment>
     );
