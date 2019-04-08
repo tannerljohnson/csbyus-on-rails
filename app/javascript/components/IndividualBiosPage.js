@@ -49,7 +49,7 @@ class IndividualBiosPage extends React.Component {
             study: "Duke Computer Science, 2018",
             caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
             email: "johnsontanner3@gmail.com",
-            myImage: "https://farm8.staticflickr.com/7859/33640729318_482cbc78a7.jpg",
+            myImage: "https://media.licdn.com/dms/image/C5603AQGd5lS1gPuYbw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=b3WWfGMXazjASPrT3U5J02PwhEkahWTKt-JFgCpnVVI",
             emailurl: "mailto:johnsontanner3@gmail.com",
             linkedinurl: "https://www.linkedin.com/in/tanner-johnson-4ba701b8/"
           },{
