@@ -29,7 +29,7 @@ class IndividualBiosPage extends React.Component {
             name:"Amy Jiang",
             team:"Teaching Team Leader",
             study: "Duke Public Policy, 2020",
-            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission",
+            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission.",
             email: "sj214@duke.edu",
             myImage: "https://farm8.staticflickr.com/7859/47268067852_9896c8a123_q.jpg",
             emailurl: "mailto:sj214@duke.edu",
