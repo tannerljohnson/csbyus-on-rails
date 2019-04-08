@@ -67,14 +67,14 @@ class CurriculaHubLanding extends React.Component {
                   </Typography>
                 <Typography variant="h4" class={classes.newFont} gutterBottom>
                   <p>
-                    Interested in contributing to the CurriculaHub community? We'd love to collaborate with you. Please fill out <NavLink to={'/joinus'}>this form</NavLink> and include the following in your message:
+                    Interested in contributing to the CurriculaHub community? We'd love to collaborate with you. To use our CSbyUs LessonBuilder, click on the blue button at the bottom right of your screen! Or you can fill out <NavLink to={'/joinus'}>this form</NavLink> and include the following in your message:
                     the resources you'd like to share or adapt and relevant links so we can view them. Our curriculum team will reach out to you via email after you submit the form as soon as possible.
                   </p>
                 </Typography>
             </div>
             {/* End Contribute */}
             </main>
-            <Fab size="large" color="primary" aria-label="Add" className={classes.fab} href="https://docs.google.com/forms/d/1h5JijmQKdxwCT1NkfPKXUl2zVZcMXx38Z8t9QYUgnEo/edit" target ="_blank">
+            <Fab size="large" color="primary" aria-label="Add" className={classes.fab} href="https://forms.gle/4SoLjikkKNwMm6cJ8" target ="_blank">
               <AddIcon />
             </Fab>
           </div>

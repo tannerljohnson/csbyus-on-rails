@@ -399,10 +399,10 @@ const homeComponentStyles = theme => ({
   },
   bioCard: {
     display: 'flex',
-    height: 300,
+    height: 350,
   },
   aboutCard: {
-    height: 400,
+    // height: 400,
   },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
