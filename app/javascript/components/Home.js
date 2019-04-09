@@ -40,6 +40,13 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import DescriptionCard from './DescriptionCard';
 import ImpactCard from './ImpactCard';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
+import {
+  Redirect,
+  Link,
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 
 
 const lightText = blue['A200'];
@@ -53,7 +60,7 @@ const impactText3 = {title: "22", subtitle: "Active educators", content: "Inform
 
 function handleJoinClick() {
   console.log("clicked join us");
-  window.smoothScroll(document.getElementById('formTarget'));
+  window.smoothScroll(document.getElementById('contact-form'));
 };
 
 function generate(element) {
@@ -64,7 +71,7 @@ function generate(element) {
   );
 };
 
-// use this to scroll from join us button to the form
+// DEPRECATED -- NO LONGER USED
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -156,9 +163,11 @@ function Home(props) {
                     <div className={classes.heroButtons}>
                       <Grid container spacing={16} justify="center" className={classes.heroButtons}>
                         <Grid item>
-                          <Button variant="contained" className={classes.newFont} color="inherit" onClick={handleJoinClick}>
-                            <b>Join us today</b>
-                          </Button>
+                          <NavLink to="/blog/1/get-involved-in-open-source-cs-ed">
+                            <Button variant="contained" className={classes.newFont} color="inherit">
+                              <b>Learn how to join us</b>
+                            </Button>
+                          </NavLink>
                         </Grid>
                       </Grid>
                     </div>
@@ -204,7 +213,7 @@ function Home(props) {
           <Divider/>
 
           <div className={classes.root2}>
-            <div id="formTarget">
+            <div id="contact-form">
               <ContactForm />
             </div>
           </div>
