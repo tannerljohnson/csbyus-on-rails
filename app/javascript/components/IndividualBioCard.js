@@ -21,7 +21,7 @@ class IndividualBioCard extends React.Component {
     return (
       <React.Fragment>
         <Card className={classes.bioCard}>		
-        	<div className={classes.postCardDetails}>
+        	<div className={classes.bioCardDetails}>
            {/*} <Grid
               container
               spacing={0}
@@ -69,7 +69,7 @@ class IndividualBioCard extends React.Component {
             </div>
             <Hidden xsDown>
             <CardMedia
-              className={classes.postCardImage}				
+              className={classes.bioMedia}				
               image={this.props.myImage}
             />
           </Hidden>
