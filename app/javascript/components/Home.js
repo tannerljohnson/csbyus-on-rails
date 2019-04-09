@@ -44,12 +44,12 @@ import homeComponentStyles from "../../assets/javascripts/jss/components/homeCom
 
 const lightText = blue['A200'];
 const cards = [1, 2, 3];
-const incubateText = "We're design thinkers. We start with inspiration for a new curriculum, prototype a solution, test it in North Carolina, and iterate until it's what students need.";
-const shareText = "CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you.";
-const supportText = "We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier.";
-const impactText1 = {title: "196", subtitle: "Public school students engaged", content: "Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. Currently based in Durham, we are expanding across North Carolina and beyond."};
-const impactText2 = {title: "100%", subtitle: "of students believe they can learn CS", content: "Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence."};
-const impactText3 = {title: "22", subtitle: "Active educators", content: "Informed mentorship is our secret sauce. We find that our students develop meaningful relationships with their trained mentors, which combined with their technical experience, results in final products students are proud of."};
+const incubateText = "We're design thinkers. We start with inspiration for a new curriculum or lesson, prototype a solution, test it in North Carolina, and iterate until it's what students need. Click to read more about our team.";
+const shareText = "CurriculaHub is your one-stop shop for proven and adaptable curricula. Once our programs are successful, we make them accessible to you. Click to check out our CurriculaHub.";
+const supportText = "We're here for you. Teaching new curricula can be difficult without a community of support. We're building resources and a network to make that easier. Click to contact us!";
+const impactText1 = {title: "196", subtitle: "Public school students engaged", content: "Our teaching team partners with public schools and after-school programs to provide high quality computer science education to students. While we are based in Durham, we are constantly looking for new audiences and working to expand across North Carolina and beyond."};
+const impactText2 = {title: "100%", subtitle: "of students believe they can learn CS", content: "Our largest mark of success is an improvement in self-efficacy. Students who believe they have the ability to learn computer science are more likely to continue learning with confidence, and we want to keep that learning streak going."};
+const impactText3 = {title: "22", subtitle: "Active educators", content: "Informed mentorship is key to increasing engagement and confidence. Our trained mentors have extensive technical experience. We find that when our students develop meaningful relationships with these mentors, they are able to create final products that they are proud of."};
 
 function handleJoinClick() {
   console.log("clicked join us");
@@ -107,7 +107,7 @@ function Home(props) {
                   <Video link='https://www.youtube.com/watch?v=in1BfwaZ2rU'/>
                 </div>
                 <Typography variant="title" align="center" className={classes.videoTitle} color="textSecondary" paragraph gutterBottom>
-                  We help teachers across the globe access, share and adapt lessons and courses in computer science and beyond
+                  We provide a platform for educators across the globe to access, share, discuss, and adapt lesson plans in the field of computer science and beyond.
                 </Typography>
               </div>
             </div>
@@ -121,7 +121,7 @@ function Home(props) {
                   <DescriptionCard avatar="share" icon="share" url="https://csbyus.herokuapp.com/curriculahub" title="Share" content={shareText} />
                 </Grid>
                 <Grid item xs={12} md={4}>
-                  <DescriptionCard avatar="support" icon="favorite" url="https://csbyus.herokuapp.com/joinus" title="Support" content={supportText} />
+                  <DescriptionCard avatar="support" icon="favorite" url="https://csbyus.herokuapp.com/home#contact-form" title="Support" content={supportText} />
                 </Grid>
               </Grid>
 
@@ -135,10 +135,10 @@ function Home(props) {
                 <div className={classes.aboutDiv}>
                     <div className={classes.aboutContent} >
                       <Typography variant="display1" className={classes.orangeFont} color="inherit" gutterBottom align="center">
-                        <b>Who are we?</b>
+                        <b>Who Are We?</b>
                       </Typography>
                       <Typography variant="headline" className={classes.newFontAbout} color="inherit" paragraph align="center">
-                        We're a team of students, teachers, and professionals spread across the globe with a common goal: <br/>To democratize digital era education.
+                        We're a team of students, teachers, and professionals spread across the globe with a common goal:<br/>To bring quality computer science education to every student.
                       </Typography>
                     </div>
                     <div className={classes.aboutContent}>
@@ -146,10 +146,12 @@ function Home(props) {
                         <b>What is CSbyUs?</b>
                       </Typography>
                       <Typography variant="headline" className={classes.newFontAbout} color="inherit" paragraph align="center">
-                        We believe that to empower students, we have to empower educators.
-                        We do the work of creating and testing curricula that deliver computer science to students in a way that is relevant to their lives.
-                        Once we're confident in our work, we share it.
-                        Not only do we welcome feedback, we want to help you customize it to fit your needs, because we know learning is personal.
+                      We believe that to empower students, we have to empower educators.
+                      We do the work of creating and testing curricula that deliver computer science
+                      lessons to students in a way that is relevant to their lives and interests.
+                      Once we're confident in our work, we share it with you. Not only do we welcome your feedback,
+                      we want to help you customize it to fit your needs, because we know learning is unique for
+                      each learning environment.
                       </Typography>
                     </div>
                     {/* Join us button here */}

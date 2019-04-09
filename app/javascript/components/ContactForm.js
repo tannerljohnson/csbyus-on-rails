@@ -111,7 +111,7 @@ class ContactForm extends React.Component {
               Get in touch with <b>Us</b>
             </Typography>
             <Typography variant="h6" component="p" align="center">
-              We're always looking for collaborators.
+              We're always open to new collaborations, questions, or comments!
             </Typography>
             <React.Fragment>
                 <React.Fragment>
