@@ -404,6 +404,11 @@ const homeComponentStyles = theme => ({
   aboutCard: {
     // height: 400,
   },
+  bioCardDetails: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 1,
+  },
   videoTitle: {
     fontFamily: theme.Typography.fontFamily[0],
     marginTop: theme.spacing.unit * 3,

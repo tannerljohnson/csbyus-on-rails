@@ -29,7 +29,7 @@ class IndividualBiosPage extends React.Component {
             name:"Amy Jiang",
             team:"Teaching Team Leader",
             study: "Duke Public Policy, 2020",
-            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission",
+            caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission.",
             email: "sj214@duke.edu",
             myImage: "https://farm8.staticflickr.com/7859/47268067852_9896c8a123_q.jpg",
             emailurl: "mailto:sj214@duke.edu",
@@ -49,7 +49,7 @@ class IndividualBiosPage extends React.Component {
             study: "Duke Computer Science, 2018",
             caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
             email: "johnsontanner3@gmail.com",
-            myImage: "https://farm8.staticflickr.com/7859/33640729318_482cbc78a7.jpg",
+            myImage: "https://media.licdn.com/dms/image/C5603AQGd5lS1gPuYbw/profile-displayphoto-shrink_800_800/0?e=1560384000&v=beta&t=b3WWfGMXazjASPrT3U5J02PwhEkahWTKt-JFgCpnVVI",
             emailurl: "mailto:johnsontanner3@gmail.com",
             linkedinurl: "https://www.linkedin.com/in/tanner-johnson-4ba701b8/"
           },{
