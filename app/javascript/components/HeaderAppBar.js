@@ -43,7 +43,7 @@ import {
 const theme = createMuiTheme({
   Typography: {
     fontFamily: [
-      'Avenir Next',
+      'Raleway',
       'Gill Sans',
     ]
   },

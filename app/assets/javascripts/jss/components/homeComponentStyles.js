@@ -432,6 +432,7 @@ const homeComponentStyles = theme => ({
   },
   postCardContent: {
     flex: '1 0 auto',
+    fontFamily: theme.Typography.fontFamily[0],
   },
   fab: {
     position: 'fixed',

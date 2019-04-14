@@ -55,7 +55,7 @@ function HomeLogo(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="" />
       <Typography color="textSecondary" align="center" variant="h2" marked="center" className={classes.h2} >
-        Teaching Computer Science like the future depends on it!
+        Teaching computer science like the future depends on it
       </Typography>
     </HomeLogoLayout>
   );
