@@ -31,7 +31,7 @@ import MarkdownTest from './MarkdownTest';
 const theme = createMuiTheme({
   Typography: {
     fontFamily: [
-      'Raleway',
+      'Mukta',
       'Gill Sans',
     ]
   },
