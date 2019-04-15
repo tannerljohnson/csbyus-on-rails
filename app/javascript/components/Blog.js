@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import { NavLink } from "react-router-dom";
+import { NavHashLink as NavHashLink } from 'react-router-hash-link';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { truncate } from '../helpers/utilities';
 import moment from 'moment';
@@ -36,7 +36,7 @@ class Blog extends React.Component {
                 summary = {truncate(post.summary, TRUNCATION_LIMIT) + "..."}
                 url = {"/blog/"+ post.id + "/" + post.slug}
                 timestamp = {moment(post.timestamp).fromNow()}
-                image = {post.image} 
+                image = {post.image}
                 />
       );
 
@@ -74,7 +74,7 @@ class Blog extends React.Component {
                   </Typography>
                 <Typography variant="h4" class={classes.newFont} gutterBottom>
                   <p>
-                  Are you interested in digital era education? We'd love to hear from you. If you'd like to contribute to our blog, please fill out <NavLink to={'/joinus'}>this form</NavLink> with 'Blog' in the <b>Subject</b> field and
+                  Are you interested in digital era education? We'd love to hear from you. If you'd like to contribute to our blog, please fill out <NavHashLink to={'/home#contact-form'}>this form</NavHashLink> with 'Blog' in the <b>Subject</b> field and
                   briefly descibe the topic you'd like to write about (or a link if you've already written something).
                   </p>
                 </Typography>

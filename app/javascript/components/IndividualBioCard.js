@@ -8,10 +8,11 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 import Hidden from '@material-ui/core/Hidden';
+import { NavHashLink as NavHashLink } from 'react-router-hash-link';
+
 
 
 class IndividualBioCard extends React.Component {
@@ -20,47 +21,29 @@ class IndividualBioCard extends React.Component {
 
     return (
       <React.Fragment>
-        <Card className={classes.bioCard}>		
+        <Card className={classes.bioCard}>
         	<div className={classes.bioCardDetails}>
-           {/*} <Grid
-              container
-              spacing={0}
-              direction="column"
-              alignItems="center"
-              justify="center"
-
-            >
-              <Grid item className={classes.bioMediaGrid}>
-              <CardMedia
-                  className={classes.bioMedia}
-                  image={this.props.myImage}
-                />
-              </Grid>
-            </Grid>
-        */}
-        	{/*<CardMedia 
-        		className={classes.bioMedia}
-        		image={this.props.myImage}
-        		/> */}
-            <CardContent className={classes.postCardContent}>		
-              <Typography variant="h5" component="h2">
+            <CardContent className={classes.postCardContent}>
+              <Typography variant="h5" component="h2" className={classes.bioCardContent}>
                 {this.props.name}
               </Typography>
-              <Typography className={this.props.title} color="textSecondary" gutterBottom>
-                {this.props.team}
+              <NavHashLink to={'/about#team-descriptions'}>
+                <Typography variant="subtitle2" className={classes.bioCardContent} color="textSecondary" gutterBottom>
+                  {this.props.team}
+                </Typography>
+              </NavHashLink>
+              <Typography className={classes.bioCardContent} color="textSecondary" gutterBottom>
+                <em>{this.props.study}</em>
               </Typography>
-              <Typography className={this.props.study} color="textSecondary" gutterBottom>
-                {this.props.study}
-              </Typography>
-              <Typography component="p">
+              <Typography component="p" className={classes.bioCardContent}>
                 {this.props.caption}
               </Typography>
-                <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                <Typography className={classes.bioCardContent} color="textSecondary" gutterBottom>
                   <a href={this.props.emailurl}>
                     {this.props.email}
                   </a>
                 </Typography>
-                <Typography className={this.props.email} color="textSecondary" gutterBottom>
+                <Typography className={classes.bioCardContent} color="textSecondary" gutterBottom>
                   <a href={this.props.linkedinurl}>
                     LinkedIn
                   </a>
@@ -69,7 +52,7 @@ class IndividualBioCard extends React.Component {
             </div>
             <Hidden xsDown>
             <CardMedia
-              className={classes.bioMedia}				
+              className={classes.bioMedia}
               image={this.props.myImage}
             />
           </Hidden>

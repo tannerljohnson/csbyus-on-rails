@@ -14,7 +14,13 @@ const styles = theme => ({
     backgroundImage: `url(${Logo})`,
     backgroundColor: theme.palette.primary.white, // Average color of the background image.
     backgroundPosition: 'center',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.between('sm', 'md')]: {
+      width: '100%',
+      height: '70%',
+      marginTop: theme.spacing.unit * 2,
+      paddingBottom: '0%',
+    },
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '60%',
       paddingBottom: '0%',
@@ -22,14 +28,33 @@ const styles = theme => ({
   },
   h2: {
     fontFamily: theme.Typography.fontFamily[0],
-    marginTop: theme.spacing.unit * 20,
+    marginTop: '10%',
     [theme.breakpoints.up('sm')]: {
-      marginTop: theme.spacing.unit * 70,
-      marginRight: theme.spacing.unit * 55,
-      marginLeft: theme.spacing.unit * 10,
-      marginBottom: theme.spacing.unit * 10,
+      // marginTop: theme.spacing.unit * 70,
+      marginTop: '40%',
+      // marginRight: theme.spacing.unit * 55,
+      marginRight: '30%',
+      marginLeft: '5%',
+      fontSize: 45,
     },
     [theme.breakpoints.down('xs')]: {
+      fontSize: 30,
+      backgroundColor: theme.palette.primary.white, // Average color of the background image.
+      marginTop: theme.spacing.unit * 20,
+    },
+  },
+  flexh2: {
+    fontFamily: theme.Typography.fontFamily[0],
+    marginTop: theme.spacing.unit * 70,
+    marginRight: theme.spacing.unit * 55,
+    marginLeft: theme.spacing.unit * 10,
+    marginBottom: theme.spacing.unit * 10,
+    [theme.breakpoints.between('sm', 'md')]: {
+      fontSize: 55,
+      marginRight: theme.spacing.unit * 40,
+      marginLeft: theme.spacing.unit * 10,
+    },
+    [theme.breakpoints.down('sm')]: {
       fontSize: 30,
       backgroundColor: theme.palette.primary.white, // Average color of the background image.
     },

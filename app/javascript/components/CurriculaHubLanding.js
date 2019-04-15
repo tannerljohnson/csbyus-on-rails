@@ -7,7 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import { NavLink } from "react-router-dom";
+import { NavHashLink as NavHashLink } from 'react-router-hash-link';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Fab from '@material-ui/core/Fab';
 import Icon from '@material-ui/core/Icon';
@@ -67,7 +67,7 @@ class CurriculaHubLanding extends React.Component {
                   </Typography>
                 <Typography variant="h4" class={classes.newFont} gutterBottom>
                   <p>
-                    Interested in contributing to the CurriculaHub community? We'd love to collaborate with you. To use our CSbyUs LessonBuilder, click on the blue button at the bottom right of your screen! Or you can fill out <NavLink to={'/joinus'}>this form</NavLink> and include the following in your message:
+                    Interested in contributing to the CurriculaHub community? We'd love to collaborate with you. To use our CSbyUs LessonBuilder, click on the blue button at the bottom right of your screen! Or you can fill out <NavHashLink to={'/home#contact-form'}>this form</NavHashLink> and include the following in your message:
                     the resources you'd like to share or adapt and relevant links so we can view them. Our curriculum team will reach out to you via email after you submit the form as soon as possible.
                   </p>
                 </Typography>

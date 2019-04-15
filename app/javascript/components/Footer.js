@@ -10,7 +10,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { withRouter } from 'react-router-dom';
 import footerComponentStyles from "../../assets/javascripts/jss/components/footerComponentStyles.js";
 
-const theme = createMuiTheme();
+// const theme = createMuiTheme();
 
 class Footer extends React.Component {
 
@@ -21,13 +21,13 @@ class Footer extends React.Component {
       <React.Fragment>
         {/* Footer */}
         <footer className={classes.footer}>
-          <Typography variant="title" align="center" gutterBottom>
+          <Typography variant="title" align="center" gutterBottom className={classes.footerText}>
             Computer Science by us, for us.
           </Typography>
-          <Typography variant="subheading" align="center" color="textSecondary" component="p">
+          <Typography variant="subheading" align="center" color="textSecondary" component="p" className={classes.footerText}>
             © 2018 CSbyUs.org. All rights reserved.
           </Typography>
-          <Typography variant="subheading" align="center" color="textSecondary" component="p">
+          <Typography variant="subheading" align="center" color="textSecondary" component="p" className={classes.footerText}>
             CSbyUs.org publishes all content under a <a href="https://creativecommons.org/licenses/" redirects="_blank">Creative Commons license</a>.
           </Typography>
         </footer>

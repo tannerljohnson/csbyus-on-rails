@@ -107,10 +107,10 @@ class ContactForm extends React.Component {
       <CssBaseline/>
         <main className={classes.layout}>
           <Paper className={classes.paper}>
-            <Typography variant="h4" component="h3" align="center">
+            <Typography variant="h4" component="h3" align="center" className={classes.textContentStyle}>
               Get in touch with <b>Us</b>
             </Typography>
-            <Typography variant="h6" component="p" align="center">
+            <Typography variant="h6" component="p" align="center" className={classes.textContentStyle}>
               We're always open to new collaborations, questions, or comments!
             </Typography>
             <React.Fragment>
@@ -143,7 +143,7 @@ class ContactForm extends React.Component {
           </DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-slide-description">
-              Please make sure you've written a quick message that explains your interest in collaborating -- this will help us get started :)
+              Please make sure you've written a quick message that explains your interest in collaborating
             </DialogContentText>
           </DialogContent>
           <DialogActions>

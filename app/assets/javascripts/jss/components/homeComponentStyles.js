@@ -113,6 +113,7 @@ const homeComponentStyles = theme => ({
     // textAlign: 'center',
     alignItems: 'center',
     paddingTop: '0%',
+    marginTop: theme.spacing.unit * 0,
   },
   heroUnit2: {
     backgroundColor: theme.palette.secondary.darkgrey,
@@ -169,6 +170,12 @@ const homeComponentStyles = theme => ({
   },
   heroButtons: {
     paddingTop: '0%', // 16:9
+    paddingBottom: '0%', // 16:9
+    fontFamily: theme.Typography.fontFamily[0],
+    color: theme.palette.primary.darkturq,
+  },
+  toAboutButton: {
+    marginTop: theme.spacing.unit * 2,
     paddingBottom: '0%', // 16:9
     fontFamily: theme.Typography.fontFamily[0],
     color: theme.palette.primary.darkturq,
@@ -399,7 +406,7 @@ const homeComponentStyles = theme => ({
   },
   bioCard: {
     display: 'flex',
-    height: 350,
+    height: 360,
   },
   aboutCard: {
     // height: 400,
@@ -432,6 +439,9 @@ const homeComponentStyles = theme => ({
   },
   postCardContent: {
     flex: '1 0 auto',
+    fontFamily: theme.Typography.fontFamily[0],
+  },
+  bioCardContent: {
     fontFamily: theme.Typography.fontFamily[0],
   },
   fab: {
