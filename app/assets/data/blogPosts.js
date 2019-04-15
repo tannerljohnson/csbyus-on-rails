@@ -1,10 +1,10 @@
 // TODO: find pictures!
 // course id is a three digital number, the first digit represents its category
-// csbyus courses start with a 9
+// CSbyUs courses start with a 9
 module.exports = {
     posts: [
         {
-          title:"The Importance of CS Education",
+          title:"The importance of CS education",
           author:"Megan Phibbons",
           image:"https://snworksceo.imgix.net/dtc/3e9717b8-17e1-424a-b421-f60f7d2e3603.sized-1000x1000.jpg?w=1000",
           isTeamMember: true,
@@ -29,7 +29,7 @@ Looking forward, I hope that one day Computer Science education can be accessibl
 `
         },
         {
-          title:"Get Involved in Open-Source CS Education",
+          title:"Get involved in open-source CS education",
           author:"Cady Zhou",
           image:"https://farm8.staticflickr.com/7801/33572984968_d0d100f205.jpg",
           isTeamMember: true,
@@ -48,7 +48,7 @@ When we talk about open-source education, we talk about a similar idea: a way th
 
 Community partners, we are excited to know you are interested in making computer science (CS) education more accessible!
 
-Let’s get in touch first. Regardless of how much you have read about us, we are always interested in hearing about your stories, opinions, and vision in education. By completing the interest form [here](csbyus.org/joinus), we	will contact you through email as soon as possible!
+Let’s get in touch first. Regardless of how much you have read about us, we are always interested in hearing about your stories, opinions, and vision in education. By completing the interest form [here](CSbyUs.org/joinus), we	will contact you through email as soon as possible!
 
 Uploading courses to our website is the best way to support our community. All courses uploaded will be completely free to be shared and modified by everybody. The best way to get started with the process is to contact us using the interest form just mentioned. At the current stage, we will use a hyperlink to share your material with others users of our website, ideally in the form of a google doc, youtube channel, or any other open medium you prefer.
 
@@ -75,7 +75,7 @@ At the same time, we hope your takeaways include not only knowledge from classes
 At last, **everyone**, we are open to any suggestions on how to improve our website and new features to include. Feedback always helps and motivates us in making CS education more accessible!`
         },
         {
-          title:"Teaching Computer Science",
+          title:"Teaching computer science",
           author:"Eliza Paradise",
           image:"https://farm8.staticflickr.com/7867/32507322627_4f9dbd77a3.jpg",
           isTeamMember: true,
@@ -88,7 +88,7 @@ At last, **everyone**, we are open to any suggestions on how to improve our webs
 
 Teaching middle school students isn’t always easy, and my co-teachers and I have learned a lot through both our successes and our failures. Reflection is a key part of our teaching process, and we rely on both discussion-based reflections and written reflections to iterate on our curriculum and our methods in the classroom. With my first semester as a teacher coming to a close, I’ve found that my reflections indicate clear successful practices and clear opportunities for improvement. One of our methodologies which I’ve found to be the most successful is explaining concepts outside of the context of computer science before using them to code. One of our greatest successes with this approach was in a lesson plan where we taught students about algorithms. For the purpose of this lesson, we defined an algorithm as "a series of steps used to accomplish a goal". To teach this to our students, we utilized two key strategies: we first had the students complete an obstacle course in pairs, where one student was a “turtle” and one was the “programmer”. The programmer had to give the turtle very specific instructions to get the turtle to the finish line- these instructions were the “algorithm” the programmer was writing for the computer. After completing this physical activity, we then taught the students how to use the turtle tool to draw images in [Code.org’s AppLab](https://code.org/educate/applab) (the platform we have them develop apps in). The turtle activity makes use of experiential learning, a technique that allows students to learn through interactive experiences. In a [survey](https://www.juniorachievement.org/documents/20009/20652/Experiential_Learning_in_Education_March.pdf/a38b18d9-cdb5-46ee-a40f-7adc9f24da51) conducted by Signal Hill Group, approximately 92% of teachers indicated that experiential learning was effective for motivating students to learn and raising student achievement.
 
-![ElizaGraph1](https://lh5.googleusercontent.com/MxX3fRFwPYl4DH_XGvVULxfwSyq0mtF9_7JKtQ8etzziiPWsUisGoSiD2dCO-S9LK_nSV202O0nDWAu7vse9_mP26A2AjYponS3VfPRT=s1469)
+![image alt text](https://lh5.googleusercontent.com/3HxG_zBKidtiy1dSATnXFZXHlX2paZS5gRJQGel_qepb-2InDavcXfmeUIY6EXK9bYcQpCM6S2UhEBU-hxecJ9U5mTmHxrrE1H-4eiU-)
 
 My reflection from that day clearly mirrors this support of experiential learning and provides some insight into what was so effective: "Today was a really great day! It was super fun getting to start actually working in AppLab with the students, and they all seemed very engaged and excited about drawing different shapes in AppLab. As someone who’s never taught this lesson plan before, I was really excited about the turtle activity. I thought it was a great way to engage the students in an activity that very clearly translated to the programming tasks. In addition, that activity seemed to clearly help them think about the algorithms they had to use to draw different shapes."
 
@@ -116,7 +116,7 @@ These experiences indicate that a combination of coding examples and hands-on ac
 
 Educators in elementary computer science face a lack of adaptable curricula. Calls for more modifiable, non-rigid curricula are therefore enticing—assuming that such curricula could benefit teachers by increasing their ability to mold resources for individual classrooms and, ultimately, produce better teaching experiences and learning outcomes.
 
-Our team at [CSbyUs](https://csbyus.herokuapp.com/) noticed this scarcity, and we've created an open source web platform to facilitate more flexible, adaptable, and tested curricula for computer science educators. The mission of the CSbyUs team has always been utilizing open source technology to improve pedagogy in computer science, which includes increasing support for teachers. Therefore, this project primarily seeks to use open source principles—and the benefits inherent in them—to expand the possibilities of modern curriculum-making and support teachers by increasing access to more adaptable curricula.
+Our team at [CSbyUs](https://CSbyUs.herokuapp.com/) noticed this scarcity, and we've created an open source web platform to facilitate more flexible, adaptable, and tested curricula for computer science educators. The mission of the CSbyUs team has always been utilizing open source technology to improve pedagogy in computer science, which includes increasing support for teachers. Therefore, this project primarily seeks to use open source principles—and the benefits inherent in them—to expand the possibilities of modern curriculum-making and support teachers by increasing access to more adaptable curricula.
 
 **Rigid, monotonous, mundane**
 
@@ -146,7 +146,7 @@ For these changes to be effective, the onus is on teachers to notice the dynamic
 
 Hayley's "back and forth" process is an iterative process of curriculum-making. Between utilizing curricula and modifying curricula, instructors like Hayley can take a once-rigid curriculum and mold it to any degree that the user sees fit—again and again. This iterative process depends on tests performed first in the classroom, and it depends on the teacher's rationale and reflection on how curricula uniquely pans out for them.
 
-Adaptability of curriculum is the most important principle on which the CSbyUs platform is built. Much like Hayley's process of curriculum-making, curriculum adaptation should be iterative, as it involves learning from experience, returning to the drawing board, making changes, and finally, utilizing the curriculum again. Once launched, the CSbyUS website will document this iterative process.
+Adaptability of curriculum is the most important principle on which the CSbyUs platform is built. Much like Hayley's process of curriculum-making, curriculum adaptation should be iterative, as it involves learning from experience, returning to the drawing board, making changes, and finally, utilizing the curriculum again. Once launched, the CSbyUs website will document this iterative process.
 
 The open-focused pedagogy behind the CSbyUs platform, then, brings to life the flexibility inherent in the process of curriculum adaptation. First, it invites and collects the valuable first-hand perspectives of real educators working with real curricula to produce real learning. Next, it capitalizes on an iterative processes of development—one familiar to open source programmers—to enable modifications to curriculum (and the documentation of those modifications). Finally, it transforms the way teachers encounter curricula by helping them make selections from different versions of both modified curriculum and "the original." Our platform's open source strategy is crucial to cultivating a hub of flexible curricula for educators.
 
@@ -245,7 +245,7 @@ We're also excited about our cloud-based implementation. We use Heroku to host o
 
 **Step 6: Testing**
 
-Since we've just deployed, we are now in a testing stage. Our goals are to collect user feedback across our feature domains and our application experience as a whole, especially as they interact with our specific audiences. Given our original constraints (namely, time and people power), this iteration is the first of many to come. For example, future iterations will allow for individual users to register accounts and post external curricula directly on our site without going through the extra steps of email. We want to scale and maximize our efficiency, and that's part of the recipe we'll deploy in future iterations. As for user testing: We collect user feedback via our contact form, via informal testing within our team, and via structured focus groups. [We welcome your constructive feedback and collaboration](https://csbyus.herokuapp.com/joinus).
+Since we've just deployed, we are now in a testing stage. Our goals are to collect user feedback across our feature domains and our application experience as a whole, especially as they interact with our specific audiences. Given our original constraints (namely, time and people power), this iteration is the first of many to come. For example, future iterations will allow for individual users to register accounts and post external curricula directly on our site without going through the extra steps of email. We want to scale and maximize our efficiency, and that's part of the recipe we'll deploy in future iterations. As for user testing: We collect user feedback via our contact form, via informal testing within our team, and via structured focus groups. [We welcome your constructive feedback and collaboration](https://CSbyUs.herokuapp.com/joinus).
 
 Our team was *only* able to unite new people with highly varied experience through the power of *open* principles and methodologies. Luckily enough, each one I described in this post is adaptable to virtually every team.
 
@@ -255,7 +255,7 @@ Regardless of whether you work—on a software development team, in a classroom,
 `
         },
         {
-          title:"What A More Equitable CS Education Means for the Future of Tech",
+          title:"What a more equitable CS education means for the future of tech",
           author:"Judyth Estrada Salinas",
           image:"https://media.wired.com/photos/5ab9b5cb9ccf76090d775118/master/w_1064,c_limit/2604WEB_college-enrollment-v3-fix.jpg",
           isTeamMember: true,
@@ -294,6 +294,291 @@ One obvious outcome is that there will be more minorities entering the tech indu
 * Companies are avoiding tapping into a wealth of talent that people of color offer
 
 There are many benefits for making computer science education more equitable. Whether it be economic growth for companies or improvement in lifestyle for marginalized communities, diversity as a goal is something that should be important to any company.
+`
+        },
+        {
+          title:"Everyone should teach computational thinking",
+          author:"Tanner Johnson",
+          image:"https://tannerjohnsonme.files.wordpress.com/2019/04/dod2.png",
+          isTeamMember: true,
+          id: "6",
+          slug: 'everyone-should-teach-computational-thinking',
+          timestamp:"2019-04-15 00:00",
+          summary: `Computational thinking is not about writing code. Sure, computer programs are often the outcome of strategic problem solving and algorithmic thinking. But at the end of the day, the critical thinking required to approach, solve, and iterate upon a solution to a problem is the true heavy lifting behind most computer programs.`,
+          content:
+`
+*A guide for educators*
+
+
+**Is this for me?**
+
+Are you a classroom teacher? Do you play an educational role in your community? Are you looking to supplement your kid's learning at home? Do you aspire to be an educator, formally or informally, someday? If you answered yes to any of these questions, then this post is for you. In the 21st century -- a time where slick [technology is rapidly outpacing dated educational practices](https://www.canadianmanufacturing.com/technology/technology-outpacing-business-education-government-says-deloitte-203177/) -- we have to teach computational thinking. **And if we don’t move fast, our learners risk falling behind.**
+
+So, do you have to be an expert in computer science (CS), [machine learning](https://www.youtube.com/watch?v=f_uwKZIAeM0), or some other related field to teach computational thinking? Absolutely not. What do you need? Simply an appetite to learn the basics. In fact, you probably have more of a computational background than you might think. If you teach, then this post is for you -- regardless of your exposure to computational thinking.
+
+**What is computational thinking?**
+
+Computational thinking is not about writing code. Sure, computer programs are often the *outcome* of strategic problem solving and algorithmic thinking. But at the end of the day, the **critical thinking** required to approach, solve, and iterate upon a solution to a problem is the true heavy lifting behind most computer programs. And that sort of problem-solving approach can (and should) be applied to virtually every subject.
+
+[Put simply](http://www.cs.cmu.edu/~wing/publications/Wing06.pdf) by Jeannette Wing, Professor of Computer Science at Columbia and Carnegie Mellon University, computational thinking is "a way of solving problems, designing systems, and understanding human behavior that draws on concepts fundamental to computer science... a fundamental skill for everyone, not just computer scientists".
+
+Computer science should not be a siloed subject. It’s relevant to any field of study and any future occupation, both as a foundation for solving problems and an entrypoint for harnessing the power of 21st-century tools and technologies. As educators, we ought to recognize we’re teaching future artists, bakers, historians, and so much more. Now is the time to bootstrap those learners with skills to thrive and pursue their curiosities to new lengths.
+
+**Why should I be teaching it?**
+
+Digital era skills are necessary for kids to live a self-determined, fully participative life. [Computer science is changing everything](https://www.youtube.com/watch?v=QvyTEx1wyOY), as industries, from [agriculture](https://cloudblogs.microsoft.com/2018/11/29/feeding-the-world-with-ai-driven-agriculture-innovation/) to [energy](https://www.weforum.org/agenda/2018/05/how-ai-can-help-meet-global-energy-demand) and [more](https://www.mtholyoke.edu/~blerner/Applications.html), are looking for tech-savvy employees. Unfortunately, the state of digital era education, particularly throughout CS learning opportunities, reflects a troubling stereotype: That these skills are [reserved only for those who fit the mold and can afford them](http://services.google.com/fh/files/misc/trends-in-the-state-of-computer-science-report.pdf). As educators, we have an ethical imperative to swiftly break down barriers that have long privileged few and disadvantaged most. We must realize that we win more when we all play.
+
+Not only can we start to prepare more conscientious technologists who will reshape the future of our human-digital interactions, but we can also equip our learners to be better problem-solvers in the broadest sense. Computational thinking teaches us [problem decomposition](https://www.bbc.com/bitesize/articles/z8ngr82), [abstraction](https://stackify.com/oop-concept-abstraction/), [network relationships](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/describing-graphs), [dependencies](https://en.wikipedia.org/wiki/Coupling_(computer_programming)), robust solution [testing](https://www.interaction-design.org/literature/article/stage-5-in-the-design-thinking-process-test), and other generalized critical thinking skills. By introducing computational thinking into standardized subjects like [biology](https://hourofcode.com/groklearningpython), [history](https://hourofcode.com/bpmlkvid), [math](https://hourofcode.com/bpmathscratch), and [social studies](https://www.kodable.com/hour-of-code#social-studies), we add to our learners’ critical thinking toolboxes. (Follow those previous links for [subject-specific hour lessons](https://hourofcode.com/es/en/learn) created by Code.org.)
+
+Even beyond understanding critical technologies and improving problem-solving, computational thinking outcomes lend themselves well to developing [21st-century soft skills](https://www.aeseducation.com/career-readiness/what-are-21st-century-skills). In the real world, most learners will find themselves in careers which require teamwork and collaboration. Computational thinking learning outcomes fit perfectly into [project-based](https://www.pblworks.org/what-is-pbl) curricula, where students tap into their creativity, and dive deep into material that is relevant to their lives. By clustering students into project teams based on shared interests, we simulate future working environments, where effective teamwork, flexibility, and other soft skills are highly valued.
+
+Take our newest [CSbyUs](https://CSbyUs.herokuapp.com/home) program [Day of Data](https://www.linkedin.com/pulse/day-data-duke-brings-open-source-learning-k-16-aria-chernik/), for example (see the full curriculum on [CurriculaHub](https://CSbyUs.herokuapp.com/curriculahub)). We invited 20 middle school girls and 15 high school girls to Duke University for a day full of – well, data. We followed the [data science process](https://www.kdnuggets.com/2016/03/data-science-process-rediscovered.html), starting with an essential research question and ending with a highly visual presentation to key stakeholders – all over the course of 5.5 hours! We split into 4 teams based on a pre-survey of intersecting skills, talents, and interests. Our goal was to find out what our students were curious about so we could help them develop a related research question that was answerable through a data lens.
+
+In the end, our teams formed around shared interests (like breakfast and sleeping habits), and leveraged computational skills and impressive teamwork to answer their authentically curious questions. Not to mention they showed impressive courage surveying hundreds of Duke students and presenting their findings in front of professors, administrators, and other community members.
+
+Whether you want to implement [your own Day of Data](https://docs.google.com/document/d/1i5TnWBwk2yvZpTetN5yb3ByLC2J2oVcdh71c4XSVHno/edit?usp=sharing), try a mini-lesson (like the [Turtle Game](https://docs.google.com/document/d/1yveay_b4OUSS3mfKWYRV9UpytbdCsxRn79OqwtxVTMU/edit)), reshape your biology class to be more computational, start an afterschool club, start learning alongside your kids, or anything in between, it’s time to start now. Start small or go big – but at any rate, *start*. There are plenty of resources to help you get off the ground, as well as communities to keep you going.
+
+To do this right – to empower our future change agents to use computational thinking to transform their lives – we have to realize we’re stronger together.
+
+**Okay, but where do I start?**
+
+Starting is often the hardest part. We’ve all been there. Maybe your room is a mess. Or the sink is full of dirty dishes. Or you put off writing that paper until the last second. Thinking about big picture deliverables can be daunting. So, let’s zoom in on something smaller, more manageable. You could make your bed. Or start washing the forks. Or write an outline. In every case, we’re moving forward, and if we remember our physics, we know that objects in motion tend to stay in motion.
+
+The same applies to transforming our teaching with computational thinking. It’s not going to happen overnight. But we’ve got to start somewhere. What follows are starting points for educators who have minimal background in computer science that are organized based on teaching capacity and learner age-group. CSbyUs has curated a resource exactly for this purpose called [CurriculaHub](https://CSbyUs.herokuapp.com/curriculahub). Here are some highlights from CurriculaHub.
+
+(**Note**: You might be surprised to know that *you don’t need access to computers to start teaching computer science concepts*. Consider using some of the ‘unplugged’ lesson plans described below to deliver core concepts without computers.)
+
+
+
+**_Elementary school age_**
+
+Elementary age students – or those from about age 5-10 – start their computational paths by building up basic problem-solving techniques. Get students excited about computing by introducing them to games, art, and storytelling using proven digital platforms. Try out some ‘unplugged’ activities to engage your learners who like to get their bodies moving. The goal for this age is to demonstrate that computer science is relevant to everyone’s lives – and it can be fun, too!
+
+* [Turtles and Algorithms](https://docs.google.com/document/d/1yveay_b4OUSS3mfKWYRV9UpytbdCsxRn79OqwtxVTMU/edit) is an active and ‘unplugged’ hour-long mini-lesson that introduces students to how computers and algorithms work.
+
+* [CS First with Scratch](https://csfirst.withgoogle.com/c/cs-first/en/curriculum.html) is a set of ready-to-teach introductory programming activities best suited for older students in this age group. Great if you have access to computers and if your students like self-paced and self-guided learning.
+
+* [Basic Programming in Scratch](https://scratch.mit.edu/ideas) teaches programming with a simple drag-and-drop interface that your students will love. Make it personal with [avatar creation and animation](https://resources.scratch.mit.edu/www/guides/en/AnimateGuide.pdf) or [storytelling](https://resources.scratch.mit.edu/www/guides/en/StoryGuide.pdf).
+
+**_Middle school age_**
+
+Middle school age students – about ages 11-13 – should have the appropriate educational foundation to learn a broad set of computational thinking fundamentals, with an emphasis on applying those concepts to personal and group projects. Projects should reinforce the idea that computer science is relevant across all disciplines, and can be used for fun, creative expression, and problem-solving. Consider topics like building basic websites, digital security, data analysis and visualization, and graphical programming.
+
+* [Hour of Code](https://code.org/hourofcode/overview) is exactly that: An hour introduction to programming using Code.org’s well-reputable online, free tools. Great for setting the hook for elementary and middle school beginners.
+
+* [Mobile Citizens](https://docs.google.com/document/d/14HhURHo2u9WwidZ83Px70qQ8U8411ClAh--IZ4Oxz20/edit?usp=sharing) is a CSbyUs curriculum suited for an after-school or in-school club environment. If you have at minimum an hour per week for 5-6 weeks, then this course is well worth the time. Students create mobile apps that improve their communities.
+
+* [Day of Data](https://docs.google.com/document/d/1i5TnWBwk2yvZpTetN5yb3ByLC2J2oVcdh71c4XSVHno/edit?usp=sharing) is a CSbyUs curriculum designed to be completed in a day – but like all our resources, it’s flexible! Your students will learn the data science process through team-based projects where they collect, analyze, and present their own data and findings.
+
+* [CS Discoveries](https://code.org/educate/csd) is a course that can be taught in a semester or a year. All resources and technologies are free and provided by Code.org.
+
+**_High school age_**
+
+High school age students – about ages 14-18 – are fit to start building their more technical muscles. If your students already have experience in middle-school or above level CS concepts, consider digging deeper and applying those same concepts with more robust, industry-grade technologies and programming languages. Keep learning project-based, hands-on and collaborative as much as possible. The goal for this age is to demonstrate how students can use CS to transform the world around them.
+
+* [Day of Data](https://docs.google.com/document/d/1i5TnWBwk2yvZpTetN5yb3ByLC2J2oVcdh71c4XSVHno/edit?usp=sharing) can be easily adapted to suit a high school environment. [Reach out to us](https://CSbyUs.herokuapp.com/home) to learn more about the adaptation process.
+
+* [Bootstrap’s Data Science course](https://www.bootstrapworld.org/materials/spring2019/courses/data-science/en-us/) is a more long-term immersive data science experience, where students see the overlap of coding and data visualization and analysis.
+
+* [CS Principles](https://code.org/educate/csp) is a more advanced course offered by [Code.org](code.org), where students learn CS fundamentals through several projects. This course can be taught as an AP or non-AP course and complements [CS Discoveries](https://code.org/educate/csd) with a deeper focus on computing’s applications in society.
+
+* [Teaching Privacy](https://csforallteachers.org/resource/teaching-privacy-curriculum) is suitable for any age group, but especially relevant for high school students, who find high relevance in why online privacy is important. Try [a sample lesson](https://teachingprivacy.org/teachers-portal/) or dive into the whole course!
+
+**_Beyond high school_**
+
+Whether you’re looking to get ahead of the curve and learn more computer science and computational thinking yourself, or you’re teaching older students – like mine, who study at a career prep vocational school – you have open access to plenty of self-guided learning resources and team-based curricula. *If you’re learning solo*, you might first identify your learning goals and what skills you’ll need to master to achieve those goals. *If you’re an educator*, maybe you’d like to write an auto-grading program for your students’ Google Form responses that calculates grades in a Google Sheets doc. In that case, you might need a background in JavaScript, from its fundamental concepts to writing custom Google Script files.
+
+* [Introduction to JavaScript](https://www.khanacademy.org/computing/computer-programming/programming) by Khan Academy is a self-guided learning pathway that uses art and animation to introduce students to one of the most important and widely used programming languages on the web.
+
+* [Code Academy](https://www.codecademy.com/) learning modules are interactive and practical tutorials that teach anything from data analytics in Python to front-end programming in ReactJS.
+
+* [Google Suite Learning Center](https://gsuite.google.com/learning-center/#!/) is a great starting point for mastering the vast capabilities of Docs, Sheets, Slides, and more. Take your teaching (or side-hustle) to the next level by mastering and customizing one or all of these tools.
+
+
+
+Or perhaps you’re like me and want to start an after-school data science club for your older students. In that case, consider the high school age resources above, but try to focus on more practical tools for students, based on the specific learning context (e.g., career prep for tourism industry students). Choose the path that is most relevant for your student’s futures.
+
+
+
+**How can I keep going?**
+
+Okay, now you’ve got the hardest part out of the way. You’ve got an idea of what might work for your students, and you’re starting to think about your next step: Implementation. Once you’ve established that momentum in your class – and it’s a huge success and your students want to keep learning these awesome skills ;) – it’s important to keep moving forward.
+
+Often, educators face the burden of long hours, minimal support, huge constraints, and poor funding. To save ourselves from burnout, we need to support one another. There will always be moments in our classes where we feel overwhelmed or unsure if our students are actually learning. These are the moments to seek support from communities like [Code.org](https://code.org/educate/professional-learning/middle-high), [CS for All Teachers](https://csforallteachers.org/), [CSbyUs](https://CSbyUs.herokuapp.com/home), [AP Teacher Community](https://apcommunity.collegeboard.org/web/apcompsci), and more, where educators can share best practices, celebrate each other’s work, seek help on big and small problems, and share a laugh about their student’s creativity.
+
+
+
+**_Join the community_**
+
+To learn more about how to get involved with CSbyUs, check out [Cady’s post](https://CSbyUs.herokuapp.com/blog/1/get-involved-in-open-source-cs-ed), which covers several great ways to join the community.
+`
+        },
+        {
+          title:"Barriers to women in computer science",
+          author:"Vivian Kirby",
+          image:"https://live.staticflickr.com/7810/40491472383_c2d7f9b0fa_h.jpg",
+          isTeamMember: true,
+          id: "7",
+          slug: 'barriers-to-women-in-computer-science',
+          timestamp:"2019-04-15 01:00",
+          summary: `Six months ago, I was sitting on my friend’s floor, crying. I’d just realized that I wanted to change my major to computer science, more than anything. But I was so late to the game. It was my third semester in college, and I’d only completed one CS class so far. Eventually, I ended up deciding to switch to CS, and it was the best decision I’ve ever made. But I wish I’d known that I wanted to sooner, and I know I’m not the only girl who feels this way.`,
+          content:
+`
+***"What if I’m not good enough?"***
+
+
+
+Six months ago, I was sitting on my friend’s floor, crying. I’d just realized that I wanted to change my major to computer science, more than anything. But I was so late to the game. It was my third semester in college, and I’d only completed one CS class so far. Eventually, I ended up deciding to switch to CS, and it was the best decision I’ve ever made. **But I wish I’d known that I wanted to sooner, and I know I’m not the only girl who feels this way.**
+
+
+
+As I’ve spent more time in the CS world, I’ve noticed that the majority of guys have known they wanted to study computer science since high school or middle school. Meanwhile, nearly all of my female CS major friends didn’t decide to major in computer science until they got to college, took a class, and loved it. But why is it that way?
+
+
+
+Thinking back to high school, I distinctly remember having an outsider’s fascination with computer science. I’ve always loved math and logic, so it sounded like an ideal field for me in theory. But my STEM-intensive high school was full of guys who’d been coding since they were 10 years old. The CS classes had virtually no female enrollment. I didn’t think I could possibly compete starting so late. So, I didn’t.
+
+
+
+Growing up, I was sent to ballet classes and piano lessons (neither of which I had an aptitude for nor interest in). My younger brother, on the other hand, was sent to robotics teams and math clubs. It’s not that my parents actively prevented me from doing those things. I was just never asked, so I never knew it was an option. There tends to be an automatic assumption of what activities are meant for males vs females, and I think that’s part of what translates to [the abysmal gender ratio seen in the tech industry today.](https://www.computerscience.org/resources/women-in-computer-science/) The term "software engineer," to this day, still evokes images in my mind of geeky-looking guys typing furiously behind large computer screens. It’s hard to inspire girls to go into tech when the concept of a female software engineer isn’t one that can be pictured easily.
+
+
+
+The issue of diversity in computer science is one that’s discussed pretty frequently, especially because [tech is growing faster than any other industry](https://www.theguardian.com/business/2012/dec/06/technology-sector-growing-faster-economy) in the country. But despite the rising number of incentives for women to enter computer science, the percentage of female CS majors remains very low, [at about 17%](https://jaxenter.com/women-in-computer-science-majors-133646.html). Based off of my experience, I think that it’s a feedback loop. Girls don’t see any other girls in tech so they feel too intimidated to code, and as a result the number of girls stays low. It took me months of building up my own self-confidence to decide to major in CS, even though I knew it was what I wanted to do. Until the narrative surrounding the tech industry is changed, I think it will probably stay that way.
+
+
+
+This issue is part of what inspired me to join CSbyUs. Although we’re not an organization specifically directed at encouraging girls to study computer science, I think making CS education more accessible overall will indirectly contribute towards accomplishing that goal. Early exposure is so important, and I’d like to believe that if I’d had better access to CS learning resources, I’d be much more ahead than where I am today. If I could go back in time, I would have told myself to be more confident in my own abilities, to take advantage of all of the learning resources I could find, and work towards a future in computer science sooner. It’s too late to do that for myself now, but I’m hoping that there’s still a chance for other girls to get started early. There isn’t really one singular solution to the problem, but I believe that more organizations like CSbyUs will help create equitable opportunities for women in the future.
+`
+        },
+        {
+          title:"Computer Science 101: An intro to college CS",
+          author:"Megan Phibbons",
+          image:"https://live.staticflickr.com/65535/33737788228_7e697c01f9.jpg",
+          isTeamMember: true,
+          id: "8",
+          slug: 'computer-science-101',
+          timestamp:"2019-04-15 01:00",
+          summary: `If you’re anything like me, going to college to study Computer Science is a scary thought. What will the people be like? What can you do? Will the classes be hard? These were all thoughts that were running through my mind as I prepared to go to college, and now that I have completed two years of school, I want to provide some insight to others on what this may be like. Because I go to Duke, a lot of the examples will be Duke-specific, but many colleges offer similar programs.`,
+          content:
+`
+If you’re anything like me, going to college to study Computer Science is a scary thought. What will the people be like? What can you do? Will the classes be hard? These were all thoughts that were running through my mind as I prepared to go to college, and now that I have completed two years of school, I want to provide some insight to others on what this may be like. Because I go to Duke, a lot of the examples will be Duke-specific, but many colleges offer similar programs. If you’re considering going to college to study Computer Science, check out this blog to see a little bit about what it’s like!
+
+In your freshman year, you’ll likely take an introductory computer science course to build the fundamentals for later on. If you’ve already tested out of them, that’s fine too. You probably will still stick to lower-level courses, then build up difficulty as you progress through college. Regardless of the course, most people will agree that office hours are your best friend. Teaching Assistants (TAs) are so helpful and generally want to help you make the most of your class. If you’re struggling, reach out. It doesn’t have to be a conversation with a professor, it can just be talking to some older students or TAs about what you can be doing differently.
+
+If you’re not sure what classes to take, there are a few core computer science classes that are pretty much universally taken at each school. Some examples include introductory CS, Data Structures and Algorithms, Discrete Math, Computer Architecture, and more. If you don’t know what some of those things are, don’t worry! For some of the core classes, I didn’t even know they existed until I registered for them.
+
+One common misconception about computer science is that it’s all about coding. However, many computer science classes don’t involve writing any code at all - but they still teach you necessary content that will help you succeed. For example, Computer Architecture teaches you about the more physical aspect of computers and how they work. Discrete Math is heavily focused on proofs related to Computer Science content. Just because it’s a CS class doesn’t mean you have to write any code, and going into a CS career doesn’t mean you’re going to be a software engineer. On the flipside of this, you can take some CS classes to learn these essential skills without needing to major in computer science.
+
+Speaking of careers, one thing that takes up a lot of time for computer science students is recruiting for jobs and internships. It is in no way necessary to have internships, but they certainly help you to figure out your interests and boost your competitiveness when trying to find a full-time job. Most companies start recruiting around October, but some start as early as July/August or as late as April/May. My advice for success is to start planning out where you want to apply early on in the summer and spread out your applications throughout the fall so you don’t get too stressed. Also, an important thing to remember when interviewing: don’t beat yourself up if you make a mistake! These companies understand that we are college students trying to gain experience, so they don’t expect you to be perfect.
+
+Outside of classes and recruiting, you may be wondering what kind of things you can do around campus to get involved in ways that are related to computer science. One of the best ways to do this is just look around and explore your options on campus! For example, Duke has organizations for women in computer science like DTech or ACM-W, general organizations like CSbyUs and Catalyst, or more hands-on clubs like Duke Robotics. There are also nationwide programs like Major League Hacking that host hackathons each year at schools! Many schools have programs like these, so look around and see if any of them interest you. Additionally, once you’ve taken a computer science class, consider applying to be a TA for it. That way, you can reinforce your baseline knowledge of content while simultaneously helping others who are where you were a few semesters ago.
+
+I know that it seems like there is a crazy amount of stuff to consider when studying computer science, but just know that it gets much easier to manage. After having some time to explore your options, you will find your place at school and it will all get much easier. It’s sometimes easy to look at your peers and think, "wow, they have so much more experience than me" and doubt your place in CS. However, keep in mind that there are many other people who are thinking this same way, some even may be thinking it about you. Try to keep an open mind going into it, and good luck with your studies!
+
+`
+        },
+        {
+          title:"Cultural competency in the classroom",
+          author:"Judyth Estrada Salinas",
+          image:"https://lh6.googleusercontent.com/K10QEaxrXB0Fs08GsF-3ErD8KhbHgzxT4BuxONqFoegoiCD1LY7MGgVLBpB7VAYi_L6xbB6IH77McK3PgL-PSX5UrQaAMlkIic51faneFrT-SGNkjTsFeLUG8kPz0lX9PDj8k5Fu",
+          isTeamMember: true,
+          id: "9",
+          slug: 'cultural-competency-in-the-classroom',
+          timestamp:"2019-04-15 01:00",
+          summary: `If you’re anything like me, going to college to study Computer Science is a scary thought. What will the people be like? What can you do? Will the classes be hard? These were all thoughts that were running through my mind as I prepared to go to college, and now that I have completed two years of school, I want to provide some insight to others on what this may be like. Because I go to Duke, a lot of the examples will be Duke-specific, but many colleges offer similar programs.`,
+          content:
+`
+*Our mission at CSbyUs is the following:*
+
+*"...to mobilize change-agents from under-resourced learning environments by fostering critical technology skills for thriving in the digital age."*
+
+My first semester with CSbyUs, we taught our computer science curriculum at Student U. Student U is a college-access after-school program for first-generation students. Most of their students are minorities and some are immigrants. For us, as Duke students, we hold a special privilege over the students at the site. They are going on their sixth graduating class of high school seniors, but have yet to send someone to Duke. The majority go to UNC Chapel Hill, NCCU, NC State and other surrounding universities. Add to that the lack of diversity that exists at Duke, and there is a disconnection when Duke students go into sites full of minorities.
+
+Our curriculum is meant to empower these students to learn computer science, a skill that many students like them are unable to have. The figure below exemplifies the problem in California but that exists in various educational systems across the nation. Latinos represent 51% of California’s enrollment, yet only 7% took the AP Computer Science exam. Similarly, African-Americans represent 7% of the California school population, but only 1% took the exam.
+
+![image alt text](https://lh6.googleusercontent.com/K10QEaxrXB0Fs08GsF-3ErD8KhbHgzxT4BuxONqFoegoiCD1LY7MGgVLBpB7VAYi_L6xbB6IH77McK3PgL-PSX5UrQaAMlkIic51faneFrT-SGNkjTsFeLUG8kPz0lX9PDj8k5Fu)
+
+The students who are lacking this education are usually African-American and Latinx. As students of a university that is a primarily white institution (PWI), it is necessary to be culturally competent.
+
+***What is cultural competency?***
+
+Cultural competency if defined as "having an awareness of one’s own cultural identity and views about difference, and the ability to learn and build on the varying cultural and community norms of students and their families" (National Education Association). It is being aware that there may exist differences among students and teachers and to make sure to acknowledge the relationship between one’s own cultural identity and a student’s.
+
+***Why is it important?***
+
+The importance of cultural competence can be seen in student outcomes. Specifically for ethnic and minority students, it can mean incorporating their communities’ histories into curriculums as well as diversifying teaching methods and practices. When students are not included in classroom and teaching methods, there can be a disconnect, which translates into disinterest or lack of engagement from the students. With a history like that of the United States, it is important to note the ways in which whiteness and white supremacy is built into educational systems. Once realizing the importance of being culturally competent and taking steps to be inclusive, teachers will be able to create a welcoming environment for students from all backgrounds.
+
+***How can teachers become culturally competent?***
+
+An article on Huffpost details the way in which teachers and mentors can take steps to make sure they are being inclusive in their classroom. The steps are as follows:
+
+1. Research the area where one is working. What kind of racial demographics are present there? Is it a heavily impoverished area? How many homes are non-English speakers?
+
+2. Get to know your students. What they like/don’t like, who they are, where they come from, how they grew up, etc. This can allow modification of curriculum to ideas that they would be more comfortable with.
+
+3. Allow yourself to be taught. Students have a lot to show teachers about the way that they learn, keep each other in check, etc. This can be useful to avoid outcasting them more than they might already feel.
+
+It is important to take these steps to be more aware of the needs of students in the classroom. Anything less may mean that these students are not getting the education they deserve. Additionally, lacking cultural competency can prevent learning how students work and the appropriate ways to discipline, which can cause unnecessary punishment,  pressuring at-risk students to abandon their schooling (this also relates to the school-to-prison pipeline, a major issue for communities of color).
+
+When a teacher takes the time to be culturally inclusive, they will note the increased engagement and excitement that flows out of the students. One last note is that to be culturally competent takes work. Many people never reach the full capacity of cultural competency, as we are exposed to a myriad of different cultures in our lifetime. Regardless, increasing your cultural competence will always be beneficial to the classroom and the students in it.
+
+[http://www.nea.org/home/39783.htm](http://www.nea.org/home/39783.htm)
+
+[https://www.huffpost.com/entry/the-importance-of-cultura_b_787876](https://www.huffpost.com/entry/the-importance-of-cultura_b_787876)
+
+`
+        },
+        {
+          title:"Our mission and vision",
+          author:"Eliza Paradie",
+          image:"https://live.staticflickr.com/835/29437860478_583cfb491c.jpg",
+          isTeamMember: true,
+          id: "10",
+          slug: 'our-mission-and-vision',
+          timestamp:"2019-04-15 01:00",
+          summary: `CSbyUs was founded with a large goal in mind: to close the gender, racial, and socio-economic gaps in computer science education. If you’re on this website, you likely agree with this goal as well, but you may also struggle to understand our exact objectives or the potential for impact. Through this blog post, I hope to add some clarity by explaining what we do, why we do it, and what results we are looking to obtain.`,
+          content:
+`
+CSbyUs was founded with a large goal in mind: to close the gender, racial, and socio-economic gaps in computer science education. If you’re on this website, you likely agree with this goal as well, but you may also struggle to understand our exact objectives or the potential for impact. Through this blog post, I hope to add some clarity by explaining what we do, why we do it, and what results we are looking to obtain.
+
+CSbyUs was started in Durham, North Carolina with the goal of exposing students to computer science. Our classroom is mostly comprised of students of color from under-resourced learning environments, a population that is typically discouraged from pursuing STEM fields. Our programming seeks to empower these students to engage with STEM by exposing them to different aspects of computer science, including data science and app development. Our curriculum development team has developed a variety of lesson plans, including a semester-long app development program and a day-long data science curriculum. You can learn more about what we do by looking at these curricula and more, all located in CurriculaHub.
+
+While we were all drawn to the team for different reasons (which you can read about in our bios!), we’re all united by the belief that computer science education is necessary for 21st century students. Computer literacy is becoming a skill on par with reading and math, and students who don’t have access to a computer science education will fall behind their peers who do. Many members of our team have had formative experiences with STEM education which showed us the importance of this work. On top of that, many of us are computer science majors who have found that computer science exposed us to opportunities we otherwise would not have had. Some of us had negative experiences with STEM education and have felt the negative effects of being told we weren’t capable of pursuing such fields. Regardless, we all understand the value and privilege of being encouraged to pursue STEM, and we’ve all noticed the disparities in who’s supported in this manner. As a woman, I’ve noticed that people don’t typically expect me to be a computer science major. There have been multiple occasions where I’ve mentioned work I’m doing for a computer science class and people have asked if I’m minoring in computer science. While this may seem like an innocent question, people are much more likely to assume my male peers are majoring in computer science. It is because of experiences like these that we’ve chosen to participate in CSbyUs.
+
+While CSbyUs is a relatively new organization, we have already seen a substantial impact from our programming. Students we work with have gone from having little to no exposure to computer and data science to having developed tangible skills in these fields and greater confidence in their abilities to pursue these fields. While these results are very exciting, they are only the beginning of what we hope will be a larger transformation in the state of computer science education in the US and beyond. Our goals for the work we do are to create a community of educators and individuals who are passionate about spreading our curriculum and mission. We envision that we will have a network of hubs at different universities across the US with undergraduates and faculty working to spread the reach of our mission. We hope to form a collaborative and supportive network of people who can seek advice from each other and learn and grow together in this mission. In addition, we hope that our work will introduce computer science into schools across the US. We hope that, in the future, a majority of students across the US will have taken some form of computer science and will believe that they are capable of pursuing a career in computer science, if they so desire. A unique aspect of our mission is that our goal is not necessarily to have more students actually pursuing a computer science education/career, although that’s important too. Our goal is that students everywhere will see that they are capable of learning computer science and that these skills can serve them regardless of their intended career path. This is important because it will provide more students with basic computer skills that will serve them later on and it will give them the confidence that comes from being told they are capable to achieve something they hadn’t previously considered. If we succeed in our work, the US will be full of students who have the confidence and skills needed to pursue not only computer science, but any other career they desire. They will enter higher education and the workforce armed with increased confidence in their abilities and computing skills necessary to thrive in the digital era.
+`
+        },
+        {
+          title:"Open source and customized learning",
+          author:"Cady Zhou",
+          image:"https://s3.amazonaws.com/libapps/accounts/106107/images/HelloOpenSource.jpg",
+          isTeamMember: true,
+          id: "11",
+          slug: 'open-source-and-customized-learning',
+          timestamp:"2019-04-15 01:00",
+          summary: `Open source has become one of the most widely known concepts in Computer Science. To  sum it up, Open Source in Computer Science simply means sharing your code online. Even after GitHub, the most reputable site for code-sharing, made private (non-open-source) repositories free earlier this year`,
+          content:
+`
+*"**Denoting software for which the original source code is made freely available and may be redistributed and modified. --Open Source"*
+
+*"**Denoting ***_curricula_*** for which the original ***_course plans_*** are made freely available and may be redistributed and modified. --***_Open Source Education_***"*
+
+[Open Source](https://opensource.com/resources/what-open-source) has become one of the most widely known concepts in Computer Science. To  sum it up, Open Source in Computer Science simply means sharing your code online. Even after [GitHub](https://en.wikipedia.org/wiki/GitHub), the most reputable site for code-sharing, made private (non-open-source) repositories free earlier this year, most developers are still willing to keep their projects public. I know this sounds counter-intuitive: Why would  I want to share my code, something I might have written for hundreds of hours, with which I could potentially make money, with someone I don’t even know on the other side of the Ethernet cable?
+
+***The Origin of Open Source***
+
+The tradition of Open Source began with a rebellion against the decision to copyright UNIX, a mainstream, free operating system in the late 1900s. Two developers, Richard Stallman and Linus Torvald, made important contribution in this rebellion. While Stallman developed his own operating system [GNU](https://en.wikipedia.org/wiki/GNU) (without a kernel, which is the main part of an operating system that translates commands into something can be understood by computers), Linus Torvald wrote his own kernel because of his dissatisfaction towards operating systems developers who paid no attentions to user feedbacks at that time. The combination of their work was the first Open Source project, [Linux Operating System](https://en.wikipedia.org/wiki/Linux). Even now, developers still love Linux because they could change the operating system as their own wish with open-sourced code.
+
+Open Source is a win-win solution for not only users but also developers. First of all, with GitHub, collaborating with other programmers couldn’t be easier (through [Version Control](https://en.wikipedia.org/wiki/Version_control)[)](https://en.wikipedia.org/wiki/Version_control). Yet the prerequisite to use that power tool, is to upload your code on GitHub and make it Open Source. By making code open source, users will also have a more accessible platform to give feedback and offer suggestions. Those who are interested in a particular project could directly fix bugs and save time for the repository’s owner. From there, those who are deeply involved might later become formal developers of this community.
+
+***Open Source Education***
+
+Understanding how Open Source software has taken off makes it easy to understand what we are trying to say when we encourage "Open Source Education".  If a course plan is shared, the course developer could receive continuous feedback from students, teachers, or others with a different background. For educators, sometimes it is even more helpful to receive suggestions from a stranger and hear different voices. No doubt others also benefit from this sharing, whether it is a student seeking additional material to learn, or a teacher looking for guidelines to follow.
+
+On GitHub, developers can fork other people’s repositories, or a coding project, and modify them to fulfill their own needs; the same is possible with courses. Student backgrounds, education levels, and learning habits all affect the way courses should be designed. While in a college level Computer Science (CS) course, the professor could begin the class by introducing syntax and algorithms, it is likely more effective to incorporate some interesting activities if the same course were taught in a middle school. And this freedom to share and modify courses is what we want to achieve with [CurriculaHub](https://csbyus.herokuapp.com/curriculahub). As long as the original author’s contribution is recognized, modification of a course is strongly encouraged. We are not only working towards equal access of CS education for everyone, but also hoping Open Source Education will bring teachers’ wisdom together and inspire other educators.
+
+The idea of customizing learning material for each individual by modifying courses is constantly on my mind. As someone who is always bothered by professors’ teaching speed, I am always imagining my perfect course that only introduces knowledge I have yet to learn, covering only topics I need to learn, and given at a pace that is neither too stressful nor too boring. According to [Vygotsky’s Zone of Proximal development](https://en.wikipedia.org/wiki/Zone_of_proximal_development), this would be a course teaching, not what a learner can do unaided or cannot do, but only what learner can do with guidance. As everyone has their own definition of the "perfect course", this vision can never come to fruition with only the work of individual teachers. However, in the future, when enough data have been collected about individual learning habits and course modification methods, might it be possible for computer programs to build suitable courses for each individual learner?
 `
         },
     ]

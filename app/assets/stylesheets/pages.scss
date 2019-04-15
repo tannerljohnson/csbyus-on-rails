@@ -10,6 +10,7 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 
 html, body {
   overflow-x: hidden;
+  font-family: 'Mukta', sans-serif;
 }
 
 .center {
@@ -42,7 +43,7 @@ html, body, form, span, h1special {
 }
 
 subtitle {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Mukta', sans-serif;
   color: white;
   font-size: 3em !important;
 }
@@ -57,7 +58,7 @@ h3form {
 }
 
 form {
-  font-family: 'Avenir Next', sans-serif;
+  font-family: '<Mukta>', sans-serif;
   width: $width + 60px;
   margin: 100px auto 0;
   box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
@@ -116,7 +117,7 @@ input[type="email"] {
   &~span.validation-text {
     position: absolute;
     visibility: hidden;
-    font-family: 'Avenir Next', sans-serif;
+    font-family: 'Mukta', sans-serif;
     font-size: 0.6em;
     width: $width;
     margin-left: 25px;
@@ -190,7 +191,7 @@ a {
   display: inline-block;
   // width: 100%;
   text-align: center;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Mukta', sans-serif;
   text-decoration: none;
   color: $base;
   i {

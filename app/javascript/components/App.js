@@ -31,10 +31,8 @@ import MarkdownTest from './MarkdownTest';
 const theme = createMuiTheme({
   Typography: {
     fontFamily: [
-      'Avenir Next',
+      'Mukta',
       'Gill Sans',
-
-
     ]
   },
   palette: {

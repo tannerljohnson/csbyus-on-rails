@@ -4,6 +4,7 @@ import IndividualBioCard from "./IndividualBioCard"
 import { withStyles } from '@material-ui/core/styles'
 import homeComponentStyles from "../../assets/javascripts/jss/components/homeComponentStyles.js";
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
@@ -27,7 +28,7 @@ class IndividualBiosPage extends React.Component {
             linkedinurl: "https://www.linkedin.com/in/ariachernik/"
           },{
             name:"Amy Jiang",
-            team:"Teaching Team Leader",
+            team:"Teaching Team Lead",
             study: "Duke Public Policy, 2020",
             caption:"I grew up believing that I could be anyone and learn anything. At some point in my schooling, I lost this feeling in STEM courses. I want all young people to not only believe but also be validated in their learning journey. I'm at CSbyUs working on this mission.",
             email: "sj214@duke.edu",
@@ -36,7 +37,7 @@ class IndividualBiosPage extends React.Component {
             linkedinurl: "https://www.linkedin.com/in/gobluedevils/"
           },{
             name:"Carter Zenke",
-            team:"Curriculum R&D Team Leader, Teaching Team",
+            team:"Curriculum R&D Team Lead, Teaching Team",
             study: "Duke Digital Era Education, 2020",
             caption:"Computer science education opens the digital era’s door to opportunity. I believe every student has a right to an education that will prepare them to thrive in their world.",
             email: "carter.zenke@duke.edu",
@@ -45,7 +46,7 @@ class IndividualBiosPage extends React.Component {
             linkedinurl: "google.com"
           },{
             name:"Tanner Johnson",
-            team:"Technology R&D Team Leader",
+            team:"Technology R&D Team Lead",
             study: "Duke Computer Science, 2018",
             caption:"Computer science education is essential to fully participate in the 21st century. I still remember how empowered I felt after my first “Hello, World” Python program. I’m here because I’m constantly motivated by a team of driven individuals, and I want to make it easier for teachers to bring “Hello, World” moments of confidence to their learners.",
             email: "johnsontanner3@gmail.com",
@@ -54,7 +55,7 @@ class IndividualBiosPage extends React.Component {
             linkedinurl: "https://www.linkedin.com/in/tanner-johnson-4ba701b8/"
           },{
             name:"Bozhena Etin",
-            team:"Curriculum R&D Team Leader, Project Manager for CSbyUs",
+            team: "Curriculum R&D Team Lead, Project Manager",
             study: "Duke General Liberal Studies, Graduate Student",
             caption:"CSbyUS is a unique opportunity for me to be part of a team that creates, implements and delivers a program that is impactful on the community of young people.",
             email: "bozhena.etin@duke.edu",
@@ -207,6 +208,20 @@ class IndividualBiosPage extends React.Component {
                    ))}
              </Grid>
             </main>
+
+            {/* Learn more about us button here */}
+             <div className={classes.toAboutButton}>
+               <Grid container spacing={16} justify="center" className={classes.heroButtons}>
+                 <Grid item>
+                   <NavLink to={'/about'}>
+                     <Button variant="contained" className={classes.orangeFont}>
+                       <b>Learn more about us</b>
+                     </Button>
+                   </NavLink>
+                 </Grid>
+               </Grid>
+             </div>
+            {/* End individual bios button  */}
           </div>
         </React.Fragment>
 

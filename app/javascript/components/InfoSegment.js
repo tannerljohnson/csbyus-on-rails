@@ -32,10 +32,6 @@ function generate(element) {
 
 class InfoSegment extends React.Component {
 
-  handleClick = () => {
-    console.log("Button clicked!");
-  };
-
   render () {
 
     const { classes } = this.props;
@@ -139,7 +135,7 @@ class InfoSegment extends React.Component {
                 </Typography>
               </div>
 
-              <Grid container spacing = {24} className={classes.descriptionCardGrid}>
+              <Grid container spacing = {24} className={classes.descriptionCardGrid}  id="team-descriptions">
                 {data.map(card => (
                   <Grid item key={card.name} style={{ textAlign: 'center' }} xs={12} md={4}>
                       <TeamCard name={card.name} content={card.content}/>
@@ -147,17 +143,17 @@ class InfoSegment extends React.Component {
               ))}
               </Grid>
                {/* Individual bios button here */}
-                    <div className={classes.heroButtons}>
-                      <Grid container spacing={16} justify="center" className={classes.heroButtons}>
-                        <Grid item>
-                          <NavLink to={'/about/bios'}>
-                            <Button variant="contained" className={classes.orangeFont} color="inherit" onClick={this.handleClick}>
-                              <b>Meet our team members</b>
-                            </Button>
-                          </NavLink>
-                        </Grid>
-                      </Grid>
-                    </div>
+              <div className={classes.toAboutButton}>
+                <Grid container spacing={16} justify="center" className={classes.heroButtons}>
+                  <Grid item>
+                    <NavLink to={'/about/bios'}>
+                      <Button variant="contained" className={classes.orangeFont} color="inherit">
+                        <b>Meet our team members</b>
+                      </Button>
+                    </NavLink>
+                  </Grid>
+                </Grid>
+              </div>
                {/* End individual bios button  */}
               </div>
 

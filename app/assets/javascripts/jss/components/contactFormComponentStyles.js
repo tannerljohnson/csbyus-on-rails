@@ -22,11 +22,13 @@ const contactFormComponentStyles = theme => ({
   buttons: {
     display: 'flex',
     justifyContent: 'flex-end',
+    fontFamily: theme.Typography.fontFamily[0],
   },
   button: {
     marginTop: theme.spacing.unit * 3,
     marginLeft: theme.spacing.unit,
     backgroundColor: theme.palette.primary.lightblue,
+    fontFamily: theme.Typography.fontFamily[0],
   },
   container: {
     display: 'flex',
@@ -74,6 +76,9 @@ const contactFormComponentStyles = theme => ({
   },
   menu: {
     width: 200,
+  },
+  textContentStyle: {
+    fontFamily: theme.Typography.fontFamily[0],
   },
 });
 
