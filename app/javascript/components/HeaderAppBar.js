@@ -26,6 +26,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
+import FaceIcon from '@material-ui/icons/Face';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -143,7 +144,7 @@ class HeaderAppBar extends React.Component {
            </NavLink>
            <NavLink to={'/about/bios'}>
              <ListItem className={classes.list} button key={'Team'}>
-               <ListItemIcon> <InfoIcon /> </ListItemIcon>
+               <ListItemIcon> <FaceIcon /> </ListItemIcon>
                <ListItemText primary={'Team'} />
              </ListItem>
            </NavLink>
