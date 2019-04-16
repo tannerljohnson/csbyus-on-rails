@@ -531,8 +531,8 @@ When a teacher takes the time to be culturally inclusive, they will note the inc
         },
         {
           title:"Our mission and vision",
-          author:"Eliza Paradie",
-          image:"https://live.staticflickr.com/835/29437860478_583cfb491c.jpg",
+          author:"Eliza Paradise",
+          image:"https://live.staticflickr.com/65535/47568613762_62083b87a3.jpg",
           isTeamMember: true,
           id: "10",
           slug: 'our-mission-and-vision',

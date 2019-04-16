@@ -143,6 +143,15 @@ class IndividualBiosPage extends React.Component {
             emailurl: "mailto:megan.phibbons@gmail.edu",
             linkedinurl: "https://www.linkedin.com/in/meganphibbons/"
           },{
+            name:"Cady Zhou",
+            team:"Technology R&D Team",
+            study: "Duke Electrical and Computer Engineering, 2022",
+            caption:"The concept of Open Source in Computer Science inspires me to believe in the power of sharing.  I am excited to apply the spirit of sharing to education, and see how people support one another in a community. This project helps me so much in terms of the interaction between Computer Science and any other area.",
+            email: "ziqing.zhou@duke.edu",
+            myImage: "https://live.staticflickr.com/65535/40655004133_7c4c266fe7.jpg",
+            emailurl: "mailto:ziqing.zhou@duke.edu",
+            linkedinurl: "https://www.linkedin.com/in/cadyzhou/"
+          },{
             name:"Nick Turecky",
             team:"Teaching Team",
             study: "Duke Visual and Media Studies, 2021",
